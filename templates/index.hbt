@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }} - Neustadt.fr</title>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,400italic,300italic,700italic' rel='stylesheet'>
+	<link rel="stylesheet" href="style/neustadt.css" type="text/css" media="screen">
+  </head>
+  <body>
+    <div id="wrapper">
+    <header>
+      <a class="back-to-home" href="#"><span class="back-arrow">&larr; </span>Neustadt.io</a>
+    </header>
+
+    <article class="an-article">
+      <div class="meta">
+        <h1>{{ title }}</h1>
+        <span class="date">August 14, 2014 &mdash; Parimal Satyal</span>
+        <p>
+          I recently bought a Chromebook and decided to install linux on it. Here’s a complete guide to installing Elementary OS Luna (0.2) on an HP Chromebook 14 in dual-boot with Chrome OS.
+        </p>
+      </div>
+      {{{ contents }}}
+    </article>
+    <footer>
+      &mdash; <br>
+      <p>Parimal Satyal is a Paris-based designer who loves singlespeed bicycles, Bavarian beer, vegetarian food, metal music and foreign languages. <a href="#">More&ndash;</a></p>
+      <p><strong><a class="back-to-home" href="#">Neustadt.fr</a></strong> is his collection of <a href="#">essays</a>, <a href="#">reviews</a> and <a href="#">music</a>. </p>
+    </footer>
+  </div>
+</body>
+</html>

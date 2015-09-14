@@ -1,0 +1,18 @@
+{
+  "source": "./src",
+  "destination": "./build",
+  "metadata": {
+    "title": "Neustadt.fr",
+    "description": "Neustadt.fr is Parimal Satyal's collection of essays, reviews and music."
+  },
+  "plugins": {
+    "metalsmith-markdown": {},
+    "metalsmith-permalinks": {
+      "pattern": ":title"
+    },
+    "metalsmith-templates": {
+      "engine": "handlebars",
+      "directory": "templates"
+    }
+  }
+}
