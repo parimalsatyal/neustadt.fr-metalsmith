@@ -5,18 +5,18 @@ var permalinks  = require('metalsmith-permalinks');
 var beautify    = require('metalsmith-beautify');
 var collections = require('metalsmith-collections');
 var define      = require('metalsmith-define');
+var handlebars  = require('handlebars');
 
 metalsmith(__dirname)
-  .source('src')
-  .use(define({
-    blog: {
-      uri: 'http://neustadt.fr',
-      title: 'Neustadt.fr',
-      description: 'Neustadt.fr is Parimal Satyal\'s collection of essays, reviews and music.',
+  .metadata({
+    site: {
+      sitetitle: 'Neustadt.fr',
+      siteurl: 'https://neustadt.fr',
       author: 'Parimal Satyal'
-    },
-    moment: require('moment')
-  }))
+    }
+  })
+  .source('src')
+  .destination('public')
   .use(collections({
     essays: {
       pattern: 'essays/**/*.md',
@@ -25,12 +25,17 @@ metalsmith(__dirname)
     }
   }))
   .use(markdown())
-  .destination('public')
-  .use(permalinks())
   .use(layouts({
-    engine: 'jade',
-    directory: 'templates'
+    engine: 'handlebars',
+    
+    directory: 'layout',
+    default: 'essay.html',
+    partials: {
+            header: 'partials/header',
+            footer: 'partials/footer'
+        }
   }))
+  .use(permalinks())
   .use(beautify({
     "preserve_newlines": true,
   }))
