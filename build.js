@@ -25,9 +25,9 @@ metalsmith(__dirname)
     }
   }))
   .use(markdown())
+  .use(permalinks())
   .use(layouts({
     engine: 'handlebars',
-    
     directory: 'layout',
     default: 'essay.html',
     partials: {
@@ -35,9 +35,10 @@ metalsmith(__dirname)
             footer: 'partials/footer'
         }
   }))
-  .use(permalinks())
   .use(beautify({
-    "preserve_newlines": true,
+    preserve_newlines: true,
+    css: false,
+    js: false
   }))
   .build(function (err) {
       if (err) {
