@@ -12,7 +12,7 @@
     },
     "metalsmith-templates": {
       "engine": "handlebars",
-      "directory": "templates"
+      "directory": "./templates"
     }
   }
 }

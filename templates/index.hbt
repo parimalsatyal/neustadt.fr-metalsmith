@@ -20,7 +20,7 @@
         <h1>{{ title }}</h1>
         <span class="date">August 14, 2014 &mdash; Parimal Satyal</span>
         <p>
-          I recently bought a Chromebook and decided to install linux on it. Here’s a complete guide to installing Elementary OS Luna (0.2) on an HP Chromebook 14 in dual-boot with Chrome OS.
+          {{ blurb }}
         </p>
       </div>
       {{{ contents }}}
