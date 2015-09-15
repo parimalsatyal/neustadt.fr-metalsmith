@@ -1,7 +1,8 @@
-build: node_modules
-	node_modules/.bin/metalsmith
+
+build: 	node_modules
+				node build.js
 
 node_modules: package.json
-	npm install
+				npm install
 
 .PHONY: build
