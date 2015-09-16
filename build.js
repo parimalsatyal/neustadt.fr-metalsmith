@@ -6,12 +6,14 @@ var beautify    = require('metalsmith-beautify');
 var collections = require('metalsmith-collections');
 var define      = require('metalsmith-define');
 var handlebars  = require('handlebars');
+var serve       = require('metalsmith-serve');
+var watch       = require('metalsmith-watch');
 
 metalsmith(__dirname)
   .metadata({
     site: {
-      sitetitle: 'Neustadt.fr',
-      siteurl: 'https://neustadt.fr',
+      name: 'Neustadt.fr',
+      baseurl: 'https://neustadt.fr',
       author: 'Parimal Satyal'
     }
   })
@@ -43,6 +45,16 @@ metalsmith(__dirname)
     css: false,
     js: false
   }))
+  .use(serve({
+    port: 8081,
+    verbose: true
+  }))
+  .use(watch({
+      paths: {
+        "${source}/**/*": true,
+        "layout/**/*": "**/*",
+      }
+    }))
   .build(function (err) {
       if (err) {
         throw err;
