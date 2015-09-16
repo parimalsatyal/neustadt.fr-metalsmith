@@ -27,6 +27,7 @@ metalsmith(__dirname)
   .use(markdown())
   .use(permalinks())
   .use(layouts({
+    pattern: '*.md',
     engine: 'handlebars',
     directory: 'layout',
     default: 'essay.html',
