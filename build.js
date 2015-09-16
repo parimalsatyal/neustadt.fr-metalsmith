@@ -15,8 +15,8 @@ metalsmith(__dirname)
       author: 'Parimal Satyal'
     }
   })
-  .source('src')
-  .destination('public')
+  .source('./src')
+  .destination('./public')
   .use(collections({
     essays: {
       pattern: 'essays/**/*.md',
@@ -27,9 +27,9 @@ metalsmith(__dirname)
   .use(markdown())
   .use(permalinks())
   .use(layouts({
-    pattern: '*.md',
     engine: 'handlebars',
-    directory: 'layout',
+    directory: './layout',
+    pattern: ["*/*/*html","*html"],
     default: 'essay.html',
     partials: {
             header: 'partials/header',
