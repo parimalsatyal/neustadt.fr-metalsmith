@@ -3,7 +3,6 @@ title: Testing Hövding, the Invisible Bike Helmet
 date: 2014-08-14
 blurb: Hövding is a high-tech challenge to the age-old bike helmet. It's smart, looks great and will set you back about 300€. Is it worth it?
 type: review
-layout: essay.html
 ---
 
 This is an example of sorts.

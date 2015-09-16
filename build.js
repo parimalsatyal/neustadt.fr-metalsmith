@@ -1,13 +1,14 @@
-var metalsmith  = require('metalsmith');
-var markdown    = require('metalsmith-markdown');
-var layouts     = require('metalsmith-layouts');
-var permalinks  = require('metalsmith-permalinks');
-var beautify    = require('metalsmith-beautify');
-var collections = require('metalsmith-collections');
-var define      = require('metalsmith-define');
-var handlebars  = require('handlebars');
-var serve       = require('metalsmith-serve');
-var watch       = require('metalsmith-watch');
+var metalsmith        = require('metalsmith');
+var markdown          = require('metalsmith-markdown');
+var layouts           = require('metalsmith-layouts');
+var permalinks        = require('metalsmith-permalinks');
+var beautify          = require('metalsmith-beautify');
+var collections       = require('metalsmith-collections');
+var define            = require('metalsmith-define');
+var handlebars        = require('handlebars');
+var serve             = require('metalsmith-serve');
+var watch             = require('metalsmith-watch');
+var dateFormatter     = require('metalsmith-date-formatter');
 
 metalsmith(__dirname)
   .metadata({
@@ -30,6 +31,15 @@ metalsmith(__dirname)
   .use(permalinks({
     pattern: ':collection/:title'
   }))
+  .use(dateFormatter({
+    dates: [
+      {
+            key: 'date',
+            format: 'DD MMM [\']YY',
+            locale: 'fr'
+        }
+    ]
+}))
   .use(layouts({
     engine: 'handlebars',
     directory: './layout',
