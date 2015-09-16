@@ -35,8 +35,7 @@ metalsmith(__dirname)
     dates: [
       {
             key: 'date',
-            format: 'DD MMM [\']YY',
-            locale: 'fr'
+            format: 'DD MMM [\']YY'
         }
     ]
 }))
