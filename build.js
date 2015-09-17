@@ -1,13 +1,13 @@
-var metalsmith        = require('metalsmith');
-  markdown          = require('metalsmith-markdown');
-  layouts           = require('metalsmith-layouts');
-  permalinks        = require('metalsmith-permalinks');
-  beautify          = require('metalsmith-beautify');
-  collections       = require('metalsmith-collections');
-  define            = require('metalsmith-define');
-  handlebars        = require('handlebars');
-  serve             = require('metalsmith-serve');
-  watch             = require('metalsmith-watch');
+var metalsmith        = require('metalsmith'),
+    markdown          = require('metalsmith-markdown'),
+    layouts           = require('metalsmith-layouts'),
+    permalinks        = require('metalsmith-permalinks'),
+    beautify          = require('metalsmith-beautify'),
+    collections       = require('metalsmith-collections'),
+    define            = require('metalsmith-define'),
+    handlebars        = require('handlebars'),
+    serve             = require('metalsmith-serve'),
+    watch             = require('metalsmith-watch');
 
 handlebars.registerHelper('moment', require('helper-moment'));
 

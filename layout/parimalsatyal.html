@@ -1,0 +1,16 @@
+{{> header }}
+      <header>
+        <a class="back-to-home" href="/"><span class="back-arrow">&larr; </span>{{ site.name }}</a>
+      </header>
+
+      <article class="an-article">
+        <div class="meta">
+          <h1>{{ title }}</h1>
+          <p>
+            {{ blurb }}
+          </p>
+        </div>
+
+        {{{ contents }}}
+      </article>
+{{> footer }}
