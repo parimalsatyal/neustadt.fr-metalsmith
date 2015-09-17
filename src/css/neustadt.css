@@ -15,7 +15,7 @@ body {
 
 header {
   display: block;
-  font-family: 'Karla'; font-size: 16pt; font-weight: 700;
+  font-family: 'Karla'; font-size: 16pt; font-weight: bold;
   padding: 10px 0;
   color: grey;
 }
@@ -31,7 +31,7 @@ header span.back-arrow {
 }
 
 header span.rubrique {
-	font-weight: 400;
+	font-weight: normal;
 }
 
 header .back-to-home {
@@ -44,15 +44,16 @@ article p {
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'PlayfairDisplay', serif;
   font-size: 40pt;
   line-height: 1em;
+   width: 85%;
 }
 
 div.meta p {
   display: block;
   font-size: 15pt; line-height: 1.5em;
-  font-weight: 700;
+  font-weight: bold;
   margin-top: 30px; margin-bottom: 30px;
   font-family: 'Karla';
 }
@@ -64,15 +65,26 @@ div.meta span {
   color: grey;
 }
 
-h3 {
-  font-family: 'Playfair Display', serif;
+h2 {
+  font-family: 'PlayfairDisplay', serif;
   font-size: 20pt;
   margin-top: 1.5em;
 }
 
+h3 {
+  font-family: 'PlayfairDisplay', serif;
+  font-size: 18pt;
+  margin-top: 1.5em;
+}
+
 article {
-  font-size: 14pt;
+  font-size: 13.5pt;
   line-height: 1.7em;
+}
+
+article em {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
 }
 
 article a:link {
@@ -155,6 +167,7 @@ ul.recent li span.date {
 ul.recent li span.title {
 	display: block;
   font-family: 'Playfair Display', serif;
+
 	font-size: 16pt;
 	line-height: 1.7em;
 }
