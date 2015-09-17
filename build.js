@@ -54,9 +54,7 @@ metalsmith(__dirname)
     }
   }))
   .use(markdown())
-  .use(permalinks({
-    pattern: ':collection/:title'
-  }))
+  .use(permalinks())
   .use(layouts({
     engine: 'handlebars',
     directory: './layout',

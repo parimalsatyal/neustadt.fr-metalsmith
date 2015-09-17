@@ -1,6 +1,6 @@
 {
-  "name": "neustadt.fr-static",
-  "version": "0.0.0",
+  "name": "neustadt.fr-metalsmith",
+  "version": "1.0.0",
   "private": true,
   "description": "Neustadt.fr is Parimal Satyal's collection of essays, reviews and music.",
   "author": "Parimal Satyal",
