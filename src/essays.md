@@ -1,0 +1,3 @@
+---
+layout: essays.html
+---

@@ -21,10 +21,35 @@ metalsmith(__dirname)
   .source('./src')
   .destination('./public')
   .use(collections({
+    lists: {
+      pattern: 'src/*.md',
+    },
     essays: {
       pattern: 'essays/**/*.md',
       sortBy: 'date',
-      reverse: true
+      reverse: true,
+      metadata: {
+        name: 'Essays',
+        description: 'Description'
+      }
+    },
+    reviews: {
+      pattern: 'reviews/**/*.md',
+      sortBy: 'date',
+      reverse: true,
+      metadata: {
+        name: 'Reviews',
+        description: 'Description'
+      }
+    },
+    music: {
+      pattern: 'music/**/*.md',
+      sortBy: 'date',
+      reverse: true,
+      metadata: {
+        name: 'Reviews',
+        description: 'Description'
+      }
     }
   }))
   .use(markdown())
@@ -42,7 +67,7 @@ metalsmith(__dirname)
   .use(layouts({
     engine: 'handlebars',
     directory: './layout',
-    pattern: ["*/*/*html","*html"],
+    pattern: ["*/*/*html","*/*html","*html"],
     default: 'essay.html',
     partials: {
             header: 'partials/header',

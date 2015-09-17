@@ -1,0 +1,14 @@
+{{> header }}
+      <header class="home">
+        <a href="/">{{ site.name }}</a><span class="rubrique">/music</span>
+      </header>
+
+	  <ul class="recent">
+    {{#each essays}}
+	  	<li>
+	  		<span class="date">{{ date }} &mdash; {{ type }}</span>
+			<span class="title"><a href="/{{ path }}">{{ title }}</a></span>
+	  	</li>
+    {{/each}}
+	  </ul>
+{{> footer }}
