@@ -1,14 +1,15 @@
 var metalsmith        = require('metalsmith');
-var markdown          = require('metalsmith-markdown');
-var layouts           = require('metalsmith-layouts');
-var permalinks        = require('metalsmith-permalinks');
-var beautify          = require('metalsmith-beautify');
-var collections       = require('metalsmith-collections');
-var define            = require('metalsmith-define');
-var handlebars        = require('handlebars');
-var serve             = require('metalsmith-serve');
-var watch             = require('metalsmith-watch');
-var dateFormatter     = require('metalsmith-date-formatter');
+  markdown          = require('metalsmith-markdown');
+  layouts           = require('metalsmith-layouts');
+  permalinks        = require('metalsmith-permalinks');
+  beautify          = require('metalsmith-beautify');
+  collections       = require('metalsmith-collections');
+  define            = require('metalsmith-define');
+  handlebars        = require('handlebars');
+  serve             = require('metalsmith-serve');
+  watch             = require('metalsmith-watch');
+
+handlebars.registerHelper('moment', require('helper-moment'));
 
 metalsmith(__dirname)
   .metadata({
@@ -56,14 +57,6 @@ metalsmith(__dirname)
   .use(permalinks({
     pattern: ':collection/:title'
   }))
-  .use(dateFormatter({
-    dates: [
-      {
-            key: 'date',
-            format: 'DD MMM [\']YY'
-        }
-    ]
-}))
   .use(layouts({
     engine: 'handlebars',
     directory: './layout',
@@ -89,8 +82,11 @@ metalsmith(__dirname)
         "layout/**/*": "**/*",
       }
     }))
-  .build(function (err) {
+    .build(function (err) {
       if (err) {
-        throw err;
+        console.log(err);
       }
-  });
+      else {
+        console.log('Neustadt.fr built!');
+      }
+    });
