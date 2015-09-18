@@ -5,10 +5,11 @@ body {
   color: #222;
   box-shadow: 0 0 0 5px red inset;
   margin: 0;
+  min-height: 100%; min-height: 100vh;
 }
 
 #wrapper {
-  max-width: 750px;
+  max-width: 740px;
   margin: 0 auto;
   padding: 120px 7% 80px 7%;
 }
@@ -39,12 +40,8 @@ header .back-to-home {
   margin-left: -20px;
 }
 
-article p {
-  text-align: justify;
-}
-
 h1 {
-  font-family: 'PlayfairDisplay', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 40pt;
   line-height: 1em;
    width: 85%;
@@ -54,8 +51,35 @@ div.meta p {
   display: block;
   font-size: 15pt; line-height: 1.5em;
   font-weight: bold;
-  margin-top: 30px; margin-bottom: 30px;
+  margin-top: 30px; margin-bottom: 20px;
   font-family: 'Karla';
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20pt;
+  margin-top: 1.5em;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18pt;
+  margin-top: 1.5em;
+}
+
+article {
+  font-size: 13pt;
+  line-height: 1.6em;
+  letter-spacing: -0.02em;
+}
+
+article p {
+  text-align: justify;
+}
+
+article em {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
 }
 
 div.meta span {
@@ -63,28 +87,7 @@ div.meta span {
   font-family: 'Karla';
   padding: 2px 0;
   color: grey;
-}
-
-h2 {
-  font-family: 'PlayfairDisplay', serif;
-  font-size: 20pt;
-  margin-top: 1.5em;
-}
-
-h3 {
-  font-family: 'PlayfairDisplay', serif;
-  font-size: 18pt;
-  margin-top: 1.5em;
-}
-
-article {
-  font-size: 13.5pt;
-  line-height: 1.7em;
-}
-
-article em {
-  font-family: 'Merriweather', serif;
-  font-style: italic;
+  text-align: left;
 }
 
 article a:link {
@@ -94,7 +97,7 @@ article a:link {
 }
 
 article a:visited {
-  color: purple;
+  color: #555;
 }
 
 article a:hover {
