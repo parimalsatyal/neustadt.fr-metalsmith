@@ -11,12 +11,25 @@ var metalsmith        = require('metalsmith'),
 
 handlebars.registerHelper('moment', require('helper-moment'));
 
+// limit an array to a maximum of elements (from the start)
+handlebars.registerHelper('each_upto', function(ary, max, options) {
+    if(!ary || ary.length == 0)
+        return options.inverse(this);
+
+    var result = [ ];
+    for(var i = 0; i < max && i < ary.length; ++i)
+        result.push(options.fn(ary[i]));
+    return result.join('');
+});
+
 metalsmith(__dirname)
   .metadata({
     site: {
       name: 'Neustadt.fr',
       baseurl: 'https://neustadt.fr',
-      author: 'Parimal Satyal'
+      author: 'Parimal Satyal',
+      description: 'Neustadt.fr is Paris-based designer Parimal Satyal\'s collection of essays, reviews and music.',
+      keywords: 'neustadt, parimal satyal, parimalsatyal'
     }
   })
   .source('./src')

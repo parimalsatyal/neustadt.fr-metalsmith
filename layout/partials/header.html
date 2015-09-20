@@ -1,13 +1,30 @@
 <!DOCTYPE html>
+<!--
+Hi.
+
+I'm keeping the HTML output clean. I like code that's structured and easy to read.
+If you have questions about anything on this website, feel free to get in touch: parimal@neustadt.fr
+
+Bonne journée !
+
+Cheers
+Parimal
+ -->
 <html>
   <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{#if title}}{{ title }} - {{/if}}{{ site.name }} </title>
+  <meta name="keywords" content="{{ keywords }}{{#if type}}, {{ type }}{{/if}} {{ site.keywords }}">
+  <meta name="description" content="{{#if blurb}}{{ blurb }}{{else}}{{ site.description }}{{/if}}">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="robots" content="index, follow">
+  <title>{{#if title}}{{ title }} - {{/if}}{{ site.name }} </title>
 	<link rel="stylesheet" href="/css/neustadt.css" type="text/css" media="screen">
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,400italic,300italic,700italic' rel='stylesheet'>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
   </head>
   <body>
     <div id="wrapper">

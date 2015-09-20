@@ -1,7 +1,8 @@
 ---
-title: Mette is Aware
+title: Mette is Not Baking
 date: 2015-09-15
-blurb: Review!
+blurb: How do we solve this problem?
+keywords:
 type: review
 ---
 
