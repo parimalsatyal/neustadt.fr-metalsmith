@@ -57,14 +57,6 @@ metalsmith(__dirname)
       metadata: {
         name: 'Reviews',
       }
-    },
-    track: {
-      pattern: 'music/**/*.md',
-      sortBy: 'date',
-      reverse: true,
-      metadata: {
-        name: 'Reviews',
-      }
     }
   }))
   .use(markdown())

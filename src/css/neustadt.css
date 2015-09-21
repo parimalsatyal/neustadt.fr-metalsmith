@@ -44,7 +44,7 @@ h1 {
   font-family: 'Playfair Display', serif;
   font-size: 40pt;
   line-height: 1em;
-   width: 87%;
+  width: 87%;
 }
 
 div.meta p {
@@ -252,4 +252,18 @@ ol > li:before {
   color: red;
   font-size: 15pt;
   width: 25px;
+}
+
+
+/* Audio player and music page */
+
+audio {
+    background-color: black;
+    color: white;
+    width: 80%;
+}
+
+.emdash {
+  color: red;
+  font-family: 'Karla', serif;
 }

@@ -3,12 +3,16 @@
         <a href="/">{{ site.name }}</a><span class="rubrique">/music</span>
       </header>
 
-	  <ul class="recent">
-    {{#each track}}
-	  	<li>
-	  		<span class="date">{{ moment date lang="fr" format="DD MMM [']YY" }} &mdash; {{ type }}</span>
-			<span class="title"><a href="/{{ path }}">{{ title }}</a></span>
-	  	</li>
-    {{/each}}
-	  </ul>
+      <article class="an-article">
+        <div class="meta">
+          <h1>{{ title }}</h1>
+          <span>All songs written, performed and recorded by <a href="/parimalsatyal">Parimal Satyal</a>, unless I mention otherwise.</span>
+          <p>
+            {{ blurb }}
+          </p>
+        </div>
+
+      {{{ contents }}}
+
+      </article>
 {{> footer }}
