@@ -3,7 +3,7 @@ title: Iron Maiden - The Book of Souls
 date: 2015-09-21
 blurb: An early review of Hövding, a high-tech challenge to the age-old bike helmet. It's smart, looks great and will set you back about 300€. Is it worth it?
 keywords: hövding, invisible helmet, bike, airbag, Swedish bike helmet
-type: review
+type: album review
 ---
 
 Just over a week ago, Microsoft launched Windows 8 to much fanfare. That same day, those of us enrolled in ‘Global and Digital Media’ (taught by Thierry Jadot, President of Aegis France and Thomas Jamet, President of Moxie) at Sciences Po’s School of Communication had the unique opportunity to visit Microsoft headquarters here in Paris and get an inside look at the company and its new operating system.
