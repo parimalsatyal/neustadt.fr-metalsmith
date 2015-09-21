@@ -44,7 +44,7 @@ h1 {
   font-family: 'Playfair Display', serif;
   font-size: 40pt;
   line-height: 1em;
-   width: 85%;
+   width: 87%;
 }
 
 div.meta p {
@@ -75,6 +75,9 @@ article {
 
 article p {
   text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 
 article em {
@@ -197,13 +200,11 @@ ul.recent li span.title a:hover {
   text-decoration: none;
   margin-left: -20px;
 }
-
 a.older:hover {
   color: red;
   border-bottom-color: red;
 }
 */
-
 
 @media all and (max-width: 700px) {
   .article-image-left {
@@ -220,4 +221,35 @@ a.older:hover {
     margin: 0 1.3em 1.3em -5em;
     width: 90%; max-width: 350px;
   }
+}
+
+/* Article Text */
+
+ol {
+  margin: 2em 0 2em 0; padding-bottom: 1em;
+  color: #222;
+  list-style-type: none;
+  list-style-type: decimal !ie; /*IE 7- hack*/
+  counter-reset: li-counter;
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  width: 90%;
+  font-size: 12pt; line-height: 1.5em;
+}
+
+ol > li {
+  margin: 0; padding: 0;
+  padding-top: 1em;
+}
+
+ol > li:before {
+  display: inline-block;
+  margin-left: -25px;
+  content: counter(li-counter)' ';
+  counter-increment: li-counter;
+  color: red;
+  font-size: 15pt;
+  width: 25px;
 }

@@ -39,8 +39,7 @@ metalsmith(__dirname)
       sortBy: 'date',
       reverse: true,
       metadata: {
-        name: 'Archive',
-        description: 'Everything posted'
+        name: 'Everything',
       }
     },
     essays: {
@@ -49,7 +48,6 @@ metalsmith(__dirname)
       reverse: true,
       metadata: {
         name: 'Essays',
-        description: 'Description'
       }
     },
     reviews: {
@@ -58,7 +56,6 @@ metalsmith(__dirname)
       reverse: true,
       metadata: {
         name: 'Reviews',
-        description: 'Description'
       }
     },
     track: {
@@ -67,7 +64,6 @@ metalsmith(__dirname)
       reverse: true,
       metadata: {
         name: 'Reviews',
-        description: 'Description'
       }
     }
   }))
