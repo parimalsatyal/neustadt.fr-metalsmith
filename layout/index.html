@@ -4,11 +4,11 @@
       </header>
 
 	  <ul class="recent">
-    {{#each_upto essays 5}}
+    {{#each publications}}
 	  	<li>
 	  		<span class="date">{{ moment date lang="fr" format="DD MMM [']YY" }} &mdash; {{ type }}</span>
-			  <span class="title"><a href="{{ path }}">{{ title }}</a></span>
+			<span class="title"><a href="{{ path }}">{{ title }}</a></span>
 	  	</li>
-    {{/each_upto}}
+    {{/each}}
 	  </ul>
 {{> footer }}

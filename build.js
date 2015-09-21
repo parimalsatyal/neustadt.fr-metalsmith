@@ -11,32 +11,25 @@ var metalsmith        = require('metalsmith'),
 
 handlebars.registerHelper('moment', require('helper-moment'));
 
-// limit an array to a maximum of elements (from the start)
-handlebars.registerHelper('each_upto', function(ary, max, options) {
-    if(!ary || ary.length == 0)
-        return options.inverse(this);
-
-    var result = [ ];
-    for(var i = 0; i < max && i < ary.length; ++i)
-        result.push(options.fn(ary[i]));
-    return result.join('');
-});
-
 metalsmith(__dirname)
   .metadata({
     site: {
       name: 'Neustadt.fr',
       baseurl: 'https://neustadt.fr',
-      author: 'Parimal Satyal',
-      description: 'Neustadt.fr is Paris-based designer Parimal Satyal\'s collection of essays, reviews and music.',
-      keywords: 'neustadt, parimal satyal, parimalsatyal'
+      author: 'Parimal Satyal'
     }
   })
   .source('./src')
   .destination('./public')
   .use(collections({
-    lists: {
-      pattern: 'src/*.md',
+    publications: {
+      pattern: '*/**/*.md',
+      sortBy: 'date',
+      reverse: true,
+      metadata: {
+        name: 'Archive',
+        description: 'Everything posted'
+      }
     },
     essays: {
       pattern: 'essays/**/*.md',
@@ -56,7 +49,7 @@ metalsmith(__dirname)
         description: 'Description'
       }
     },
-    music: {
+    track: {
       pattern: 'music/**/*.md',
       sortBy: 'date',
       reverse: true,
@@ -67,9 +60,7 @@ metalsmith(__dirname)
     }
   }))
   .use(markdown())
-  .use(permalinks({
-    relative: false
-  }))
+  .use(permalinks())
   .use(layouts({
     engine: 'handlebars',
     directory: './layout',
