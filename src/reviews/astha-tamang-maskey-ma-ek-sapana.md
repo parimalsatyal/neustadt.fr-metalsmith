@@ -1,18 +1,27 @@
 ---
 title: Astha Tamang Maskey - Ma Ek Sapana
 date: 2012-07-19
-blurb: "‘Ma Ek Sapana’ is a tremendous, inspired release from an ambitious, creative musician (and friend) who has clearly matured as a singer and, judging by the emotional and thematic depth of the songs, as an artist. It engages, provokes, intrigues and inspires."
+blurb: "Ma Ek Sapana is a tremendous, inspired release from an ambitious, creative musician (and friend) who has clearly matured as a singer and an artist."
 keywords: astha, tamang maskey, sabai thikai huncha, disconnected, ma ek sapana
 type: album review
 ---
+<figure>
+  <img src="../img/astha-tamang-maskey_ma-ek-sapana.jpg" alt="Ma Ek Sapana album cover" class="review-album-cover" />
+  <figcaption></figcaastption>
+</figure>
 
-'Ma Ek Sapana' excels in three areas that have come to define the quintessential **[Astha Tamang-Maskey](http://asthamusic.com)** sound: a versatile voice, atmosphere and sonic experimentation. Although the sound is a logical progression from her previous full-length album '[Sabai Thikai Huncha](http://www.cdbaby.com/cd/asthatamangmaskey)' and the more recent, experimental '[11:11](http://www.cdbaby.com/cd/asthatamangmaskey2)', this album is a unique, balanced, more mature oeuvre that invites listeners to connect, emotionally, to its words, music and ideas. The production is excellent: the sound is full, the vocals are crisp and the guitars, sharp, sit slightly off-center. The piano (in 'Shahar' and 'Supposed to Be') is a welcome addition to already diverse instrumentation. Particularly impressive is the way in which Astha and co. (including co-writer/co-producer/co-engineer _Rohit Shakya_) are able, through creative use of digital instruments (orchestral pads, sonic ornaments, beats) and bass, to sculpt engaging soundscapes that make use of the full sonic spectrum.
+'Ma Ek Sapana' excels in three areas that have come to define the quintessential *[Astha Tamang-Maskey](http://asthamusic.com)* sound: a versatile voice, atmosphere and sonic experimentation. Although the sound is a logical progression from her previous full-length album '[Sabai Thikai Huncha](http://www.cdbaby.com/cd/asthatamangmaskey)' and the more recent, experimental '[11:11](http://www.cdbaby.com/cd/asthatamangmaskey2)', this album is a unique, balanced, more mature oeuvre that invites listeners to connect, emotionally, to its words, music and ideas.
+
+The production is excellent: the sound is full, the vocals are crisp and the guitars, sharp, sit slightly off-center. The piano (in 'Shahar' and 'Supposed to Be') is a welcome addition to already diverse instrumentation. Particularly impressive is the way in which Astha and co. (including co-writer/co-producer/co-engineer _Rohit Shakya_) are able, through creative use of digital instruments (orchestral pads, sonic ornaments, beats) and bass, to sculpt engaging soundscapes that make use of the full sonic spectrum.
 
 ## Khula Aakash
 
 Before we get to the track-by-track review, here's a full-length video of the opening song '_**Khula Aakash**_', directed by Rohit Shakya and featuring _Deep Chhetri_ and Astha's younger brother _Ozasvi Maskey Tamang_. Best viewed fullscreen in HD.
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/ayw4RIn81CM?rel=0" frameborder="0" allowfullscreen=""></iframe>
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/ayw4RIn81CM"
+  frameborder="0" allowfullscreen class="video"></iframe>
+</div>
 
 ## Track-by-Track
 
@@ -33,5 +42,3 @@ Before we get to the track-by-track review, here's a full-length video of the op
 ## Get the album
 
 I highly recommend purchasing 'Ma Ek Sapana' from [CD Baby](http://www.cdbaby.com/cd/asthatamangmaskey5), [iTunes](http://itunes.apple.com/us/artist/astha-tamang-maskey/id336855413), [Amazon](http://amzn.com/B00897S8OG) or, if you're in Kathmandu, a [local CD store](https://www.facebook.com/notes/astha-tamang-maskey/list-of-stores-that-have-my-albums/10150873913287522). You'll be supporting young, independent musical talent and treating yourself to fantastic music.
-
-[![](http://realityequation.net/live/wp-content/files/asthamaeksapana.jpeg "'Ma Ek Sapana' by Astha Tamang-Maskey")](http://www.cdbaby.com/cd/asthatamangmaskey5)

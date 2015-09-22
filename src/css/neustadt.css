@@ -210,7 +210,25 @@ a.older:hover {
   .article-image-left {
     display: block;
     margin: auto; padding: 1em;
-    width: 90%; max-width: 350px;
+    max-width: 450px;
+  }
+
+  .review-album-cover {
+    display: block;
+    margin: auto; padding: 1em 0 1em 0;
+    width: 100%;
+  }
+
+  figure {
+    margin: 0; padding: 0;
+    display: block;
+    margin: auto; padding: 1em 0 1em 0;
+  }
+
+  figure figcaption {
+    font-size: 12pt;
+    font-family: 'Playfair Display', serif;
+    color: lightslategrey;
   }
 }
 
@@ -218,12 +236,30 @@ a.older:hover {
   .article-image-left {
     display: inline-block;
     float: left;
-    margin: 0 1.3em 1.3em -5em;
-    width: 90%; max-width: 350px;
+    margin: 0 1.6em 1.6em -5em;
+    max-width: 500px;
   }
+
+  .review-album-cover {
+    max-width: 100%;
+  }
+
+  figure {
+    display: inline-block;
+    float: left;
+      margin: 0 1.6em 1em -5em;
+    max-width: 70%;
+  }
+
+  figure figcaption {
+    font-size: 12pt;
+    font-family: 'Playfair Display', serif;
+    color: lightslategrey;
+  }
+
 }
 
-/* Article Text */
+/* Article Elements */
 
 article ol, article ul {
   margin: 2em 0 2em 0; padding-bottom: 1em;
@@ -294,4 +330,19 @@ audio {
 .emdash {
   color: red;
   font-family: 'Karla', serif;
+}
+
+.video-embed {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

@@ -1,7 +1,7 @@
 ---
 title: "China: One Nation, How Many Languages?"
 date: 2010-12-15
-blurb: Just a century previously, the differences in local dialects would have made it nearly impossible for a Chinese person from Harbin in the North to speak with a fellow compatriot in Guangzhou. Today, even a foreigner having taken an introductory course in Chinese is able to use pútōnghuà to hold a basic conversation in virtually any part of the country. How did China achieve language standardisation in such a short span of time? What necessitated it? How effective is standardisation in a country as linguistically diverse as China?
+blurb: Just a century ago, differences in local dialects would have made it nearly impossible for someone from Harbin to speak with someone from Guangzhou. Today, a foreigner having taken introductory Chinese is able to hold a basic conversation virtually anywhere in the country. What happened? 
 type: paper
 ---
 
