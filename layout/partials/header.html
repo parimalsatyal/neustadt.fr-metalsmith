@@ -10,19 +10,19 @@ Bonne journée !
 Cheers
 Parimal
  -->
-<html>
+<html {{#if language}}lang="{{language}}"{{else}}lang="en"{{/if}}>
   <head>
   <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="{{ keywords }}{{#if type}}, {{ type }}{{/if}} {{ site.keywords }}">
-  <meta name="description" content="{{#if blurb}}{{ blurb }}{{/if}}{{#if description}}{{ description }}{{else}}{{ site.description }}{{/if}}">
-  <meta name="author" content="{{ site.author }}">
-  <meta name="robots" content="index, follow">
   <title>{{#if title}}{{ title }} - {{/if}}{{ site.name }} </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="{{ keywords }}, {{#if type}}{{ type }}{{/if}} {{ site.keywords }}">
+  <meta name="description" content="{{#if blurb}}{{ blurb }}{{else}}{{#if description}}{{ description }}{{else}}{{ site.description }}{{/if}}{{/if}}">
+  <meta name="author" content="{{ site.author }}">
 	<link rel="stylesheet" href="/css/neustadt.css" type="text/css" media="screen">
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,400italic,300italic,700italic' rel='stylesheet'>
+  <link rel="canonical" href="{{ site.baseurl}}/{{ path }}">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="shortcut icon" href="/favicon.ico">
   </head>

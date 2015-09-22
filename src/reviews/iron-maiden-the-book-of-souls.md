@@ -1,7 +1,7 @@
 ---
 title: Iron Maiden - The Book of Souls
 date: 2015-09-21
-blurb: Book of Souls is the most 'progressive' Maiden album yet. Ambient, energetic and occassionally unexpected and very, very satisfying. 
+blurb: Book of Souls is the most 'progressive' Maiden album yet. Ambient, energetic and occassionally unexpected and very, very satisfying.
 keywords: book of souls, iron maiden, empire of the clouds, speed of light
 type: album review
 ---

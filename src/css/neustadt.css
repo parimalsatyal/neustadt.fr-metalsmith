@@ -225,35 +225,63 @@ a.older:hover {
 
 /* Article Text */
 
-ol {
+article ol, article ul {
   margin: 2em 0 2em 0; padding-bottom: 1em;
   color: #222;
-  list-style-type: none;
-  list-style-type: decimal !ie; /*IE 7- hack*/
-  counter-reset: li-counter;
   text-align: justify;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
   width: 90%;
   font-size: 12pt; line-height: 1.5em;
+  list-style-type: none;
+  list-style-type: decimal !ie; /*IE 7- hack*/
 }
 
-ol > li {
+article ol {
+  counter-reset: li-counter;
+}
+
+article ol > li, article ul > li {
   margin: 0; padding: 0;
   padding-top: 1em;
 }
 
-ol > li:before {
+article ol > li:before {
+  font-family: 'Playfair Display', serif;
   display: inline-block;
-  margin-left: -25px;
+  width: 30px; margin-left: -30px;
   content: counter(li-counter)' ';
   counter-increment: li-counter;
+  color: red;
+  font-size: 15pt;
+}
+
+article ul > li:before {
+  font-family: 'Playfair Display', serif;
+  display: inline-block;
+  width: 30px; margin-left: -30px;
+  content: '− ';
   color: red;
   font-size: 15pt;
   width: 25px;
 }
 
+article blockquote {
+  font-family: 'Playfair Display', serif;
+  color: red;
+  font-size: 15pt;
+  font-style: italic;
+}
+
+article blockquote  em {
+  font-style: normal;
+}
+
+article .harvard-ref {
+  font-family: 'Playfair Display', serif;
+  color: lightslategrey;
+}
 
 /* Audio player and music page */
 

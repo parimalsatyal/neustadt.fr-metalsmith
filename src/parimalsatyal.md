@@ -27,7 +27,8 @@ The fonts used on this website are also all free and shared with an SIL Open Fon
 
 ## Contact
 
-Email is probably the best way to get in touch: <parimal@neustadt.fr>.<br>
+Email is probably the best way to get in touch:
+<a href="mailto:parimal~snail~neustadt[.]fr">parimal~snail~neustadt[.]fr</a>  
 You will also find me on Twitter: [@parimalsatyal](https://twitter.com/parimalsatyal)
 
 I live in Paris. If you'd like to talk in person, I'm usually up for [coffee](http://stradacafe.fr) or [beer](http://kiez.fr/).
