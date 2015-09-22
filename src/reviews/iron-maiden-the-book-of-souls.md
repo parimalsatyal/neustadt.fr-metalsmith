@@ -4,6 +4,7 @@ date: 2015-09-21
 blurb: "Book of Souls is the band's best album since Brave New World. Iron Maiden still manage to create something raw, energetic and genuinely powerful."
 keywords: book of souls, iron maiden, empire of the clouds, speed of light
 type: album review
+img: img/iron-maiden_the-book-of-souls.jpg
 ---
 <figure>
   <img src="../img/iron-maiden_the-book-of-souls.jpg" alt="The Book of Souls album cover" class="review-album-cover" />

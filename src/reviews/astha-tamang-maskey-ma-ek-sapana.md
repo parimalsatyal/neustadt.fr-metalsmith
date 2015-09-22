@@ -4,6 +4,7 @@ date: 2012-07-19
 blurb: "Ma Ek Sapana is a tremendous, inspired release from an ambitious, creative musician (and friend) who has clearly matured as a singer and an artist."
 keywords: astha, tamang maskey, sabai thikai huncha, disconnected, ma ek sapana
 type: album review
+img: img/astha-tamang-maskey_ma-ek-sapana.jpg
 ---
 <figure>
   <img src="../img/astha-tamang-maskey_ma-ek-sapana.jpg" alt="Ma Ek Sapana album cover" class="review-album-cover" />

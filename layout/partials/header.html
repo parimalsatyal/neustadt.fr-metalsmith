@@ -14,10 +14,17 @@ Parimal
   <head>
   <meta charset="utf-8">
   <title>{{#if title}}{{ title }} - {{/if}}{{ site.name }} </title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="{{ keywords }}, {{#if type}}{{ type }}{{/if}} {{ site.keywords }}">
-  <meta name="description" content="{{#if blurb}}{{ blurb }}{{else}}{{#if description}}{{ description }}{{else}}{{ site.description }}{{/if}}{{/if}}">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="{{ keywords }}, {{#if type}}{{ type }}{{/if}} {{ site.keywords }}" />
+  <meta name="description" content="{{#if blurb}}{{ blurb }}{{else}}{{#if description}}{{ description }}{{else}}{{ site.description }}{{/if}}{{/if}}" />
   <meta name="author" content="{{ site.author }}">
+  <meta property="og:site_name" content="{{ site.name }}" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ site.baseurl}}/{{ path }}" />
+  <meta property="og:description" content="{{#if blurb}}{{ blurb }}{{else}}{{#if description}}{{ description }}{{else}}{{ site.description }}{{/if}}{{/if}}" />
+  {{#if img}}<meta property="og:image" content="{{ site.baseurl}}/{{ img }}" />{{/if}}
+  <meta property="article:author" content="{{ site.author}}" />
 	<link rel="stylesheet" href="/css/neustadt.css" type="text/css" media="all">
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
