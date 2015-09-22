@@ -39,7 +39,7 @@ metalsmith(__dirname)
       sortBy: 'date',
       reverse: true,
       metadata: {
-        name: 'Everything',
+        name: 'Everything'
       }
     },
     essays: {
@@ -47,7 +47,7 @@ metalsmith(__dirname)
       sortBy: 'date',
       reverse: true,
       metadata: {
-        name: 'Essays',
+        name: 'Essays'
       }
     },
     reviews: {
@@ -55,7 +55,7 @@ metalsmith(__dirname)
       sortBy: 'date',
       reverse: true,
       metadata: {
-        name: 'Reviews',
+        name: 'Reviews'
       }
     }
   }))
