@@ -1,8 +1,8 @@
 var metalsmith        = require('metalsmith'),
     markdown          = require('metalsmith-markdown'),
+    drafts            = require('metalsmith-drafts'),
     layouts           = require('metalsmith-layouts'),
     permalinks        = require('metalsmith-permalinks'),
-    beautify          = require('metalsmith-beautify'),
     collections       = require('metalsmith-collections'),
     define            = require('metalsmith-define'),
     handlebars        = require('handlebars'),
@@ -35,6 +35,7 @@ metalsmith(__dirname)
   })
   .source('./src')
   .destination('./public')
+  .use(drafts())
   .use(collections({
     publications: {
       pattern: '*/**/*.md',
@@ -62,7 +63,9 @@ metalsmith(__dirname)
     }
   }))
   .use(markdown())
-  .use(permalinks())
+  .use(permalinks({
+    relative: false
+  }))
   .use(layouts({
     engine: 'handlebars',
     directory: './layout',
@@ -72,11 +75,6 @@ metalsmith(__dirname)
             header: 'partials/header',
             footer: 'partials/footer'
         }
-  }))
-  .use(beautify({
-    preserve_newlines: true,
-    css: false,
-    js: false
   }))
   .use(serve({
     port: 8081,

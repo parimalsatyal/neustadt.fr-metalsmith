@@ -5,6 +5,7 @@ blurb: "Book of Souls is the band's best album since Brave New World. Iron Maide
 keywords: book of souls, iron maiden, empire of the clouds, speed of light
 type: album review
 img: img/iron-maiden_the-book-of-souls.jpg
+draft: true
 ---
 <figure>
   <img src="../img/iron-maiden_the-book-of-souls.jpg" alt="The Book of Souls album cover" class="review-album-cover" />

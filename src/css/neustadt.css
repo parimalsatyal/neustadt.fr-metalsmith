@@ -327,6 +327,25 @@ audio {
     width: 80%;
 }
 
+a.song {
+  float:left;
+  display: block;
+  width: 50px; height: 50px;
+  margin-top: 0.5em; margin-right: 1em; margin-bottom: 0.5em;
+  border: solid red 2px;
+  background-image: url('/img/play.png');
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+a.song:link, a.song:visited, a.song:hover {
+  border: solid red 2px;
+}
+
 .emdash {
   color: red;
   font-family: 'Karla', serif;

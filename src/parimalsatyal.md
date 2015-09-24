@@ -35,7 +35,7 @@ This website does not store cookies, does not track or analyze your browsing beh
 ## Contact
 
 Email is probably the best way to get in touch:
-<a href="mailto:parimal~snail~neustadt[.]fr">parimal~snail~neustadt[.]fr</a>  
+<a href="mailto:parimal[snail]neustadt[.]fr">parimal[snail]neustadt[.]fr</a>  
 You will also find me on Twitter: [@parimalsatyal](https://twitter.com/parimalsatyal)
 
 I live in Paris. If you'd like to talk in person, I'm usually up for [coffee](http://stradacafe.fr) or [beer](http://kiez.fr/).
