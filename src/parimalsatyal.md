@@ -4,7 +4,7 @@ blurb: Hi! I'm Parimal Satyal, a Paris-based designer who loves singlespeed bicy
 layout: parimalsatyal.html
 ---
 
-<img src="../img/parimalsatyal.jpg" alt="Parimal Satyal" class="article-image-left" />
+<img src="/img/parimalsatyal.jpg" alt="Parimal Satyal" class="article-image-left" />
 
 Neustadt.fr is where I share my thoughts and ideas on technology, urban living, music, design and language.
 

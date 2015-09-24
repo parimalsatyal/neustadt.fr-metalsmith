@@ -7,7 +7,7 @@ type: album review
 img: img/astha-tamang-maskey_ma-ek-sapana.jpg
 ---
 <figure>
-  <img src="../img/astha-tamang-maskey_ma-ek-sapana.jpg" alt="Ma Ek Sapana album cover" class="review-album-cover" />
+  <img src="/img/astha-tamang-maskey_ma-ek-sapana.jpg" alt="Ma Ek Sapana album cover" class="review-album-cover" />
   <figcaption></figcaastption>
 </figure>
 

@@ -8,7 +8,7 @@ img: img/iron-maiden_the-book-of-souls.jpg
 draft: true
 ---
 <figure>
-  <img src="../img/iron-maiden_the-book-of-souls.jpg" alt="The Book of Souls album cover" class="review-album-cover" />
+  <img src="/img/iron-maiden_the-book-of-souls.jpg" alt="The Book of Souls album cover" class="review-album-cover" />
   <figcaption></figcaastption>
 </figure>
 
