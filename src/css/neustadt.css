@@ -229,9 +229,10 @@ figure.full-width-image {
     margin: auto; padding: 1em 0 1em 0;
   }
 
-  figure.article-image-left {
+  .article-image-left {
     display: block;
     margin: auto; padding: 1em;
+    width: 100%;
     max-width: 450px;
   }
 
@@ -264,14 +265,7 @@ figure.full-width-image {
     display: inline-block;
     float: left;
     margin: 1em 1.6em 1.6em -5em;
-    width: 70%;
-  }
-
-  figure.article-image-right {
-    display: inline-block;
-    float: right;
-    margin: 0 -5em 1.6em 1.6em;
-    max-width: 500px;
+    width: 68%;
   }
 
   figure.full-length-3c-image, figure.full-length-2c-image {

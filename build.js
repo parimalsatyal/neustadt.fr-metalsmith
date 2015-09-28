@@ -27,7 +27,7 @@ metalsmith(__dirname)
   .metadata({
     site: {
       name: 'Neustadt.fr',
-      baseurl: 'http://neustadt.fr',
+      baseurl: 'http://www.neustadt.fr',
       author: 'Parimal Satyal',
       keywords: 'Neustadt, parimalsatyal, Paris, UX, design',
       description: 'Neustadt.fr is Paris-based designer Parimal Satyal\'s collection of essays, reviews and music.'

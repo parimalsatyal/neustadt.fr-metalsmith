@@ -1,9 +1,9 @@
 ---
 title: "First-Hand: Hövding, the Invisible Bike Helmet"
-date: 2015-09-23
-blurb: "Hövding is really a portable airbag for urban cyclists. It’s smart, looks good and is three time more effective than most bike helmets. A first-hand review."
-keywords: hövding, invisible helmet, bike, bicycle, airbag
-img: img/hovding/neustadt-hovding-worn-profileleft.jpg
+date: 2015-09-28
+blurb: "Hövding is really a portable airbag for urban cyclists. It’s smart, looks good and is three times more effective than most bike helmets. A first-hand review."
+keywords: hövding, invisible helmet, bike, bicycle, airbag, insurance, france, paris, singlespeed, fixie, effective, compare
+img: img/hovding/neustadt-hovding-frontside.jpg
 type: product review
 ---
 <figure>
@@ -63,7 +63,7 @@ Hövding comes in three sizes. Small and medium are generally for more or less t
 
   <img src="/img/hovding/neustadt-hovding-worn-profileright.jpg" alt="Photo: Hövding around my neck, side profile (right)" />
 
-  <span class="clearfix" />
+  <span class="clearfix"></span>
 </figure>
 
 What surprised me was not its weight--it's actually quite light--but how the part that holds the compressed hydrogen canister sits at the back of my neck. You can definitely feel it there, and it isn't immediately very comfortable. If you ride an upright city bike, you won't notice it too much. On a road bike or a light singlespeed like mine where you're sitting quite low, it does restrict your movement just a little bit.
@@ -72,7 +72,7 @@ The first few times I rode with Hövding, I didn't move my head around too much.
 
 ## Maintenance and Upkeep
 
-Hövding can go nine hours on a full charge. For me, that's about a week - an hour to and back from work on weekdays and about three hours for rides on weekends. In real life that's a conservative estimate. I charged mine today after 10 days and the battery was far from drained. The tiny cable goes in my bike bag and I charge it on my computer at work. Even if I somehow forget or lose the cable, someone around me is bound to have a standard micro USB cable handy.
+Hövding can go nine hours on a full charge. For me, that's about a week - an hour to and back from work on weekdays and about three hours for rides on weekends. In real life that's a conservative estimate. I charged mine after 10 days and the battery was far from drained. The tiny cable goes in my bike bag and I charge it on my computer at work. Even if I somehow forget or lose the cable, someone around me is bound to have a standard micro USB cable handy.
 
 There's a battery indicator with four bright green LEDs near the front. Loud beeps warn you when you're running low on battery and need to charge. This is important because a Hövding cannot protect you at all if it's out of charge.
 

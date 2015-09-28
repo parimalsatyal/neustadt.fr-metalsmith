@@ -19,18 +19,11 @@ Parimal
   <meta name="keywords" content="{{ keywords }}, {{#if type}}{{ type }}{{/if}} {{ site.keywords }}" />
   <meta name="description" content="{{#if blurb}}{{ blurb }}{{else}}{{#if description}}{{ description }}{{else}}{{ site.description }}{{/if}}{{/if}}" />
   <meta name="author" content="{{ site.author }}">
-  <meta property="og:site_name" content="{{ site.name }}" />
-  {{#if title}}<meta property="og:title" content="{{ title }}" />{{/if}}
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="{{ site.baseurl}}/{{ path }}" />
-  <meta property="og:description" content="{{#if blurb}}{{ blurb }}{{else}}{{#if description}}{{ description }}{{else}}{{ site.description }}{{/if}}{{/if}}" />
-  {{#if img}}<meta property="og:image" content="{{ site.baseurl}}/{{ img }}" />{{/if}}
-  <meta property="article:author" content="{{ site.author}}" />
+  {{#if img}}<meta property="og:image" content="http://parimalsatyal.github.io/{{ img }}" />{{/if}}
 	<link rel="stylesheet" href="/css/neustadt.css" type="text/css" media="all">
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,400italic,300italic,700italic' rel='stylesheet'>
-  <link rel="canonical" href="{{ site.baseurl}}/{{ path }}">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="shortcut icon" href="/favicon.ico">
   </head>
