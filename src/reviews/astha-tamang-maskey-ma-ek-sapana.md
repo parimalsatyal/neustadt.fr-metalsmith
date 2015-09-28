@@ -17,12 +17,7 @@ The production is excellent: the sound is full, the vocals are crisp and the gui
 
 ## Khula Aakash
 
-Before we get to the track-by-track review, here's a full-length video of the opening song '_**Khula Aakash**_', directed by Rohit Shakya and featuring _Deep Chhetri_ and Astha's younger brother _Ozasvi Maskey Tamang_. Best viewed fullscreen in HD.
-
-<div class="video-embed">
-  <iframe src="https://www.youtube.com/embed/ayw4RIn81CM"
-  frameborder="0" allowfullscreen class="video"></iframe>
-</div>
+Before we get to the track-by-track review, watch the full-length [music video of the opening track *Khula Aakash*](https://www.youtube.com/embed/ayw4RIn81CM), directed by Rohit Shakya and featuring _Deep Chhetri_ and Astha's younger brother _Ozasvi Maskey Tamang_. Best viewed fullscreen in HD.
 
 ## Track-by-Track
 

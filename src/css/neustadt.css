@@ -260,7 +260,7 @@ figure.full-width-image {
     max-width: 100%;
   }
 
-  figure.article-image-left {
+  .article-image-left {
     display: inline-block;
     float: left;
     margin: 1em 1.6em 1.6em -5em;
@@ -276,7 +276,7 @@ figure.full-width-image {
 
   figure.full-length-3c-image, figure.full-length-2c-image {
     display: block;
-    margin: 1em 1.6em 1em -5em;
+    margin: 1em 1.6em 1em -6em;
     min-width: 140% !important;
     padding: 1em 0;
     overflow:hidden;

@@ -3,9 +3,10 @@ title: "First-Hand: Hövding, the Invisible Bike Helmet"
 date: 2015-09-23
 blurb: "Hövding is really a portable airbag for urban cyclists. It’s smart, looks good and is three time more effective than most bike helmets. A first-hand review."
 keywords: hövding, invisible helmet, bike, bicycle, airbag
+img: img/hovding/neustadt-hovding-worn-profileleft.jpg
 type: product review
 ---
-<figure class="article-image-left">
+<figure>
   <img src="/img/hovding/neustadt-hovding-closeup.jpg" alt="Photo: Hövding label logo close-up."  class="opening-cover-image" />
   <figcaption>Hövding is definitely not your average bike helmet</figcaption>
 </figure>
@@ -42,10 +43,6 @@ They also put me in touch with a local dealer in France. More on that later.
 
 ## The Package
 
-<figure >
-  <img src="/img/hovding/neustadt-hovding-box.jpg" alt="Photo: Hövding comes in a bright green box." />
-</figure>
-
 Hövding comes in a bright green cubical box. Inside: the actual airbag, the basic outer shell, my other shell, a user manual and a bright yellow micro USB charging cable.
 
 <figure >
@@ -63,6 +60,7 @@ Hövding comes in three sizes. Small and medium are generally for more or less t
   <img src="/img/hovding/neustadt-hovding-worn-profileleft.jpg" alt="Photo: Hövding around my neck, side profile (left)" />
 
   <img src="/img/hovding/neustadt-hovding-worn-back.jpg" alt="Photo: Hövding around my neck, from the back"/>
+
   <img src="/img/hovding/neustadt-hovding-worn-profileright.jpg" alt="Photo: Hövding around my neck, side profile (right)" />
 
   <span class="clearfix" />
@@ -104,13 +102,9 @@ The Hövding 2.0 helmet performed almost three times better than all the other c
 
 You can read the [Folksam 2015 Bike Helmet Test](http://www.folksam.se/testergodarad/varatester/cykelhjalmar2015) report in [English](http://www.folksam.se/polopoly_fs/1.139790!/Folksam%20bicycle%20helmet%20test%202015.pdf) or in [Swedish](http://www.folksam.se/polopoly_fs/1.140326!/Folksams%20cykelhj%C3%A4lmtest%202015%20forskningsrapport%20v2.pdf).
 
-The creators of Hövding themselves have posted videos of simulated accidents using both dummies and professional stunt-actors in real-life conditions. This one's from **city**:
+The creators of Hövding themselves have posted videos of simulated accidents using both dummies and [professional stunt-actors in real-life conditions](https://www.youtube.com/watch?v=WCd8qQv6Htw&list=PLtd9zaplbSYLmU-HpwsQOSJo9Oxt03il8&index=3).
 
-**Video**
-
-They recently also produced a series of clever videos called "Will it Pop?", complete with retro 8-bit music and pixel art. They're basically a dude in bright yellow overalls testing Hövding in a number of different situations: taking a curb, at the super market, on a tennis court, in a lake. They're all really fun.
-
-**Video**
+They recently also produced a series of clever videos called [*Will it Pop?*](https://www.youtube.com/playlist?list=PLtd9zaplbSYJsjF-1aBWX-Hhd0ygiATun), complete with retro 8-bit music and pixel art. They're basically a dude in bright yellow overalls testing Hövding in a number of different situations: [taking a curb](https://www.youtube.com/watch?v=ikYFfxpu3I0&list=PLtd9zaplbSYJsjF-1aBWX-Hhd0ygiATun&index=7), [going shopping](https://www.youtube.com/watch?v=KQih1TinKqY&list=PLtd9zaplbSYJsjF-1aBWX-Hhd0ygiATun&index=6), [playing tennis](https://www.youtube.com/watch?v=82gVoTTProQ&list=PLtd9zaplbSYJsjF-1aBWX-Hhd0ygiATun&index=4), [high diving](https://www.youtube.com/watch?v=4syjUva8yy0&list=PLtd9zaplbSYJsjF-1aBWX-Hhd0ygiATun&index=2). They're all really fun.
 
 Hövding tested the device and their algorithm for years before bringing the product to market, so false positives are exceedingly rare. As far as I'm ware, not a single case of failure has so far been reported. Sudden stops or harmless slips have a different signature to actual falls that are likely to cause head injury. Hövding can distinguish between them and many other situations. So chances are overwhelmingly that it'll deploy if you need it. The official manual reassuringly mentions that Hövding is programmed to err on the side of safety and deploy even in situations it's probably not needed.
 
@@ -129,6 +123,10 @@ When I ordered my Hövding, they put me in touch with the marketing director of 
 I've so far been very happy with my Hövding. Of course, it's the sort of thing you hope you'll never have to need. But as long as you get into the habit of put it around your neck and activating it before riding, you don't have to think about it too much.
 
 It will take a while for this technology to be widely adopted. The price will surely drop with time and that should help. Professional bikers are understandably suspicious of it; I'm sure that too will change. Many still see Hövding as nothing more than a fashion accessory, which is partly a result of their own marketing. In time though, I think Hövding will manage to shake things up a little and be taken more seriously.
+
+<figure>
+  <img src="/img/hovding/neustadt-hovding-onbike.jpg" alt="Photo: Hövding on my State Bicycle singlespeed." />
+</figure>
 
 If Hövding can make safety more stylish and convince more people who are on the fence about getting a helmet to ride safer, that's excellent. But it's shouldn't put the focus away from road safety in general and the real source of the problem in our cities today: the dominance of cars. There are even studies that suggest that wearing a (regular) helmet makes cars less careful around bicycles. For now, until our cities become more bike-friendly, Hövding might be an excellent balance between riding safe and looking good.
 

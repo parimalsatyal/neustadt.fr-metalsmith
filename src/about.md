@@ -1,7 +1,7 @@
 ---
 title: About Me
 blurb: Hi! I'm Parimal Satyal, a Paris-based designer who loves singlespeed bicycles, Bavarian beer, vegetarian food, metal music and foreign languages.
-layout: parimalsatyal.html
+layout: about.html
 ---
 
 <img src="/img/parimalsatyal.jpg" alt="Parimal Satyal" class="article-image-left" />
@@ -30,7 +30,7 @@ The fonts used on this website are also all free and shared with the SIL Open Fo
 
 Neustadt.fr can be accessed from pretty much any device connected to the internet and able to read HTML: laptops, tablets, smartphones but also [text-based browsers](http://lynx.isc.org/), screen readers and e-book readers. I favour native HTML elements to external resources and have deliberately kept all pages light and as free of dependencies as possible. The only linked external resources are web-fonts hosted on Google Fonts.
 
-This website does not store cookies, does not track or analyze your browsing behaviour, does not hijack your scrollbar and does not abuse your network bandwith.
+This website does not store cookies, does not track or analyze your browsing behaviour, does not hijack your scrollbar and does not abuse your network bandwith. I do not embed YouTube videos directly either for this reason.
 
 ## Contact
 
