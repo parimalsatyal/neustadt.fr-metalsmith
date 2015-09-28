@@ -13,7 +13,7 @@ type: product review
 
 After eyeing it for about a year, I finally bought a [Hövding](http://www.hovding.com/). When its two Swedish designers first publicly announced it two years ago, it made headlines around the world. Safety and style. *Of course* it came from Scandinavia. The invisible helmet was hard to ignore. But at 499€, it was also hard to afford/acquire.
 
-Now more mature and slightly more affordable at 299€, Hövding 2.0 is a compelling alternative to the bike helmet. But how it is day-to-day? How does it *feel* around the neck? Is it really effective? What happens if it deploys? Read on for a first-hand review after 10 days with Hövding. This is going to be quite detailed, so you might want to go get some tea or coffee. Ready? Let's go.
+Now more mature and slightly more affordable at 299€, Hövding 2.0 is a compelling alternative to the bike helmet. But how it is day-to-day? How does it *feel* around the neck? Is it really effective? What happens if it deploys? Read on for a first-hand review after two weeks with Hövding. This is going to be quite detailed, so you might want to go get some tea or coffee. Ready? Let's go.
 
 ## Back story: Hövding in Paris
 Paris is far from being the most bike-friendly city but it honestly isn’t too bad. For over two years, I got around on the city's [Vélib](http://velib.paris) bikeshare cycles without ever really needing a helmet. The whole appeal of Vélib is that you don't have to come prepared; you just pick one up and go. It's done wonders putting more people on bikes in Paris.
