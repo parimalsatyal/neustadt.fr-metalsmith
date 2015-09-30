@@ -12,8 +12,8 @@ photosby: Mattawan Sutjaritthanarak
   <figcaption>Hövding is not your average bike helmet</figcaption>
 </figure>
 
-<div class="update">		
-<p><strong>Update (29 sept 2015):</strong> Right after having posted this review, my Hövding accidentally deployed this morning in normal riding conditions. I'll be contacting Hövding and sending them my unit so we can get more details. Until we have a chance to learn more, the rest of the review still holds. </p>		
+<div class="update">
+**Update (29 sept 2015)**: Right after having posted this review, my Hövding accidentally deployed this morning in normal riding conditions. I'll be contacting Hövding and sending them my unit so we can get more details. Until we have a chance to learn more, the rest of the review still holds.
 </div>
 
 After eyeing it for about a year, I finally bought a [Hövding](http://www.hovding.com/). When its two Swedish designers first publicly announced it two years ago, it made headlines around the world. Safety and style. *Of course* it came from Scandinavia. The invisible helmet was hard to ignore. But at 499€, it was also hard to afford/acquire.
@@ -36,7 +36,6 @@ You wear Hövding around your neck, like you would a scarf. Right before you sta
 <figure>
   <img src="/img/hovding/neustadt-hovding-frontside.jpg" alt="Photo: Hövding from a height." />
 </figure>
-
 
 ## Ordering
 
@@ -136,9 +135,3 @@ It will take a while for this technology to be widely adopted. The price will su
 If Hövding can make safety more stylish and convince more people who are on the fence about getting a helmet to ride safer, that's excellent. But it's shouldn't put the focus away from road safety in general and the real source of the problem in our cities today: the dominance of cars. There are even studies that suggest that wearing a (regular) helmet makes cars less careful around bicycles. For now, until our cities become more bike-friendly, Hövding might be an excellent balance between riding safe and looking good.
 
 Hövding is worth being excited about.
-
-<em>Corrections: An earlier version of this article misidentified [TOAD](http://toad.fr) as a Lyon-based authorized reseller in France; they are actually based in Quimper and are responsible for importing and supplying authorized resellers in France.
-
-It also misidentified the gas used to inflate the airbag; Hövding uses a Helium cold gas inflator.
-
-These errors have been corrected in the article. </em>
