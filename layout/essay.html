@@ -6,7 +6,7 @@
       <article class="an-article">
         <div class="meta">
           <h1>{{ title }}</h1>
-          <span>{{ moment date lang="fr" format="DD MMMM YYYY" }} &mdash;</span> <span>{{ site.author }}</span>
+          <span>{{ moment date lang="fr" format="DD MMMM YYYY" }} &mdash;</span> <span>{{ site.author }}</span> <span>{{#if photosby}} &mdash; Photos: {{ photosby }}{{/if}}</span>
           <p>
             {{ blurb }}
           </p>

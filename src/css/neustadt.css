@@ -108,6 +108,12 @@ article a:hover {
   border-bottom-color: gray;
 }
 
+.update {
+  font-family: 'Karla', serif; font-size: 16pt;
+  color: red;
+  font-size: 14pt;
+}
+
 footer {
   margin-top: 40px; padding-top: 20px;
   font-family: 'Karla', serif; font-size: 16pt;
