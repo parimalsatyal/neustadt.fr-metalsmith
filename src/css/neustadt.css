@@ -108,6 +108,12 @@ article a:hover {
   border-bottom-color: gray;
 }
 
+.update {
+  font-family: 'Karla', serif; font-size: 16pt;
+  color: red;
+  font-size: 14pt;
+}
+
 footer {
   margin-top: 40px; padding-top: 20px;
   font-family: 'Karla', serif; font-size: 16pt;
@@ -231,7 +237,7 @@ figure.full-width-image {
 
   .article-image-left {
     display: block;
-    margin: auto; padding: 1em;
+    margin: auto; padding: 1em 0;
     width: 100%;
     max-width: 450px;
   }
@@ -239,7 +245,7 @@ figure.full-width-image {
   .opening-cover-image {
     display: block;
     margin: auto; padding: 1em 0 1em 0;
-    width: 100%;
+    max-width: 350px;
   }
 
   figure figcaption {
@@ -265,7 +271,6 @@ figure.full-width-image {
     display: inline-block;
     float: left;
     margin: 1em 1.6em 1.6em -5em;
-    width: 68%;
   }
 
   figure.full-length-3c-image, figure.full-length-2c-image {

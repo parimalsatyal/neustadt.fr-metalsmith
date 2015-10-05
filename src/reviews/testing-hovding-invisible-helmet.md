@@ -1,41 +1,45 @@
 ---
 title: "First-Hand: Hövding, the Invisible Bike Helmet"
-date: 2015-09-28
+date: 2015-09-29
 blurb: "Hövding is really a portable airbag for urban cyclists. It’s smart, looks good and is three times more effective than most bike helmets. A first-hand review."
 keywords: hövding, invisible helmet, bike, bicycle, airbag, insurance, france, paris, singlespeed, fixie, effective, compare
 img: img/hovding/neustadt-hovding-frontside.jpg
 type: product review
+photosby: Mattawan Sutjaritthanarak
 ---
 <figure>
   <img src="/img/hovding/neustadt-hovding-closeup.jpg" alt="Photo: Hövding label logo close-up."  class="opening-cover-image" />
-  <figcaption>Hövding is definitely not your average bike helmet</figcaption>
+  <figcaption>Hövding is not your average bike helmet</figcaption>
 </figure>
+
+<div class="update">
+**Update (29 sept 2015)**: Right after having posted this review, my Hövding accidentally deployed this morning in normal riding conditions. I'll be contacting Hövding and sending them my unit so we can get more details. Until we have a chance to learn more, the rest of the review still holds.
+</div>
 
 After eyeing it for about a year, I finally bought a [Hövding](http://www.hovding.com/). When its two Swedish designers first publicly announced it two years ago, it made headlines around the world. Safety and style. *Of course* it came from Scandinavia. The invisible helmet was hard to ignore. But at 499€, it was also hard to afford/acquire.
 
-Now more mature and slightly more affordable at 299€, Hövding 2.0 is a compelling alternative to the bike helmet. But how it is day-to-day? How does it *feel* around the neck? Is it really effective? What happens if it deploys? Read on for a first-hand review after two weeks with Hövding. This is going to be quite detailed, so you might want to go get some tea or coffee. Ready? Let's go.
+Now more mature and slightly more affordable at 299€, Hövding 2.0 is a compelling alternative to the bike helmet. But how is it day-to-day? How does it *feel* around the neck? Is it really effective? What happens if it deploys? Read on for a first-hand review after two weeks with Hövding. This is going to be quite detailed, so you might want to go get some tea or coffee. Ready? Let's go.
 
 ## Back story: Hövding in Paris
 Paris is far from being the most bike-friendly city but it honestly isn’t too bad. For over two years, I got around on the city's [Vélib](http://velib.paris) bikeshare cycles without ever really needing a helmet. The whole appeal of Vélib is that you don't have to come prepared; you just pick one up and go. It's done wonders putting more people on bikes in Paris.
 
 I recently switched to a [light singlespeed](http://statebicycle.com/products/vice-2-0). I now zip around the city at 20km/h. In many ways, I feel safer and can take the entire lane without feeling guilty. But speed also demands quicker decision-making. Car drivers in Paris aren't too aware of bikes and often start moving or turn without signaling. Sometimes, they signal after starting to turn. If you ride often, you start being able to guess. Call it biker's intuition. If you think the driver might turn right at the next intersection but he hasn't signaled, you slow down even if you're on a bike lane, the light's green and you have right of way.
 
-I've become quite good at this. But about three weeks ago I was on a narrow bike lane on Île de la Cité when a car slightly ahead to my left made a very sudden right turn right without signaling or slowing down. There was no indication at all, not even a hint. I had to brake violently. I apologized to the rider behind me as the car sped away, leaving a trail of shaken bikers in its wake.
+I've become quite good at this. But about three weeks ago I was on a narrow bike lane on Île de la Cité when a car slightly ahead to my left made a very sudden right turn without signaling or slowing down. There was no indication at all, not even a hint. I had to brake violently. I apologized to the rider behind me as the car sped away, leaving a trail of shaken bikers in its wake.
 
 *So*. I still think I *shouldn't need* a helmet in Paris, but this little encounter could have ended much worse. I was going to get a helmet. But maybe I could go further. Maybe it was time to try that invisible helmet I'd been eyeing for over a year and test it in the real world.
 
 ## How does Hövding work?
 
-You wear Hövding around your neck, like you would a scarf. Right before you start riding, you zip up and button your Hövding to active it. It uses its interal gyroscope and accelerometer to continously read your movements at a rate of 200 inputs per second. If incoming data corresponds to anything in its internal database that represents a fall or an accident, it deploys in less than a tenth of a second. A cycling portable airbag.
+You wear Hövding around your neck, like you would a scarf. Right before you start riding, you zip up and button your Hövding to active it. It uses its interal gyroscope and accelerometer to continously read your movements at a rate of 200 inputs per second. If incoming data corresponds to anything in its internal database that represents a fall or an accident, it deploys in less than a tenth of a second. A portable cycling airbag.
 
 <figure>
   <img src="/img/hovding/neustadt-hovding-frontside.jpg" alt="Photo: Hövding from a height." />
 </figure>
 
-
 ## Ordering
 
-I ordered on the official website. On top of the actual Hövding 2.0, you can also choose to get an additional customizable outer shell for 40€. This protective outer shell is washable and lets you change how your Hövding looks. I went for a [Sarek Odyssey shell](#), but you can also skip it entirely; Hövding comes with a basic shell that'll do the job.
+I ordered on the [official website](http://www.hovding.com). On top of the actual Hövding 2.0, you can also choose to get an additional customizable outer shell for 40€. This protective outer shell is washable and lets you change how your Hövding looks. I went for a [Sarek Odyssey shell](#), but you can also skip it entirely; Hövding comes with a basic shell that'll do the job.
 
 I received an order confirmation by email and I received Hövding after about 10 days. Oddly, I never got a shipping confirmation or a tracking code, which would have been nice. I sent an email to *info@...* after a few days and was told it would be shipping from Sweden that very day.
 
@@ -66,9 +70,13 @@ Hövding comes in three sizes. Small and medium are generally for more or less t
   <span class="clearfix"></span>
 </figure>
 
+<<<<<<< HEAD
 What surprised me was not its weight--it's actually quite light--but how the part that holds the compressed helium canister sits at the back of my neck. You can definitely feel it there, and it isn't immediately very comfortable. If you ride an upright city bike, you won't notice it too much. On a road bike or a light singlespeed like mine where you're sitting quite low, it does restrict your movement just a little bit.
+=======
+What surprised me was not its weight&mdash;it's actually quite light&mdash;but how the bit that holds the cold gas helium inflator sits on the back of my neck. You can definitely feel it there, and it isn't immediately very comfortable. If you ride an upright city bike, you won't notice it too much. On a road bike or a light singlespeed like mine where you're sitting quite low, it does restrict your movement a little bit.
+>>>>>>> 5fed59b6e9f9685318d72ae565ae6068efc9dced
 
-The first few times I rode with Hövding, I didn't move my head around too much. I was just not used to having something behind my neck. I was also extra careful to avoid having this expensive device accidentally deploy when I turn my head. This fear is unfounded, of course; Hovding is much smarter than that. Now after over a week, I've grown used to it and feel it a lot less. I've started moving my head around normally too. This is of course essential. Luckily, once you get get the hang of it, Hövding does not restrict your head movement much at all. But give it a week. I imagine in another week it'll have become a habit and I won't even think about it.
+The first few times I rode with Hövding, I didn't move my head around too much. I was just not used to having something behind my neck. I was also extra careful to avoid having this expensive device accidentally deploy when I turn my head. This fear is unfounded, of course; Hovding is much smarter than that. Now after over a week, I've grown used to it and feel it a lot less. I've started moving my head around normally too. This is of course essential. Luckily, once you get get the hang of it, Hövding does not restrict your head movement much. But give it a week. I imagine in another week it'll have become a habit and I won't even think about it.
 
 ## Maintenance and Upkeep
 
@@ -88,7 +96,7 @@ Hövding is water resistant. You don't want to go swimming with it, but I've alr
 
 *How effective is Hövding, really?* That's the first question anyone will ask, and rightly so. Thankfully, we now have lots of real-world data and and independent tests. The results are very encouraging to say the least.
 
-All helmets sold in Europe meet [CEN European standards](https://en.wikipedia.org/wiki/EN_1078), although some are much more effective than others. The subject of bike helmet testing is controversial; often, they're only tested with perpendicular impact, very unlikely in real-life situations. [Folksam](http://www.folksam.se/), a Swedish insurance company that tests bike helmets every year, recently expanded its methodologies to account for oblique impacts and angular acceleration, which are primarily responsible for brain injury. It concluded:
+All helmets sold in Europe meet [CEN European standards](https://en.wikipedia.org/wiki/EN_1078), although some are much more effective than others. The subject of bike helmet testing is controversial; often, they're only tested for perpendicular impact, very unlikely in real-life situations. [Folksam](http://www.folksam.se/), a Swedish insurance company that tests bike helmets every year, recently expanded its methodologies to account for oblique impacts and angular acceleration, which are primarily responsible for brain injury. It concluded:
 
 <blockquote>
 "the Hövding 2.0 head protector, which protects the head with an airbag in the event of an accident, showed the overall best result."
@@ -116,11 +124,11 @@ Hövding like all airbags can only be used once. If it does deploy, the company 
 
 In Scandinavian countries, your insurance will mostly likely reimburse the cost of your replacement. In France, we might soon have something similar.
 
-When I ordered my Hövding, they put me in touch with the marketing director of [TOAD](http://toad.fr), an authorized Hövding reseller in Lyon. He tells me that they're currently talking to French insurance companies about insuring Hövding. I don't have the details yet but it'll probably be an a specific plan at affordable rates. If your Hövding deploys, the insurance company would then pay for the replacement. We should have the details very soon.
+When I ordered my Hövding, they put me in touch with the marketing director of [TOAD](http://toad.fr), a Quimper-based company that imports Hövding and supplies authorized resellers in France. He tells me that they're currently talking to French insurance companies about insuring Hövding. I don't have the details yet but it'll probably be a specific plan at affordable rates. If your Hövding deploys, the insurance company would then pay for the replacement. We should have the details very soon.
 
 ## Shaking Things Up
 
-I've so far been very happy with my Hövding. Of course, it's the sort of thing you hope you'll never have to need. But as long as you get into the habit of put it around your neck and activating it before riding, you don't have to think about it too much.
+I've so far been very happy with my Hövding. Of course, it's the sort of thing you hope you'll never need. But as long as you get into the habit of put it around your neck and activating it before riding, you don't have to think about it too much.
 
 It will take a while for this technology to be widely adopted. The price will surely drop with time and that should help. Professional bikers are understandably suspicious of it; I'm sure that too will change. Many still see Hövding as nothing more than a fashion accessory, which is partly a result of their own marketing. In time though, I think Hövding will manage to shake things up a little and be taken more seriously.
 
