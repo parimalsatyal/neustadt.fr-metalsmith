@@ -4,8 +4,8 @@ var metalsmith        = require('metalsmith'),
     layouts           = require('metalsmith-layouts'),
     permalinks        = require('metalsmith-permalinks'),
     collections       = require('metalsmith-collections'),
-    define            = require('metalsmith-define'),
     handlebars        = require('handlebars'),
+    metallic          = require('metalsmith-metallic'),
     serve             = require('metalsmith-serve'),
     watch             = require('metalsmith-watch');
 
@@ -62,6 +62,7 @@ metalsmith(__dirname)
       }
     }
   }))
+  .use(metallic())
   .use(markdown())
   .use(permalinks({
     relative: false
