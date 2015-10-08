@@ -114,6 +114,7 @@ metalsmith(__dirname)
   .metadata({
     site: {
       name: 'Electroniq',
+      description: 'Electroniq is sample metalsmith blog.'
     }
   })
   .source('./src')
@@ -161,6 +162,7 @@ This is what your `electroniq` directory should look like :
 ```
 .
 ├── node_modules/
+│   └── ...
 ├── src/
 ├── build.js
 ├── Makefile
@@ -202,18 +204,50 @@ Create a new file in your `src` folder called `first-article.md`:
 ---
 title: "Bonjour Monde"
 date: 2015-10-12
-subtitle: La fabuleuse histoire d'un texte en Markdown
+blurb: La fabuleuse histoire d'un texte en Markdown
 ---
 
 # Bonjour monde
 
-Oui je sais que c'est en français et que pas tout le monde va comprendre.
-Mais ce n'est que du faux texte donc je me permets.
+Oui je sais que ce texte est *en français* et que pas tout le monde va le comprendre.
+Mais ce n'est que du **faux texte** donc je me permets.
 ```
 
-The bit at the top between the `---` is called fontmatter. Here, it's in [YAML](http://yaml.org/) but that's not too important. These are just metadata that we'll be able to access in the template. Here we've included a *title*, a *date* and a *subtitle*. You could also use add these kind of key/value pairs for keywords, categories, author name, modified date… you get the idea.
+The bit at the top between the `---` is called fontmatter. Here, it's in [YAML](http://yaml.org/) but that's not too important. These are just metadata that we'll be able to access in the template. Here we've included a *title*, a *date* and a *blurb*. You could also use add these kind of key/value pairs for keywords, categories, author name, modified date… you get the idea.
 
-## Templates and routes
+We don't have a template to display this content yet, but since we added Markdown to our workflow, Metalsmith will still be able to convert it to HTML. Let's build the website now to check.
+
+```
+$ npm make build
+```
+
+This will create a new folder called `public` with a file `first-post.html`. Your root directory should now look like this:
+
+```
+.
+├── node_modules/
+│   └── ...
+├── src/
+│   └── first-article.md
+├── public/
+│   └── first-article.html
+├── build.js
+├── Makefile
+└── package.json
+```
+
+Open the generator `first-article.html` file on your editor. It will simply contain:
+
+```
+<h1>Bonjour monde</h1>
+
+Oui je sais que c'est <em>en français</em> et que pas tout le monde va comprendre.
+Mais ce n'est que du <strong>faux texte</strong> donc je me permets.
+```
+
+That's a start, but this page is incomplete. There's no <head> or navigation or anything, and we're not using information in our YAML frontmatter. What we need is a template to display this page. Let's make one now.
+
+## Templates
 
 One of the reasons to use a static site generator is to be able to use templates with HTML markup and variables we can reuse on different pages without having to repeat any of it. Another reason is to manage routing so we can have pretty permalinks.
 
@@ -231,10 +265,148 @@ We'll also install Handlebars while we're at it:
 $ npm install handlebars --save
 ```
 
-We know that these dependencies will automatically be added to our `package.json` file. But let's go back to our `build.js` file:
+We know that these dependencies will automatically be added to our `package.json` file. Now let's add them to our workflow. Open `build.js` and first require the two new packages:
 
+```javascript
+var metalsmith        = require('metalsmith');
+var layouts           = require('metalsmith-layouts');
+var handlebars        = require('handlebars');
+// ...
+```
 
+And then add them to our workflow:
+
+```javascript
+// ...
+    .source('./src')
+    .destination('./public')
+    .use(markdown()).
+    .use(layouts({
+      engine: 'handlebars',
+      directory: './layout',
+      default: 'article.html'
+    }))
+    .build(function (err) {
+// ...
+```
+
+What this does is tell Metalsmith to use Handlebars templates, look for them in the `layouts` directory and use a template called `article.html` by default.
+
+Let's create this directory and write this default template now:
+
+```
+$ mkdir layouts
+```
+
+Inside this folder, create a file called `article.html` with these contents:
+
+```handlebars
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.name }}</title>
+    <meta name="description" content="{{ blurb }}" />
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <div class="meta">
+        Published: {{ date }}
+    </div>
+    <div class="blurb">
+      {{ blurb }}
+    </div>
+    {{ contents}}
+  </body>
+</html>
+```
+
+It's a pretty standard HTML page, except for the Handlebars tags in `{{ }}`. Anything in those tags will be replaced by content from your templates. For example, we want the name of our website as the page's `<title>`.
+
+Remember we already defined this in `build.js` as a global metadata, like so:
+
+```javascript
+// ...
+metalsmith(__dirname)
+  .metadata({
+    site: {
+      name: 'Electroniq',
+      description: 'Electroniq is sample metalsmith blog.'
+    }
+  })
+// ...
+```
+
+In the template, we can access this information as `{{ site.name }}`. The other tags &mdash; `title`, `blurb` and `date` &mdash; come from our article's frontmatter.
+
+The article itself can be accessed quite logically through the `{{ content }}` template tag.
+
+To see this in action,  `make build` your website and open `public/first-article.html`. You should see this:
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Electroniq</title>
+    <meta name="description" content="Electroniq is sample metalsmith blog." />
+  </head>
+  <body>
+    <h1>Bonjour Monde</h1>
+    <div class="meta">
+        Published: 2015-10-12
+    </div>
+    <div class="blurb">
+      La fabuleuse histoire d'un texte en Markdown
+    </div>
+    <p>
+      Oui je sais que c'est <em>en français</em> et que pas tout le monde va comprendre.
+      Mais ce n'est que du <strong>faux texte</strong> donc je me permets.
+    </p>
+  </body>
+</html>
+```
+
+So we now have an article page.
+
+What we don't have is an index page that lists all the articles we publish. So the next step is to write a template page for the index. But before we do, maybe we should do something about the header and the footer. These are elements probably that don't change much page to page, so it wouldn't make sense to repeat them on every single template. We can split them into smaller sub-templates, or *partials*, that we can call from our main templates.
+
+```handlebars
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{#if title }}{ {title }} - {{/if}}{{ site.name }}</title>
+    <meta name="description" content="{{#if blurb}}{{ blurb }}{{else}}{{#if description}}{{ description }}{{else}}{{ site.description }}{{/if}}{{/if}}" />
+  </head>
+  <body>
+```
+
+```handlebars
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{#if title }}{ {title }} - {{/if}}{{ site.name }}</title>
+    <meta name="description" content="{{#if blurb}}{{ blurb }}{{else}}{{#if description}}{{ description }}{{else}}{{ site.description }}{{/if}}{{/if}}" />
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <div class="meta">
+        Published: {{ date }}
+    </div>
+    <div class="subtitle">
+      {{ blurb }}
+    </div>
+    {{ contents}}
+  </body>
+</html>
+```
+
+## Routes and pretty permalinks
+
+## Drafts and local serving
 
 ## Going Live (with GitHub Pages)
 
-## Next Steps
+## Going further
