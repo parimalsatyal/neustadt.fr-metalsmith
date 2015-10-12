@@ -369,18 +369,36 @@ To see this in action,  `make build` your website and open `public/first-article
 
 So we now have an article page.
 
-What we don't have is an index page that lists all the articles we publish. So the next step is to write a template page for the index. But before we do, maybe we should do something about the header and the footer. These are elements probably that don't change much page to page, so it wouldn't make sense to repeat them on every single template. We can split them into smaller sub-templates, or *partials*, that we can call from our main templates.
+What we don't have is an index page that lists all the articles we publish. Let's create a copy of our article page and name it `index.html`. This page can look like this:
 
 ```handlebars
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{{#if title }}{ {title }} - {{/if}}{{ site.name }}</title>
-    <meta name="description" content="{{#if blurb}}{{ blurb }}{{else}}{{#if description}}{{ description }}{{else}}{{ site.description }}{{/if}}{{/if}}" />
+    <title>{{ site.name }}</title>
+    <meta name="description" content="{{ site.description }}" />
   </head>
   <body>
+    <h1>{{ site.name }}</h1>
+
+    <ul class="recent">
+    {{#each articles }}
+      <li>
+        <div class="title"><a href="{{ path }}">{{ title }}</a></div>
+        <div class="date">{{ date }}</div>
+      </li>
+    {{/each_upto}}
+    </ul>
+
+  </body>
+</html>
 ```
+
+We've replaced the `{{ title }}`, which only exists for articles, with `{{ site.name }}` and we've switched out the `{{ blurb }}` for `{{ site.description }}`.
+
+This is great, but we're repeating a lot of code. This is bad, because if we ever want to change something in the header, for example, we'd need to change it in every single page. That kinda ruins the point of using a site generator. We can split them into smaller sub-templates, or *partials*, that we can call from our main templates.
+
 
 ```handlebars
 <!DOCTYPE html>
