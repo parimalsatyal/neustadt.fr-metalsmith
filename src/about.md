@@ -1,6 +1,6 @@
 ---
 title: About Me
-blurb: Hello. I'm Parimal Satyal, a Paris-based designer who loves singlespeed bicycles, Bavarian beer, vegetarian food, metal music and foreign languages.
+blurb: I'm Parimal Satyal, a Paris-based designer who enjoys cosmology, dark beer, singlespeed bicycles, metal music and foreign languages.
 layout: about.html
 img: img/parimalsatyal.jpg
 ---
