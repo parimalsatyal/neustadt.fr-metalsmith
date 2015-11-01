@@ -85,7 +85,7 @@ Einstein didn't live long enough to witness how far quantum mechanics would come
 
 ## Ayreon - The Theory of Everything
 
-<img src="/img/Ayreon_The-Theory-of-Everything.jpg" alt="" class="article-image-left" />
+<img src="/img/ayreon_the-theory-of-everything.jpg" alt="" class="article-image-left" />
 
 And finally, we have Ayreon. Where do I even start? This entire album is [Anthony Arjen-Lucassen](https://en.wikipedia.org/wiki/Arjen_Anthony_Lucassen)'s metal opera love-letter to physics and the scientific quest to understand the true nature of reality.
 
