@@ -403,9 +403,11 @@ a.song:link, a.song:visited, a.song:hover {
 }
 
 .video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+
+}
+
+.vid {
+	position: relative;
+	width: 100%;
+	max-width: 800px;
 }
