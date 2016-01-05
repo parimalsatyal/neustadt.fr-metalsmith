@@ -2,7 +2,7 @@
 title: "First-Hand: Hövding, the Invisible Bike Helmet"
 date: 2015-09-29
 blurb: "Hövding is really a portable airbag for urban cyclists. It’s smart, looks good and is three times more effective than most bike helmets. A first-hand review."
-keywords: hövding, invisible helmet, bike, bicycle, airbag, insurance, france, paris, singlespeed, fixie, effective, compare
+keywords: hövding, invisible helmet, bike, bicycle, airbag, insurance, france, paris, singlespeed, fixie, review, compare
 img: img/hovding/neustadt-hovding-frontside.jpg
 type: product review
 photosby: Mattawan Sutjaritthanarak

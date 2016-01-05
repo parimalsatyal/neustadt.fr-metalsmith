@@ -3,6 +3,7 @@ title: Island (At Long Last)
 date: 2015-04-14
 blurb: At Long Last began as a haiku but just kept on going. I'm not entirely sure where the dark overtones come from, nor the Siren theme. It's not like I often think about sea-dwelling homicidal nymphs.
 type: poem
+keywords: island, poem, siren, nymphs
 ---
 
 Those adrift at sea might sight it,  
