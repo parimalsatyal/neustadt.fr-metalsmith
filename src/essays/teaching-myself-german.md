@@ -38,11 +38,11 @@ Luckily, Leipzig doesn’t have a metro. It was still absolutely insane. I had b
 
 I had toyed with the idea of learning Deutsch for a while. I even considered learning it over French many, many years ago; I only picked the latter because my local Alliance Française had a nice café/bistro and the Goethe Institut didn’t. That was reason enough for me to pick French over German.
 
-My closest friend in Paris was German (he still is; he’s just not in Paris anymore) and he introduced me to German, mostly Bavarian, beer. I loved how the words looked and sounded: *Hefeweiße*, *Dunkles Doppelbock*, *Märzen Rauchbier*. Then when he and Charlotte (who you’ll recall from my last essay) moved to Germany, I had two very good reasons to visit Deutschland. Since, I’ve been several times to five different cities and, on the way, discovered even more types of beer.
+My closest friend in Paris was German (he still is; he’s just not in Paris anymore) and he introduced me to German, mostly Bavarian, beer. I loved how the words looked and sounded: *Hefeweiße*, *Dunkles Doppelbock*, *Reinheitsgebot*, *Märzenbier*, *Rauchbier*. Then when he and Charlotte (who you’ll recall from my last essay) moved to Germany, I had two very good reasons to visit Deutschland. Since, I’ve been several times to five different cities and, on the way, discovered even more types of beer.
 
 The turning point though was really Silvester in Leipzig. Everything else just fell into place after that.
 
-I’m into my third month now and I am quite happy with my progress. I was in Leipzig again just last weekend and was able to hold a conversation almost entirely in German for over 20 minutes. Sure, I occasionally struggled to find the right words and used very simple structures, but to me that’s very encouraging.
+I’m into my third month now and I am quite happy with my progress. I was in Leipzig again just last weekend and was able to hold short conversations almost entirely in German. Sure, I occasionally struggled to find my words and could use only very simple structures but to me that’s quite encouraging.
 
 I owe this progress to these resources. And the fact that I seem to have somehow surrounded myself with really nice people who speak German and don’t mind helping me out, but more about that later.
 
