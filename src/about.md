@@ -1,6 +1,7 @@
 ---
 title: About Me
 blurb: I'm Parimal Satyal, a Paris-based designer who enjoys cosmology, dark beer, singlespeed bicycles, metal music and foreign languages.
+keywords: Parimal Satyal, parimal, livatlantis, reality equation, Paris, UX designer
 layout: about.html
 img: img/parimalsatyal.jpg
 ---

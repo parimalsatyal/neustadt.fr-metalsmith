@@ -16,7 +16,7 @@ Parimal
   <meta charset="utf-8">
   <title>{{#if title}}{{ title }} - {{/if}}{{ site.name }} </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="keywords" content="{{ keywords }}, {{#if type}}{{ type }},{{/if}} {{ site.keywords }}" />
+  <meta name="keywords" content="{{#if keywords}}{{ keywords }},{{/if}}{{#if type}}{{ type }},{{/if}} {{ site.keywords }}" />
   <meta name="description" content="{{#if blurb}}{{ blurb }}{{else}}{{#if description}}{{ description }}{{else}}{{ site.description }}{{/if}}{{/if}}" />
   <meta name="author" content="{{ site.author }}">
   <meta name="referrer" content="never" />
