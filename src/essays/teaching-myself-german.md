@@ -105,12 +105,12 @@ It's cheesy as hell but hey, you'll almost certainly pick up words and expressio
 
 Finally, the best way to learn a language is obviously to live and work with people who speak the language. This is really the best part. Learning to speak a language also means learning the culture: new jokes, new perspectives and especially, new ways to embarass yourself. And I'm very lucky to be surrounded by German speakers even here in Paris.
 
-Case in point: I was having a *deutschsprechendes* lunch with Sandra, a colleague from Luxembourg. It was at a Chinese restaurant and at the end of the meal, we were complaining about the lack of good dessert options. Then I remembered I'd bought some Kinder chocolates earlier and figured that that could be dessert when we got back to the agency. Excitedly, I said, "*Ah, keine Sorge... ich kann dir Kinder geben!*"
+Case in point: I was having a *deutschsprechendes* lunch with Christine, a colleague from Luxembourg. It was at a Chinese restaurant and at the end of the meal, we were complaining about the lack of good dessert options. Then I remembered I'd bought some Kinder chocolates earlier and figured that that could be dessert when we got back to the agency. Excitedly, I said, "*Ah, keine Sorge... ich kann dir Kinder geben!*"
 
 Which roughly translates to, "Oh don't worry, I can give you children!"
 
 So, right. Or that time I was with my flatmates in Bordeaux and I said, "*Hmm, ich hab' mein Schaf verloren...*". I didn't understand why Joëlle burst out in laughter until she explained that "Schaf" is, in fact, *sheep* and not *scarf*, which would be "Schals". Didn't help that that same day I also said, "*Ja, das kann ich dir ziegen*". If I go to Germany now, they might just take me for a farmer.
 
-The point is, it's good to surround yourself with people who speak the language who can help you and correct you go. My flatmates both speak German and are learning French. It's the perfect environment for language sharing and linguistic schizophrenia. If you ever find yourself at our kitchen, you'll have to dodge a flurry of words in French, German, English and Swiss-German being thrown around carelessly. Yes, even Swiss-German. Turns out, to Sandra's great horror, that I've started picking up Swiss words, expressions and even the accent.
+The point is, it's good to surround yourself with people who speak the language who can help you and correct you go. My flatmates both speak German and are learning French. It's the perfect environment for language sharing and linguistic schizophrenia. If you ever find yourself at our kitchen, you'll have to dodge a flurry of words in French, German, English and Swiss-German being thrown around carelessly. Yes, even Swiss-German. Turns out, to Christine's great horror, that I've started picking up Swiss words, expressions and even the accent.
 
 We'll see how the Germans take a guy from Nepal speaking German with just a touch of Switzerdeutsch. *Uf Widerluege*!
