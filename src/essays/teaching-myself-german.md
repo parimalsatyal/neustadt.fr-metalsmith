@@ -5,7 +5,7 @@ blurb: "I had been somewhat obsessed with Germany for the past year or so but th
 type: guide
 draft: false
 keywords: german, learn, Deutsch, teaching yourself, self study, independent study, resources, links
-img:
+img: img/teaching_myself_german-cover.jpg
 ---
 This is a guide to teaching yourself German.
 
@@ -36,6 +36,11 @@ Luckily, Leipzig doesn’t have a metro. It was still absolutely insane. I had b
 I'd toyed with the idea of learning *Deutsch* for a while. I even considered learning it over French many, many years ago; I only picked the latter because my local Alliance Française had a nice café/bistro and the Goethe Institut didn’t. (Incidentally, this is also why I now live and work in Paris).
 
 My closest friend in Paris was German (he still is; he’s just not in Paris anymore) and he introduced me to German, mostly Bavarian, beer. I loved how the words looked and sounded: *Hefeweiße*, *Dunkles Doppelbock*, *Reinheitsgebot*, *Märzenbier*, *Rauchbier*. Then when he and Charlotte (who you’ll recall from [my last essay](www.neustadt.fr/essays/32c3/)) moved to Germany, I had two very good reasons to visit Deutschland. Since, I’ve been several times to five different cities and absolutely loved it every time.
+
+<figure>
+  <img src="/img/teaching_myself_german-cover.jpg" alt="A fine selection of German beers: Ayinger Albairisch Dunkel, Ayinger's starkbier Celebrator and Ur-Krostitzer Pilsner" class="opening-cover-image"/>
+  <figcaption>A fine selection of German beers: Ayinger Albairisch Dunkel, Ayinger's starkbier Celebrator and Ur-Krostitzer Pilsner</figcaption>
+</figure>
 
 The turning point though was really Silvester in Leipzig. Everything else just fell into place after that.
 
