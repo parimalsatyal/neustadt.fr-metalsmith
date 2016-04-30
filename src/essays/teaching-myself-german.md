@@ -1,7 +1,7 @@
 ---
 title: "Teaching Myself German"
 date: 2016-03-07
-blurb: "I had been somewhat obsessed with Germany for the past year or so but there, on an small street off Könnerlitzstraße in the backdrop of loud, bright fireworks and sekt-induced mirth, something was absolutely clear: I had to learn German."
+blurb: "I had been somewhat obsessed with Germany for the past year or so but there, on a small street off Könnerlitzstraße in the backdrop of loud, bright fireworks and sekt-induced mirth, something was absolutely clear: I had to learn German."
 type: guide
 draft: false
 keywords: german, learn, Deutsch, teaching yourself, self study, independent study, resources, links
@@ -31,7 +31,7 @@ On December 31, 2015 I learnt that the Germans really, really like their firewor
 
 >„You know those things that you normally shoot up in the air? Rockets? Yeah well people were launching them everything, even inside the metro! It was like a war zone!”
 
-Luckily, Leipzig doesn’t have a metro. It was still absolutely insane. I had been somewhat obsessed with Germany for the past year or so but there, on an small street off Könnerlitzstraße in the backdrop of loud, bright fireworks and *sekt*-induced mirth, something was absolutely clear: I had to learn German.
+Luckily, Leipzig doesn’t have a metro. It was still absolutely insane. I had been somewhat obsessed with Germany for the past year or so but there, on a small street off Könnerlitzstraße in the backdrop of loud, bright fireworks and *sekt*-induced mirth, something was absolutely clear: I had to learn German.
 
 I'd toyed with the idea of learning *Deutsch* for a while. I even considered learning it over French many, many years ago; I only picked the latter because my local Alliance Française had a nice café/bistro and the Goethe Institut didn’t. (Incidentally, this is also why I now live and work in Paris).
 
@@ -55,7 +55,7 @@ I remember Charlotte learning German two years ago when she was still in Paris; 
 
 >"You need to really study the grammar," she said. "Otherwise things won’t make a lot of sense."
 
-She was of course right. Up until that point, I had been picking  up words and phrases by ear but the structure of the language remained elusive. I knew that German had three genders — *der* (masculine), *die* (feminine) and *das* (neutral) — but I had no idea why "*die Straße*" (the street) would sometimes seemingly turn masculine and become, for example, "*auf der Straße*". Or why you'd sometimes say "*das rote Auto*" but other times "*mit dem rotes Auto*". What I needed was a simple, comprehensive Grammar book.
+She was of course right. Up until that point, I had been picking  up words and phrases by ear but the structure of the language remained elusive. I knew that German had three genders — *der* (masculine), *die* (feminine) and *das* (neutral) — but I had no idea why "*die Straße*" (the street) would sometimes seemingly turn masculine and become, for example, "*auf der Straße*". Or why you'd sometimes say "*das rote Auto*" but other times "*mit dem roten Auto*". What I needed was a simple, comprehensive Grammar book.
 
 I found this in **Basic German: A Grammar and Workbook** by *H. Schenke and K. Seago* ([available for free on archive.org](https://archive.org/details/BasicGermanAGrammarAndWorkbookH.SchenkeK.Seago)). Especially if you’ve already some experience learning languages, you’ll find its direct approach rather efficient. It explains the basics of every major grammatical feature of German with examples and exercises, without going into too much detail. This is important; you don't want to get overwhelmed when you start.
 
@@ -109,7 +109,7 @@ Case in point: I was having a *deutschsprechendes* lunch with Sandra, a colleagu
 
 Which roughly translates to, "Oh don't worry, I can give you children!"
 
-So, right. Or that time I was with my flatmates in Bordeaux and I said, "*Hmm, ich hab' mein Schaf verloren...*". I didn't understand why Joëlle burst out in laughter until she explained that "Schaf" is, in fact, *sheep* and not *scarf*, which would be "Schals". Didn't help that that same day I also said, "*Ja, dass kann ich dir ziegen*". If I go to Germany now, they might just take me for a farmer.
+So, right. Or that time I was with my flatmates in Bordeaux and I said, "*Hmm, ich hab' mein Schaf verloren...*". I didn't understand why Joëlle burst out in laughter until she explained that "Schaf" is, in fact, *sheep* and not *scarf*, which would be "Schals". Didn't help that that same day I also said, "*Ja, das kann ich dir ziegen*". If I go to Germany now, they might just take me for a farmer.
 
 The point is, it's good to surround yourself with people who speak the language who can help you and correct you go. My flatmates both speak German and are learning French. It's the perfect environment for language sharing and linguistic schizophrenia. If you ever find yourself at our kitchen, you'll have to dodge a flurry of words in French, German, English and Swiss-German being thrown around carelessly. Yes, even Swiss-German. Turns out, to Sandra's great horror, that I've started picking up Swiss words, expressions and even the accent.
 
