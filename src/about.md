@@ -6,7 +6,7 @@ layout: about.html
 img: img/parimalsatyal.jpg
 ---
 
-<img src="/img/parimalsatyal.jpg" alt="Parimal Satyal" class="article-image-left" />
+<img src="/img/parimalsatyal2.jpg" alt="Parimal Satyal" class="article-image-left" />
 
 Neustadt.fr is where I share my thoughts and ideas on technology, urban living, music, design and language.
 
