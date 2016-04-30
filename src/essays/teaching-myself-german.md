@@ -113,4 +113,4 @@ So, right. Or that time I was with my flatmates in Bordeaux and I said, "*Hmm, i
 
 The point is, it's good to surround yourself with people who speak the language who can help you and correct you go. My flatmates both speak German and are learning French. It's the perfect environment for language sharing and linguistic schizophrenia. If you ever find yourself at our kitchen, you'll have to dodge a flurry of words in French, German, English and Swiss-German being thrown around carelessly. Yes, even Swiss-German. Turns out, to Christine's great horror, that I've started picking up Swiss words, expressions and even the accent.
 
-We'll see how the Germans take a guy from Nepal speaking German with just a touch of Switzerdeutsch. *Uf Widerluege*!
+We'll see how the Germans take a guy from Nepal speaking German with just a touch of Schweizerdeutsch. *Uf Widerluege*!
