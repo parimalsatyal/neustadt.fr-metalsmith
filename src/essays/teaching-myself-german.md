@@ -29,7 +29,7 @@ The German verb for ’to celebrate’ is *feiern*. I associate this with the wo
 
 On December 31, 2015 I learnt that the Germans really, really like their fireworks. It was exactly the sort of brazen disregard for safety for which my preconceived notions could not have prepared me. I was celebrating with close friends in Leipzig, [2 hours south of Berlin](https://www.youtube.com/watch?v=nH2gUPTFCfo&feature=youtu.be&t=383). [Anders](http://anders.unix.se), a calm Swede who had experienced the madness in Berlin first-hand the year before had previously warned me:
 
->„You know those things that you normally shoot up in the air? Rockets? Yeah well people were launching them everything, even inside the metro! It was like a war zone!”
+>„You know those things that you normally shoot up in the air? Rockets? Yeah well people were launching them everywhere, even inside the metro. It was like a war zone!”
 
 Luckily, Leipzig doesn’t have a metro. It was still absolutely insane. I had been somewhat obsessed with Germany for the past year or so but there, on a small street off Könnerlitzstraße in the backdrop of loud, bright fireworks and *sekt*-induced mirth, something was absolutely clear: I had to learn German.
 
