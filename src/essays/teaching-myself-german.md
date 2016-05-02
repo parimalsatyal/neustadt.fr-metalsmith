@@ -109,7 +109,7 @@ Case in point: I was having a *deutschsprechendes* lunch with Christine, a colle
 
 Which roughly translates to, "Oh don't worry, I can give you children!"
 
-So, right. Or that time I was with my flatmates in Bordeaux and I said, "*Hmm, ich hab' mein Schaf verloren...*". I didn't understand why Joëlle burst out in laughter until she explained that "Schaf" is, in fact, *sheep* and not *scarf*, which would be "Schals". Didn't help that that same day I also said, "*Ja, das kann ich dir ziegen*". If I go to Germany now, they might just take me for a farmer.
+So, right. Or that time I was with my flatmates in Bordeaux and I said, "*Hmm, ich hab' mein Schaf verloren...*". I didn't understand why Joëlle burst out in laughter until she explained that "Schaf" is, in fact, *sheep* and not *scarf*, which would be "Schal". Didn't help that that same day I also said, "*Ja, das kann ich dir ziegen*". If I go to Germany now, they might just take me for a farmer.
 
 The point is, it's good to surround yourself with people who speak the language who can help you and correct you go. My flatmates both speak German and are learning French. It's the perfect environment for language sharing and linguistic schizophrenia. If you ever find yourself at our kitchen, you'll have to dodge a flurry of words in French, German, English and Swiss-German being thrown around carelessly. Yes, even Swiss-German. Turns out, to Christine's great horror, that I've started picking up Swiss words, expressions and even the accent.
 
