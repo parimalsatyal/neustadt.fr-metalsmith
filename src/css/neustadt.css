@@ -1,6 +1,6 @@
 body {
-  font-family: 'Merriweather', 'Playfair Display', sans-serif;
-  font-weight: 300;
+  font-family: 'Merriweather', 'Alegreya', sans-serif;
+  font-weight: 400;
   background-color: #fcfcfc;
   color: #222;
   box-shadow: 0 0 0 5px red inset;
@@ -41,28 +41,30 @@ header .back-to-home {
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Karla', 'Alegreya', serif;
+	letter-spacing: -1pt;
   font-size: 40pt;
   line-height: 1em;
   width: 87%;
+	margin-bottom: 0.5em;
 }
 
 div.meta p {
   display: block;
   font-size: 15pt; line-height: 1.5em;
   font-weight: bold;
-  margin-top: 30px; margin-bottom: 20px;
+  margin-top: 30px; margin-bottom: 30px;
   font-family: 'Karla';
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Karla', 'Alegreya', serif;
   font-size: 20pt;
-  margin-top: 1.5em;
+  margin-top: 2em;
 }
 
 h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Karla', 'Alegreya', serif;
   font-size: 18pt;
   margin-top: 1.5em;
 }
@@ -70,7 +72,7 @@ h3 {
 article {
   font-size: 13pt;
   line-height: 1.7em;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 
 article p {
@@ -78,6 +80,7 @@ article p {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
+	margin-bottom: 1.5em;
 }
 
 article em {
@@ -178,9 +181,8 @@ ul.recent li span.date {
 
 ul.recent li span.title {
 	display: block;
-  font-family: 'Playfair Display', serif;
-
-	font-size: 16pt;
+  font-family: 'Karla', 'Alegreya', serif;
+	font-size: 16.5pt;
 	line-height: 1.7em;
 }
 
@@ -250,8 +252,9 @@ figure.full-width-image {
 
   figure figcaption {
     font-size: 12pt;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Alegreya', serif;
     color: lightslategrey;
+		font-style: italic;
   }
 }
 
@@ -296,8 +299,8 @@ figure.full-width-image {
   }
 
   figure figcaption {
-    font-size: 12pt;
-    font-family: 'Playfair Display', serif;
+    font-size: 13pt;
+    font-family: 'Alegreya', serif;
     color: lightslategrey;
   }
 
@@ -328,7 +331,7 @@ article ol > li, article ul > li {
 }
 
 article ol > li:before {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Alegreya', serif;
   display: inline-block;
   width: 30px; margin-left: -30px;
   content: counter(li-counter)' ';
@@ -338,7 +341,7 @@ article ol > li:before {
 }
 
 article ul > li:before {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Alegreya', serif;
   display: inline-block;
   width: 30px; margin-left: -30px;
   content: '− ';
@@ -348,18 +351,24 @@ article ul > li:before {
 }
 
 article blockquote {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Alegreya', serif;
   color: red;
-  font-size: 15pt;
+	font-weight: 400;
+  font-size: 17pt;
   font-style: italic;
 }
 
-article blockquote  em {
+article blockquote strong, article blockquote strong {
+	font-family: 'Alegreya', serif;
+	font-weight: 700,
+}
+
+article blockquote em {
   font-style: normal;
 }
 
 article .harvard-ref {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Alegreya', serif;
   color: lightslategrey;
 }
 

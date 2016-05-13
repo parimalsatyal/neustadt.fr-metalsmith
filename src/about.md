@@ -26,13 +26,13 @@ Neustadt.fr is built using [Metalsmith](http://metalsmith.io), a node.js-based s
 
 This entire website is open-source (with an MIT license). There are public GitHub repositories for both [the Metalsmith back-end](https://github.com/parimalsatyal/neustadt.fr-metalsmith) and the [static front-end](https://github.com/parimalsatyal/parimalsatyal.github.io) hosted on GitHub Pages. You are free to reuse the code in any way you please.
 
-The fonts used on this website are also all free and shared with the SIL Open Font License. Thanks to [Jonathan Pinhorn](https://twitter.com/jonpinhorn_type) for [Karla](http://www.fontsquirrel.com/fonts/karla), [Claus Eggers Sørensen](http://www.forthehearts.net/about/) for [Playfair Display](http://www.forthehearts.net/typeface-design/playfair-display/) and [Eben Sorkin](https://github.com/EbenSorkin) for [Merriweather](https://github.com/EbenSorkin/Merriweather).
+The fonts used on this website are also all free and shared with the SIL Open Font License. Thanks to [Jonathan Pinhorn](https://twitter.com/jonpinhorn_type) for [Karla](https://www.fontsquirrel.com/fonts/karla), [Juan Pablo del Peral](http://www.huertatipografica.com.ar/) for [Alegraya](https://www.fontsquirrel.com/fonts/alegreya) and [Eben Sorkin](https://github.com/EbenSorkin) for [Merriweather](https://github.com/EbenSorkin/Merriweather).
 
 ## Accessible and Privacy-friendly
 
 Neustadt.fr can be accessed from pretty much any device connected to the internet and able to read HTML: laptops, tablets, smartphones but also [text-based browsers](http://lynx.isc.org/), screen readers and e-book readers. I favour native HTML elements to external resources and have deliberately kept all pages light and as free of dependencies as possible. The only linked external resources are web-fonts hosted on Google Fonts.
 
-This website does not store cookies, does not track you, does not hijack your scrollbar for 'immersive experiences' and does not abuse your network bandwith. I do not embed YouTube videos directly either.
+This website does not store cookies, does not track you, does not hijack your scrollbar for 'immersive experiences' and does not abuse your network bandwith. I do not embed YouTube videos directly either. GitHub Pages currently does not support SSL certificates for external domains, but I'm working on getting Neustadt.fr on HTTPS.
 
 ## Contact
 
