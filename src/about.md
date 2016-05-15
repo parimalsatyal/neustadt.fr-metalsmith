@@ -24,15 +24,15 @@ The *.fr* part is because I live in France. And because *.com* was not available
 
 Neustadt.fr is built using [Metalsmith](http://metalsmith.io), a node.js-based static site generator.
 
-This entire website is open-source (with an MIT license). There are public GitHub repositories for both [the Metalsmith back-end](https://github.com/parimalsatyal/neustadt.fr-metalsmith) and the [static front-end](https://github.com/parimalsatyal/parimalsatyal.github.io) hosted on GitHub Pages. You are free to reuse the code in any way you please.
+This website is open-source (with an [MIT license](https://opensource.org/licenses/MIT)), accessible as a [public GitHub repository](https://github.com/parimalsatyal/neustadt.fr-metalsmith). You are free to reuse the code in any way you please. It is hosted in Frankfurt on [Digital Ocean](https://www.digitalocean.com/).
 
 The fonts used on this website are also all free and shared with the SIL Open Font License. Thanks to [Jonathan Pinhorn](https://twitter.com/jonpinhorn_type) for [Karla](https://www.fontsquirrel.com/fonts/karla), [Juan Pablo del Peral](http://www.huertatipografica.com.ar/) for [Alegraya](https://www.fontsquirrel.com/fonts/alegreya) and [Eben Sorkin](https://github.com/EbenSorkin) for [Merriweather](https://github.com/EbenSorkin/Merriweather).
 
 ## Accessible and Privacy-friendly
 
-Neustadt.fr can be accessed from pretty much any device connected to the internet and able to read HTML: laptops, tablets, smartphones but also [text-based browsers](http://lynx.isc.org/), screen readers and e-book readers. I favour native HTML elements to external resources and have deliberately kept all pages light and as free of dependencies as possible. The only linked external resources are web-fonts hosted on Google Fonts.
+Neustadt.fr can be accessed from pretty much any device connected to the internet and able to read HTML: laptops, tablets, smartphones but also [text-based browsers](http://lynx.isc.org/), screen readers and e-book readers. I favour native HTML elements to external resources and have deliberately kept all pages light and as free of dependencies as possible. The only linked external resources are web-fonts hosted on [Brick.im](http://brick.im/).
 
-This website does not store cookies, does not track you, does not hijack your scrollbar for 'immersive experiences' and does not abuse your network bandwith. I do not embed YouTube videos directly either. GitHub Pages currently does not support SSL certificates for external domains, but I'm working on getting Neustadt.fr on HTTPS.
+This website does not store cookies, does not track you, does not hijack your scrollbar for 'immersive experiences' and does not abuse your network bandwith. I do not embed YouTube videos directly either. All connections to this domain are also encrypted thanks to [Let's Encrypt](https://letsencrypt.org/).
 
 ## Contact
 
