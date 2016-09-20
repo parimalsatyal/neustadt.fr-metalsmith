@@ -3,7 +3,7 @@ title: "We Need to Stop Breaking the Web"
 date: 2016-05-16
 blurb: "We're quietly replacing the internet that connected and empowered people with one that restricts and commoditizes users. And we need to stop it."
 type: essay
-draft: false
+draft: true
 keyword: internet, break, empower, designers, open, privacy, rights, free, web
 ---
 

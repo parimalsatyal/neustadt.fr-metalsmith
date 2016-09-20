@@ -1,5 +1,5 @@
 body {
-  font-family: 'Merriweather', 'Alegreya', sans-serif;
+  font-family: 'Karla', sans-serif;
   font-weight: 400;
   background-color: #fcfcfc;
   color: #222;
@@ -70,9 +70,9 @@ h3 {
 }
 
 article {
-  font-size: 13pt;
-  line-height: 1.7em;
-  letter-spacing: -0.03em;
+  font-size: 14pt;
+  line-height: 1.5em;
+  letter-spacing: -0.04em;
 }
 
 article p {
@@ -84,7 +84,7 @@ article p {
 }
 
 article em {
-  font-family: 'Merriweather', serif;
+  font-family: 'Karla', serif;
   font-style: italic;
 }
 
@@ -252,7 +252,7 @@ figure.full-width-image {
 
   figure figcaption {
     font-size: 12pt;
-    font-family: 'Alegreya', serif;
+    font-family: 'Garamond', 'Alegreya', serif;
     color: lightslategrey;
 		font-style: italic;
   }
@@ -300,7 +300,7 @@ figure.full-width-image {
 
   figure figcaption {
     font-size: 13pt;
-    font-family: 'Alegreya', serif;
+    font-family: 'Garamond', 'Alegreya', serif;
     color: lightslategrey;
   }
 
@@ -310,13 +310,13 @@ figure.full-width-image {
 
 article ol, article ul {
   margin: 2em 0 2em 0; padding-bottom: 1em;
-  color: #222;
+  color: #555;
   text-align: justify;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
   width: 90%;
-  font-size: 12pt; line-height: 1.5em;
+  font-size: 13pt; line-height: 1.5em;
   list-style-type: none;
   list-style-type: decimal !ie; /*IE 7- hack*/
 }
@@ -331,27 +331,27 @@ article ol > li, article ul > li {
 }
 
 article ol > li:before {
-  font-family: 'Alegreya', serif;
+  font-family: 'Karla', sans-serif;
   display: inline-block;
   width: 30px; margin-left: -30px;
   content: counter(li-counter)' ';
   counter-increment: li-counter;
   color: red;
-  font-size: 15pt;
+  font-size: 12pt;
 }
 
 article ul > li:before {
-  font-family: 'Alegreya', serif;
+  font-family: 'Karla', sans-serif;
   display: inline-block;
   width: 30px; margin-left: -30px;
   content: '− ';
   color: red;
-  font-size: 15pt;
+  font-size: 12pt;
   width: 25px;
 }
 
 article blockquote {
-  font-family: 'Alegreya', serif;
+  font-family: 'Garamond', 'Alegreya', serif;
   color: red;
 	font-weight: 400;
   font-size: 17pt;
@@ -359,7 +359,7 @@ article blockquote {
 }
 
 article blockquote strong, article blockquote strong {
-	font-family: 'Alegreya', serif;
+	font-family: 'Garamond', 'Alegreya', serif;
 	font-weight: 700,
 }
 
@@ -368,7 +368,7 @@ article blockquote em {
 }
 
 article .harvard-ref {
-  font-family: 'Alegreya', serif;
+  font-family: 'Garamond', 'Alegreya', serif;
   color: lightslategrey;
 }
 
