@@ -141,7 +141,7 @@ We'll need to do this for every plugin we use; most dependencies on your `packag
 
 Next, we call the `metalsmith()` function itself and define metadata that'll be useful later. These values can be called from any of our templates. For now, we'll just include a name that we can later use as in `<title>` tag of our blog.
 
-Next, we define our source folder (`.\src` that we created earlier), a destination folder where Metalsmith will output our static site (`.\public`), and call the `build()` function to build our site.
+Next, we define our source folder (`./src` that we created earlier), a destination folder where Metalsmith will output our static site (`./public`), and call the `build()` function to build our site.
 
 We've also included error catching. Should Metalsmith encounter an exception, it'll be appended to the Javascript console. Otherwise, it'll post a message indicating that the build was successful.
 
@@ -205,7 +205,7 @@ Create a new file in your `src` folder called `hello-world.md`:
 ```markdown
 ---
 title: "Hello World"
-date: 2015-10-12
+date: 2016-10-12
 blurb: An introduction to our blog Electroniq
 ---
 
@@ -523,11 +523,18 @@ var collections       = require('metalsmith-collections');
 And then, finally, add them to our workflow. I'd add them right before `layouts`:
 
 ```javascript
-.use(collections(
-))
-.use(permalinks({
-  relative: false
-}))
+
+// ...
+    .use(markdown())
+		.use(collections()
+		)
+		.use(permalinks({
+		  relative: false
+		}))
+    .use(layouts({
+// ...
+
+
 ```
 
 Here permalinks takes only one parameter *relative*, which is set to false. If this were set to true, Metalsmith would make a copy of any resource on the source folder in all sub-folders.
@@ -602,7 +609,7 @@ Then just add them to your workflow around the end, right before the `build()` f
 // ...
 ```
 
-The `serve` command essentially tells Metalsmith to serve the pages using a local server running on port 8081. The 'verbose' option will output status updates to the command line (everytime it detects a change to a file, for example.
+The `serve` command essentially tells Metalsmith to serve the pages using a local server running on port 8081. The 'verbose' option will output status updates to the command line (everytime it detects a change to a file, for example; this is helpful for when you've set a wrong path and the server responds with a 404).
 
 The `watch` commands takes paths as parameters; these are essentially folders it should watch for changes. We're going to include the source folder (obviously) and our layout folder.
 
@@ -619,7 +626,7 @@ $ make build
 
 This is where things get fun. Going live is as simple as copying your `/public` folder to your remote `public_html` (or equivalent) folder. So your deployment process involves invoking `make build` and uploading these files to your host.
 
-For this website, I use a simple deploy shell script that looks like this:
+For Neustadt.fr, I use a simple deploy shell script that looks like this:
 
 ```
 #!/bin/sh
@@ -629,8 +636,15 @@ rsync -av -e ssh public/* parimalsatyal@xxx.xx.xxx.xxx:/var/www/neustadt.fr
 
 I've named it `deploy.sh`. All it does is use the [rsync](https://linux.die.net/man/1/rsync) command to sync the local public folder with my public folder on my remote host, via SSH. (I've replaced my actual IP address with *xxx.xx.xxx.xxx*). 
 
+This way, I can update my website with just two commands: 
+
+```
+$ make build
+$ ./deploy.sh
+```
+
 ## Final Thoughts
 
-And that's how you can craft a very simple (but useful) static website using Metalsmith. If you'd like to go further, I'd recommend consulting the [Awesome Metalsmith](https://github.com/metalsmith/awesome-metalsmith) list.
+This is one way to craft a very simple (but useful) static website using Metalsmith. If you'd like to go further, I'd recommend consulting the [Awesome Metalsmith](https://github.com/metalsmith/awesome-metalsmith) list.
 
-If you spot errors, or would like to suggest an edit, you can simply send a pull request on GitHub. If you find this tutorial useful, well that's excellent. 
+If you spot errors or would like to suggest an edit, you can simply [send a pull request on GitHub](https://github.com/parimalsatyal/neustadt.fr-metalsmith/blob/master/src/essays/crafting-a-simple-blog-with-metalsmith.md). Or get in touch via email (parimal-at-neustadt-dot-fr). Thanks go out to [Metalsmith](https://github.com/metalsmith/metalsmith) and [the community](https://metalsmith.slack.com/) for building and maintaining this beautiful static website generator. 
