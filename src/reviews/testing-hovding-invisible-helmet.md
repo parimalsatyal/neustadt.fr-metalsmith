@@ -2,7 +2,7 @@
 title: "First-Hand: Hövding, the Invisible Bike Helmet"
 date: 2015-09-29
 blurb: "Hövding is really a portable airbag for urban cyclists. It’s smart, looks good and is three times more effective than most bike helmets. A first-hand review."
-keywords: hövding, invisible helmet, bike, bicycle, airbag, insurance, france, paris, singlespeed, fixie, review, compare
+keywords: hövding, invisible helmet, bike, bicycle, airbag, insurance, france, paris, singlespeed, fixie, effective, compare
 img: img/hovding/neustadt-hovding-frontside.jpg
 type: product review
 photosby: Mattawan Sutjaritthanarak
@@ -70,11 +70,7 @@ Hövding comes in three sizes. Small and medium are generally for more or less t
   <span class="clearfix"></span>
 </figure>
 
-<<<<<<< HEAD
-What surprised me was not its weight--it's actually quite light--but how the part that holds the compressed helium canister sits at the back of my neck. You can definitely feel it there, and it isn't immediately very comfortable. If you ride an upright city bike, you won't notice it too much. On a road bike or a light singlespeed like mine where you're sitting quite low, it does restrict your movement just a little bit.
-=======
 What surprised me was not its weight&mdash;it's actually quite light&mdash;but how the bit that holds the cold gas helium inflator sits on the back of my neck. You can definitely feel it there, and it isn't immediately very comfortable. If you ride an upright city bike, you won't notice it too much. On a road bike or a light singlespeed like mine where you're sitting quite low, it does restrict your movement a little bit.
->>>>>>> 5fed59b6e9f9685318d72ae565ae6068efc9dced
 
 The first few times I rode with Hövding, I didn't move my head around too much. I was just not used to having something behind my neck. I was also extra careful to avoid having this expensive device accidentally deploy when I turn my head. This fear is unfounded, of course; Hovding is much smarter than that. Now after over a week, I've grown used to it and feel it a lot less. I've started moving my head around normally too. This is of course essential. Luckily, once you get get the hang of it, Hövding does not restrict your head movement much. But give it a week. I imagine in another week it'll have become a habit and I won't even think about it.
 

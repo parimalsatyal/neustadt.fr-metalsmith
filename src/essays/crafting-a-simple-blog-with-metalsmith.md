@@ -1,9 +1,9 @@
 ---
 title: A Beginner's Guide to Crafting a Blog with Metalsmith
-date: 2015-10-06
+date: 2016-09-23
 blurb: Neustadt.fr is built with Metalsmith, a node.js-based static site generator. In this tutorial I explain how you can build your own Metalsmith blog from scratch.
 type: tutorial
-draft: true
+draft: false
 highlighting: true
 ---
 
@@ -15,7 +15,7 @@ This came at a time when I was getting increasingly frustrated with the wasteful
 
 Simplicity and speed. Call it nostalgia but I like to keep things small, simple and manageable. There's something beautiful about a website in standard HTML, CSS and (minimal) Javascript that can be hosted pretty much anywhere. Even [Neocities](https://neocities.org/).
 
-With a static website, you don't have to worry about databases, SQL injections, security patches and server environments. Need to change hosts? Migrating is as simple as copy/paste. Then there's the speed. Between the caching and not having to query databases to dynamically generate pages every time, you end up with something very robust. A [friend who recently went static](http://anders.unix.se) had [an article LINK](#) make it to the front page of HN, bringing in about 3 GB of traffic in one day. Since he was only serving plain HTML and CSS, his server handled it just fine.
+With a static website, you don't have to worry about databases, SQL injections, security patches and server environments. Need to change hosts? Migrating is as simple as copy/paste. Then there's the speed. Between the caching and not having to query databases to dynamically generate pages every time, you end up with something very robust. A [friend who recently went static](http://anders.unix.se) had [an article](https://anders.unix.se/2015/10/28/screenshots-from-developers--unix-people-2002/) make it to the front page of [Hacker News](https://news.ycombinator.com/), bringing in about 3 GB of traffic in one day. Since he was only serving plain HTML and CSS, his server handled it just fine.
 
 ## Why Metalsmith?
 
@@ -76,7 +76,7 @@ On your root folder (`electroniq`), create a file called `package.json` with thi
 }
 ```
 
-For now, we're just seting up your node.js environment with some meta information (for documentation; you could very well omit the description and author but it's good habit to document things). Every time we install a plugin, we'll add it to this file. This can be automated; let's install a plugin to see it in action.
+For now, we're just seting up your node.js environment with some meta information. But this file does a lot more. Every time we install a plugin, we'll need to add it to this file. This can be automated; let's install a plugin to see it in action.
 
 We'll start by installing metalsmith itself. On your root folder, type:
 
@@ -157,7 +157,7 @@ node_modules: package.json
 .PHONY: build
 ```
 
-Why a Makefile? Because it ties everything together and lets you build your Metalsmith blog just by typing `make build`.
+Why a Makefile? Because it ties everything together and lets you build your Metalsmith blog just by typing `make build` into your command line.
 
 This is what your `electroniq` directory should look like :
 
@@ -409,7 +409,7 @@ What we don't have is an index page that lists all the articles we publish. Let'
 </html>
 ```
 
-We've remove the bit with `{{ title }}`, which only exists for articles and left just the `{{ site.name }}` bit and we've switched out the `{{ blurb }}` for `{{ site.description }}`.
+In the `<head>` section, we've removed the bit with `{{ title }}`, which only exists for articles and left just the `{{ site.name }}` bit and we've switched out the `{{ blurb }}` for `{{ site.description }}`.
 
 It's a good start but we're repeating a lot of code. This is not ideal because if we ever want to change something in the header, for example, we'd need to change it on every template that contains it. To avoid this, we can split reusable code into smaller sub-templates, or *partials*, that we can call from our main templates.
 
@@ -498,9 +498,13 @@ Let's say we're going to have two types of articles on our blog: essays and revi
 - Reviews page: `/reviews`
 - Interstellar (review) page: `/reviews/interstellar/`
 
-Notice that these are root-relative links, `/` being the root. The root could really be a number of things: a domain like `http://electroniq.example`; a subdomain like `http://electroniq.domain.example`; heck, even a local address like `http://localhost:8081/` (we'll see this again in the next section).
+Notice that these are root-relative links, `/` being the root. The root could really be a number of things: a domain like `http://electroniq.org`; a subdomain like `http://electroniq.example.org`; heck, even a local address like `http://localhost:8081/` (we'll see this again in the next section).
 
-To enable this kind of routing and categorization, we'll two plugins: `metalsmith-permlinks` and `metalsmith-collections`. The first will allow us to write custom URLS: with a *date*, maybe, or an *id* or an *author* name. As long as this information exists in the front-matter, you can use it in your URL. In our case, we're only using the `title`.
+To enable this kind of routing and categorization, we'll two plugins: `metalsmith-permlinks` and `metalsmith-collections`. 
+
+The first will allow us to write custom URLS: with a *date*, maybe, or an *id* or an *author* name. As long as this information exists in the front-matter, you can use it in your URL. In our case, we're only using the `title`.
+
+The second plugin will be useful to create categories (like 'reviews')
 
 Let's install these two plugins:
 
@@ -611,6 +615,22 @@ $ make build
 ```
 
 
-## Going Live (with GitHub Pages)
+## Going Live (aka. Deploying)
 
-## Going further
+This is where things get fun. Going live is as simple as copying your `/public` folder to your remote `public_html` (or equivalent) folder. So your deployment process involves invoking `make build` and uploading these files to your host.
+
+For this website, I use a simple deploy shell script that looks like this:
+
+```
+#!/bin/sh
+rsync -av -e ssh public/* parimalsatyal@xxx.xx.xxx.xxx:/var/www/neustadt.fr
+
+```
+
+I've named it `deploy.sh`. All it does is use the [rsync](https://linux.die.net/man/1/rsync) command to sync the local public folder with my public folder on my remote host, via SSH. (I've replaced my actual IP address with *xxx.xx.xxx.xxx*). 
+
+## Final Thoughts
+
+And that's how you can craft a very simple (but useful) static website using Metalsmith. If you'd like to go further, I'd recommend consulting the [Awesome Metalsmith](https://github.com/metalsmith/awesome-metalsmith) list.
+
+If you spot errors, or would like to suggest an edit, you can simply send a pull request on GitHub. If you find this tutorial useful, well that's excellent. 

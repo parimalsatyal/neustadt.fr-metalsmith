@@ -16,7 +16,7 @@ Parimal
   <meta charset="utf-8">
   <title>{{#if title}}{{ title }} - {{/if}}{{ site.name }} </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="keywords" content="{{#if keywords}}{{ keywords }},{{/if}}{{#if type}}{{ type }},{{/if}} {{ site.keywords }}" />
+  <meta name="keywords" content="{{ site.keywords }}, {{#if keywords}}{{ keywords }},{{/if}}{{#if type}}{{ type }}{{/if}}"/>
   <meta name="description" content="{{#if blurb}}{{ blurb }}{{else}}{{#if description}}{{ description }}{{else}}{{ site.description }}{{/if}}{{/if}}" />
   <meta name="author" content="{{ site.author }}">
   <meta name="referrer" content="never" />
@@ -24,8 +24,6 @@ Parimal
   <link rel="stylesheet" href="/css/neustadt.css" type="text/css" media="all">
 
 	<link rel="stylesheet" href="//brick.a.ssl.fastly.net/Karla:400,400i,700, 700i">
- 	<link rel="stylesheet" href="//brick.a.ssl.fastly.net/Merriweather:200,200i,400,400i,700,700i">
-	<link rel="stylesheet" href="//brick.a.ssl.fastly.net/Alegreya:400,400i,700,700i">
 
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="shortcut icon" href="/favicon.ico">
