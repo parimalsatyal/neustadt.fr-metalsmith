@@ -1,3 +1,11 @@
+---
+title: "We're breaking the Web"
+date: 2016-09-30
+blurb: ""
+type: essay
+draft: true
+---
+
 We're breaking the web.
 
 That's right, us architects of the modern web — web designers, UX designers, developers, creative directors, social media managers, data scientists, product managers, start-up people, strategists — are breaking one of humanity's greatest inventions without even realizing it.

@@ -145,16 +145,26 @@ Next, we define our source folder (`./src` that we created earlier), a destinati
 
 We've also included error catching. Should Metalsmith encounter an exception, it'll be appended to the Javascript console. Otherwise, it'll post a message indicating that the build was successful.
 
-Next, we'll write a makefile and point it to all our resources. Create a file called `Makefile` (with a capital M) and paste this in:
+Next, we'll add a few lines on our `package.json` file to point it to your `build.js` file we just create.
 
-``` makefile
-build: 	node_modules
-				node build.js
+Open `package.json` and make sure it looks like this:
 
-node_modules: package.json
-				npm install
-
-.PHONY: build
+``` json
+{
+  "name": "electroniq",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Electroniq is a sample metalsmith project.",
+  "author": "<your-name>",
+  "dependencies": {
+    "metalsmith": "^2.0.1"
+  },
+	"main": "build.js",
+	"scripts": {
+		"prestart": "npm install",
+		"start": "node ."
+	}
+}
 ```
 
 Why a Makefile? Because it ties everything together and lets you build your Metalsmith blog just by typing `make build` into your command line.
@@ -572,6 +582,8 @@ The collections plugin doesn't do much if we don't define our collections. Let's
   relative: false
 }))
 ```
+
+Here we've defined three collections. publications (which is everything), essays and reviews. These collections don't *really* correspond to different typologies of conent; they're more like views. For each we declare a source pattern -- which files should be considered part of this collection? -- a sort order (here, reverse chronological). We then give it some meta data that we'll be able to access in our templates using our Handlebars variables that look like this: `{{ name }}` 
 
 ## Watching, (local) serving and drafts
 

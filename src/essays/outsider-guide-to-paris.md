@@ -1,5 +1,10 @@
-An Outsider's Guide to (the real) Paris
-
+---
+title: "An Outsider's Guide to (the real) Paris"
+date: 2016-09-30
+blurb: ""
+type: essay
+draft: true
+---
 
 This is a guide to surviving Paris as an outsider. Not the Paris in Woody Allen's Midnight in Paris (charming as that was) but the real Paris. My Paris.
 
