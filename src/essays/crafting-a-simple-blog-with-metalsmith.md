@@ -9,7 +9,7 @@ highlighting: true
 
 Neustadt.fr started, as many things have, with [a post on Hacker News](https://news.ycombinator.com/item?id=10001996). I stumbled on [Jendrik Poloczek's very simple, readable website](http://www.madewithtea.com/) after one of his articles made it to the front page. His website is apparently *powered by [Pelican](http://blog.getpelican.com/)*, a Python-based static site generator. I didn't really know what that meant but I was intrigued.
 
-This came at a time when I was getting increasingly frustrated with the wastefulness, bloat and disregard for privacy in modern web design. Not to mention the layers and layers of dependencies. People who want a simple website today often end up with a dynamic database-dependent WordPress blog running a theme that has widgets, infinite scroll, lightbox, a media gallery, Google Analytics and jQuery animations built-in. And all they wanted was to post a few photos and articles every month. It's absurd.
+This came at a time when I was getting increasingly frustrated with the wastefulness, bloat and disregard for privacy in modern web design. Not to mention the layers and layers of dependencies. People who want a simple website today often end up with a dynamic database-dependent WordPress blog running a theme that has widgets, infinite scroll, lightbox, a media gallery, Google Analytics and jQuery animations built-in. And all they wanted was to post a few articles and photos every month. It's absurd.
 
 ## Why go static?
 
@@ -27,9 +27,13 @@ Instead of having to *disable* features I don't need, I could simply *add* the o
 
 ## Requirements and audience
 
-This tutorial is for beginners, so it'll be quite detailed and verbose. I assume only that you are familiar with basic HTML/CSS and are at least a little bit comfortable using the command line (or not scared of it, at the very least). You'll also need to be familiar with basic Javascript syntax. If you're not, don't worry; I'm no programmer either, you can learn as you go.
+This tutorial is for beginners, so it'll be quite detailed and verbose. 
 
-We'll be writing our posts in [Markdown](https://help.github.com/articles/markdown-basics/), a very simple markup language that lets you format your posts easily without having to throw in HTML tags everywhere. It then converts it to HTML for you. It's very easy and you can learn it in 5 minutes.
+Our example blog will be extremely simple: an index page with a list of all articles, a page for each article and an about page. It'll be the personal website of fictional astrophycisist (and retro music enthusiast) Tara Himmels and we'll call it *Electroniq*. 
+
+I assume only that you are familiar with basic HTML/CSS and are at least a little bit comfortable using the command line (or not scared of it, at the very least). You'll also need to be familiar with very basic Javascript syntax. If you're not, don't worry; I'm no programmer either, you can learn as you go.
+
+We'll be writing our posts in [Markdown](https://help.github.com/articles/markdown-basics/), a simple markup language that lets you format your posts easily without having to throw in HTML tags everywhere. It then converts it to HTML for you. If you don't know it, you can learn it in 5 minutes.
 
 You don't need to know [node.js](https://nodejs.org).
 
@@ -45,7 +49,7 @@ I usually also use [Git](http://www.git-scm.com/) for version control. But let's
 
 ## Installing Node.js and Metalsmith
 
-If you're running Windows or Mac OS X, the easiest way to install Node.js is to [download the precompiled binaries](https://nodejs.org/en/download/). If you're running Linux, you can use your distro's [package manager](https://nodejs.org/en/download/package-manager/).
+If you're running Windows or Mac OS X, the easiest way to install Node.js is to download and install [the precompiled binaries](https://nodejs.org/en/download/) (or via  [Homebrew](https://github.com/Homebrew/brew) on the Mac). If you're running Linux, you can use your distro's [package manager](https://nodejs.org/en/download/package-manager/). 
 
 This installs both Node.js and [npm](https://nodejs.org/en/download/package-manager/), the node package manager that we'll be using to install all our plugins.
 
@@ -145,9 +149,7 @@ Next, we define our source folder (`./src` that we created earlier), a destinati
 
 We've also included error catching. Should Metalsmith encounter an exception, it'll be appended to the Javascript console. Otherwise, it'll post a message indicating that the build was successful.
 
-Next, we'll add a few lines on our `package.json` file to point it to your `build.js` file we just create.
-
-Open `package.json` and make sure it looks like this:
+Next, we'll add a few lines on our `package.json` file to point it to your `build.js` file we just create. Open `package.json` and edit it to look like this:
 
 ``` json
 {
@@ -167,7 +169,7 @@ Open `package.json` and make sure it looks like this:
 }
 ```
 
-Why a Makefile? Because it ties everything together and lets you build your Metalsmith blog just by typing `make build` into your command line.
+These lines we added tells node that `build.js` is the main entry point for our project. Then we define two scripts; the *start* bit essentially just tells node to run the main script in the current folder and the optional *prestart* bit just updates npm before doing so. 
 
 This is what your `electroniq` directory should look like :
 
@@ -177,7 +179,6 @@ This is what your `electroniq` directory should look like :
 │   └── ...
 ├── src/
 ├── build.js
-├── Makefile
 └── package.json
 ```
 
@@ -186,7 +187,7 @@ You now have a basic Metalsmith setup. It doesn't do anything yet (other than co
 Give it a go:
 
 ```
-$ npm make build
+$ npm start
 ```
 
 Now let's make it actually do something.
@@ -234,7 +235,7 @@ The bit at the top between the `---` is called fontmatter. Here, it's in [YAML](
 We don't have a template to display this content yet, but since we added Markdown to our workflow, Metalsmith will still be able to convert it to HTML. Let's build the website now to check.
 
 ```
-$ npm make build
+$ npm start
 ```
 
 This will create a new folder called `public` with a file `hello-world.html`. Your root directory should now look like this:
@@ -303,15 +304,16 @@ And then add them to our workflow:
     .use(layouts({
       engine: 'handlebars',
       directory: './layout',
-      default: 'article.html'
+      default: 'article.html',
+			pattern: ["*/*/*html","*/*html","*html"]
     }))
     .build(function (err) {
 // ...
 ```
 
-What this does is tell Metalsmith to use Handlebars templates, look for them in the `layouts` directory and use a template called `article.html` by default.
+What this does is tell Metalsmith to use Handlebars templates, look for them in the `layouts` directory and use a template called `article.html` by default. We also define a pattern for layout files; this is case, they're files with the *.html* extension.
 
-Let's create this directory and write this default template now:
+Let's create our layouts directory and write our default template now:
 
 ```
 $ mkdir layouts
@@ -361,7 +363,7 @@ In the template, we can access this information via `{{ site.name }}`. The other
 
 The article itself can be accessed quite through the `{{ content }}` template tag.
 
-To see this in action, `make build` your website and open `public/hello-world.html`. You should see this:
+To see this in action, `npm start` your website and open `public/hello-world.html`. You should see this:
 
 ```
 <!DOCTYPE html>
@@ -407,7 +409,7 @@ What we don't have is an index page that lists all the articles we publish. Let'
     <h1>{{ site.name }}</h1>
 
     <ul class="recent">
-    {{#each articles }}
+    {{#each publications }}
       <li>
         <div class="title"><a href="{{ path }}">{{ title }}</a></div>
         <div class="date">{{ date }}</div>
@@ -420,6 +422,18 @@ What we don't have is an index page that lists all the articles we publish. Let'
 ```
 
 In the `<head>` section, we've removed the bit with `{{ title }}`, which only exists for articles and left just the `{{ site.name }}` bit and we've switched out the `{{ blurb }}` for `{{ site.description }}`.
+	
+The bit in between the `<body>` tags introduces new Handsbar code:
+	
+```
+{{#each publications }}
+...
+{{/each}}
+```
+
+This is a loop. It looks into the `publications` collection we created earlier (remember, this collection contains any files ending with *.md* extension under our `/src` folder; essentially, everything) and loops through every item. 
+
+So for every article we write, we're going to display the title and the date.
 
 It's a good start but we're repeating a lot of code. This is not ideal because if we ever want to change something in the header, for example, we'd need to change it on every template that contains it. To avoid this, we can split reusable code into smaller sub-templates, or *partials*, that we can call from our main templates.
 
@@ -479,13 +493,59 @@ Now create a file called 'footer.html' that contains:
 </html>
 ```
 
-Nothing too surprising here.
+Nothing too surprising here. But now we have to let Metalsmith know that we've created these partials so we can invoke them from inside our templaces. To do this, open `build.js` and modify the parameters for our *layouts* plugin so it looks like this:
 
-What's missing now is a way to navigate from an article page back to the index page. Open `layout/article.html` and add the `<header>` block between `<body>` and `<article>` so it looks like this:
+```javascript
+.use(layouts({
+      engine: 'handlebars',
+      directory: './layout',
+      default: 'article.html',
+      pattern: ["*/*/*html","*/*html","*html"]
+	    partials: {
+	            header: 'partials/header',
+	            footer: 'partials/footer'
+	        }
+    }))
+```
+
+Now that our partials are defined, it's time to use them. Open both `article.html` and `index.html` and replace this header that's there:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.name }}</title>
+    <meta name="description" content="{{ site.description }}" />
+  </head>
+  <body>
+```
+
+with just this one line, which is Handsbars syntax for invoking partials:
+
+```
+{{> header }}
+```
+
+Do the same with the footer, replacing
+
+```
+</body>  
+</html>
+```
+
+with:
+
+```
+{{> footer }}
+```
+
+We're almost ready. The only thing missing now is a way to navigate from an article page back to the index page. Open `layout/article.html` and add the `<header>` block between `{{> header }}` and `<article>` so it looks like this:
+
 
 ```
 ...
-<body>
+{{> header }}
   <header>
     <a class="back-to-index" href="index.html">&larr; Index</a>
   </header>
@@ -498,7 +558,7 @@ This just adds a *← Index* link at the top of the page (a little like on this 
 
 Now try building your blog again and moving between the two pages.
 
-## Routes and pretty permalinks
+## Routes and Pretty Permalinks
 
 Let's say we're going to have two types of articles on our blog: essays and reviews (kinda like on this website). What woud be cool would be to have URLs that looked like these:
 
@@ -583,7 +643,79 @@ The collections plugin doesn't do much if we don't define our collections. Let's
 }))
 ```
 
-Here we've defined three collections. publications (which is everything), essays and reviews. These collections don't *really* correspond to different typologies of conent; they're more like views. For each we declare a source pattern -- which files should be considered part of this collection? -- a sort order (here, reverse chronological). We then give it some meta data that we'll be able to access in our templates using our Handlebars variables that look like this: `{{ name }}` 
+Here we've defined three collections: *publications* (which is everything), *essays* and *reviews*. 
+
+These collections don't really correspond to different typologies of conent; they're more like views. Or categoties. For each we declare a source pattern -- which files should be considered part of this collection? -- and a a sort order (reverse chronological). We then give it some meta data that we'll be able to access in our templates. 
+
+We can now have different listing pages for our essays and reviews pages. In your `/layouts` folder, create a copy of index.html and name it `essays.html` and make one little change so it looks like this: 
+
+```
+{{> header }}
+  <header>
+    <a class="back-to-index" href="index.html">&larr; Index</a>
+  </header>
+  <article>
+    <h1>{{ title }}</h1>
+
+    <ul class="recent">
+    {{#each essays }}
+      <li>
+        <div class="title"><a href="{{ path }}">{{ title }}</a></div>
+        <div class="date">{{ date }}</div>
+      </li>
+    {{/each}}
+    </ul>
+{{> footer }}
+```
+Notice the change? 
+
+Instead of looping through all publications, our each loop now only loops through essays :
+
+```
+{{#each essays }}
+```
+
+Now go ahead and create a copy of this file and call it 'reviews.html'. Again, change the *each* statement so we're only looping through reviews: 
+
+
+```
+{{#each reviews }}
+```
+
+Great, we now have a general index page and two other index pages for our reviews and essays. But we have no way of accessing these pages from our home; let add it now. Open `/layouts/partials/footer.html` :
+
+
+You'll notice we've defined two folders that don't exist yet: `essays` and `reviews`; create them now.
+
+```
+$ cd src
+$ mkdir essays
+$ mkdir reviews
+```
+
+This is what your root directory should look like now:
+
+```
+.
+├── node_modules/
+│   └── ...
+├── src/
+│   └── articles/
+│   └── reviews/
+├── public/
+│   └── index.md
+├── layout/
+│   └── index.html
+│   └── articles.html
+│   └── reviews.html
+│   └── partials/
+│      └── footer.html
+│      └── header.html
+├── build.js
+└── package.json
+```
+
+
 
 ## Watching, (local) serving and drafts
 
@@ -630,13 +762,13 @@ I should mention that while the serve/watch combo works really well when you're 
 To do that, you'll need to first kill your server by hitting `Ctrl + C` (on Unix, Mac or Windows). This interrupts the current process. After that, it's the usual:
 
 ```
-$ make build
+$ npm start
 ```
 
 
 ## Going Live (aka. Deploying)
 
-This is where things get fun. Going live is as simple as copying your `/public` folder to your remote `public_html` (or equivalent) folder. So your deployment process involves invoking `make build` and uploading these files to your host.
+This is where things get fun. Going live is as simple as copying your `/public` folder to your remote `public_html` (or equivalent) folder. So your deployment process involves invoking `npm start` and uploading these files to your host.
 
 For Neustadt.fr, I use a simple deploy shell script that looks like this:
 
@@ -651,7 +783,7 @@ I've named it `deploy.sh`. All it does is use the [rsync](https://linux.die.net/
 This way, I can update my website with just two commands: 
 
 ```
-$ make build
+$ npm start
 $ ./deploy.sh
 ```
 
@@ -659,4 +791,6 @@ $ ./deploy.sh
 
 This is one way to craft a very simple (but useful) static website using Metalsmith. If you'd like to go further, I'd recommend consulting the [Awesome Metalsmith](https://github.com/metalsmith/awesome-metalsmith) list.
 
-If you spot errors or would like to suggest an edit, you can simply [send a pull request on GitHub](https://github.com/parimalsatyal/neustadt.fr-metalsmith/blob/master/src/essays/crafting-a-simple-blog-with-metalsmith.md). Or get in touch via email (parimal-at-neustadt-dot-fr). Thanks go out to [Metalsmith](https://github.com/metalsmith/metalsmith) and [the community](https://metalsmith.slack.com/) for building and maintaining this beautiful static website generator. 
+I personally use and love these plugins :
+
+If you spot errors or would like to suggest an edit, you can simply [send a pull request on GitHub](https://github.com/parimalsatyal/neustadt.fr-metalsmith/blob/master/src/essays/crafting-a-simple-blog-with-metalsmith.md). Or get in touch via email (parimal-at-neustadt-dot-fr). Thanks go out to [Metalsmith](https://github.com/metalsmith/metalsmith) and [the community](https://metalsmith.slack.com/) for building and maintaining this beautiful static website generator and to [woody](https://github.com/woodyrew) for his tips.
