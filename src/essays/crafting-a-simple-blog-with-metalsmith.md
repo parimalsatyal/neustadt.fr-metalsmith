@@ -29,7 +29,7 @@ Instead of having to *disable* features I don't need, I could simply *add* the o
 
 This tutorial is for beginners, so it'll be quite detailed and verbose. 
 
-Our example blog will be extremely simple: an index page with a list of all articles, a page for each article and an about page. It'll be the personal website of fictional astrophycisist (and retro music enthusiast) Tara Himmels and we'll call it *Electroniq*. 
+Our example blog will be extremely simple: an index page with a list of all articles, a page for each article and an about page. It'll be the personal website of fictional astrophycisist (and retro music enthusiast) Tara Himmels, who'll name her blog *Electroniq*. 
 
 I assume only that you are familiar with basic HTML/CSS and are at least a little bit comfortable using the command line (or not scared of it, at the very least). You'll also need to be familiar with very basic Javascript syntax. If you're not, don't worry; I'm no programmer either, you can learn as you go.
 
@@ -53,7 +53,7 @@ If you're running Windows or Mac OS X, the easiest way to install Node.js is to 
 
 This installs both Node.js and [npm](https://nodejs.org/en/download/package-manager/), the node package manager that we'll be using to install all our plugins.
 
-Once you have npm installed, you can go ahead and install metalsmith. Before you do so, let's create a project directory. We'll call our sample site "Electroniq". On the command line, type (omitting the `$`, which is just a convention to denote the prompt):
+Once you have npm installed, you can go ahead and install metalsmith. Before you do so, let's create a project directory. On the command line, type this (omitting the `$`, which is just a convention to denote the prompt):
 
 ```
 $ mkdir electroniq
@@ -75,12 +75,12 @@ On your root folder (`electroniq`), create a file called `package.json` with thi
   "name": "electroniq",
   "version": "1.0.0",
   "private": true,
-  "description": "Electroniq is a sample metalsmith project.",
-  "author": "<your-name>"
+  "description": "Electroniq is astrophysicist (and retro music enthusiast) Tara Himmels' blog.",
+  "author": "Tara Himmels"
 }
 ```
 
-For now, we're just seting up your node.js environment with some meta information. But this file does a lot more. Every time we install a plugin, we'll need to add it to this file. This can be automated; let's install a plugin to see it in action.
+For now, we're just seting up your node.js environment with some meta information. But the `package.js` file does a lot more; it holds everything together. Every time we use a plugin, we'll need to declare it in this file. Luckily, this can be automated; let's install a plugin to see it in action.
 
 We'll start by installing metalsmith itself. On your root folder, type:
 
@@ -95,8 +95,8 @@ This installs metalsmith and creates a `node_modules` folder with all of metalsm
   "name": "electroniq",
   "version": "1.0.0",
   "private": true,
-  "description": "Electroniq is a sample metalsmith project.",
-  "author": "<your-name>",
+  "description": "Electroniq is astrophysicist (and retro music enthusiast) Tara Himmels' blog.",
+  "author": "Tara Himmels",
   "dependencies": {
     "metalsmith": "^2.0.1"
   }  
@@ -118,7 +118,7 @@ metalsmith(__dirname)
   .metadata({
     site: {
       name: 'Electroniq',
-      description: 'Electroniq is sample metalsmith blog.'
+      description: "Electroniq is astrophysicist (and retro music enthusiast) Tara Himmels' blog."
     }
   })
   .source('./src')
@@ -141,23 +141,23 @@ First, we require metalsmith itself:
 var metalsmith        = require('metalsmith');
 ```
 
-We'll need to do this for every plugin we use; most dependencies on your `package.json` file will also need to be declared/required here.
+We'll need to do this for every plugin we use. Most dependencies on your `package.json` file will also need to be declared/required here.
 
-Next, we call the `metalsmith()` function itself and define metadata that'll be useful later. These values can be called from any of our templates. For now, we'll just include a name that we can later use as in `<title>` tag of our blog.
+Next, we call the main `metalsmith()` function itself and define metadata that'll be useful later. These values can be called from any of our templates. For now, we'll just include a name that we can later use as in `<title>` tag of our blog.
 
-Next, we define our source folder (`./src` that we created earlier), a destination folder where Metalsmith will output our static site (`./public`), and call the `build()` function to build our site.
+Then, we define our source folder (`./src` that we created earlier), a destination folder where Metalsmith will output our static site (`./public`), and call the `build()` function to build our site.
 
-We've also included error catching. Should Metalsmith encounter an exception, it'll be appended to the Javascript console. Otherwise, it'll post a message indicating that the build was successful.
+We've also included basic error catching. Should Metalsmith encounter an exception, it'll be appended to the Javascript console, which will be useful for debugging. Otherwise, it'll post a message to the Termnial indicating that the build was successful.
 
-Next, we'll add a few lines on our `package.json` file to point it to your `build.js` file we just create. Open `package.json` and edit it to look like this:
+Now, we'll create a bridge between `package.json` to our newly-forged `build.js` file. Open `package.json` and edit it to look like this:
 
 ``` json
 {
   "name": "electroniq",
   "version": "1.0.0",
   "private": true,
-  "description": "Electroniq is a sample metalsmith project.",
-  "author": "<your-name>",
+  "description": "Electroniq is astrophysicist (and retro music enthusiast) Tara Himmels' blog.",
+  "author": "Tara Himmels",
   "dependencies": {
     "metalsmith": "^2.0.1"
   },
@@ -169,9 +169,9 @@ Next, we'll add a few lines on our `package.json` file to point it to your `buil
 }
 ```
 
-These lines we added tells node that `build.js` is the main entry point for our project. Then we define two scripts; the *start* bit essentially just tells node to run the main script in the current folder and the optional *prestart* bit just updates npm before doing so. 
+These lines we added tells node that `build.js` is the main entry point for our project. We then define two scripts; the *start* bit essentially just tells node to run this main script and the optional *prestart* bit just updates npm before doing so. 
 
-This is what your `electroniq` directory should look like :
+This is what your `electroniq` directory should now look like :
 
 ```
 .
@@ -182,7 +182,7 @@ This is what your `electroniq` directory should look like :
 └── package.json
 ```
 
-You now have a basic Metalsmith setup. It doesn't do anything yet (other than copy any file you put in your source directory to your destination directory), but we can technically build our website.
+You now have a basic Metalsmith setup. It doesn't do anything yet (other than copy the nothingness in your source directory to your destination directory), but we can technically build our website.
 
 Give it a go:
 
@@ -207,11 +207,11 @@ Open `build.js` and add Markdown between `.source()` and `.destination()`, like 
 // ...
 ```
 
-And that's it. This is essentially how you add plugins to your workflow, except sometimes you can set parameters. We'll see that later.
+And that's it. This is how you add plugins to your workflow. Of course they usually take parameters, but we'll see that later. It's important to remember that the *order* of plugins is important; think of it as a pipeline. Each action passes on its results to the next.
 
-Let's write a sample article in Markdown. We'll title it "Hello World".
+Now let's write a sample article in Markdown. We'll title it "Hello Universe".
 
-Create a new file in your `src` folder called `hello-world.md`:
+Create a new file in your `src` folder called `hello-universe.md`:
 
 ```markdown
 ---
@@ -222,11 +222,11 @@ blurb: An introduction to our blog Electroniq
 
 # Welcome to Electroniq
 
-*Electroniq* is a new blog about pixels and people.
+*Electroniq* is a new blog about space, distant galaxies and black holes.
 
-We'll talk about [pixel art](https://en.wikipedia.org/wiki/Pixel_art), artists and the beauty of 8-bit color.
+We'll talk about [the holographic principle](https://en.wikipedia.org/wiki/Holographic_principle), dark matter and the beauty of space in infrared light.
 
-This blog is run by **Pixie** and **Elias**.
+This blog is run by **Tara** and **Elias**.
 
 ```
 
@@ -238,34 +238,34 @@ We don't have a template to display this content yet, but since we added Markdow
 $ npm start
 ```
 
-This will create a new folder called `public` with a file `hello-world.html`. Your root directory should now look like this:
+This will create a new folder called `public` with a file `hello-universe.html`. Your root directory should now look like this:
 
 ```
 .
 ├── node_modules/
 │   └── ...
 ├── src/
-│   └── hello-world.md
+│   └── hello-universe.md
 ├── public/
-│   └── hello-world.html
+│   └── hello-universe.html
 ├── build.js
 ├── Makefile
 └── package.json
 ```
 
-Open the generator `hello-world.html` file on your editor. It will simply contain:
+Open the generator `hello-universe.html` file on your editor. It will simply contain:
 
 ```
 <h1>Welcome to Electroniq</h1>
 
-<p><em>Electroniq</em> is a new blog about pixels and people.</p>
+<p><em>Electroniq</em> is a new blog about space, distant galaxies and black holes.</p>
 
-<p>We'll talk about <a href="https://en.wikipedia.org/wiki/Pixel_art">pixel art</a>, artists and the beauty of 8-bit color.</p>
+<p>We'll talk about <a href="https://en.wikipedia.org/wiki/Holographic_principle">the holographic principle</a>, dark matter and the beauty of space in infrared light.</p>
 
-<p>This blog is run by <strong>Pixie</strong> and <strong>Elias</strong>.</p>
+<p>This blog is run by <strong>Tara</strong> and <strong>Elias</strong>.</p>
 ```
 
-Metalsmith has converted your article (that you formatted in readable Markdown code) into HTML. This is a start but this page is incomplete. There's no <head> or navigation or anything, and we're not using information in our YAML frontmatter. What we need is a template to display this page. Let's make one now.
+Metalsmith has converted your article from Markdown into HTML. This is a good start but our page is incomplete. There's no <head> or navigation or any structure, and we're not using information in our YAML frontmatter. What we need is a template to display this page. Let's make one now.
 
 ## Templates
 
@@ -285,7 +285,7 @@ We'll also install Handlebars while we're at it:
 $ npm install handlebars --save
 ```
 
-We know that these dependencies will automatically be added to our `package.json` file. Now let's add them to our workflow. Open `build.js` and first require the two new packages:
+We know that these dependencies will automatically be added to our `package.json` file. Now let's add them to our workflow. Open `build.js` and first require our two new packages:
 
 ```javascript
 var metalsmith        = require('metalsmith');
@@ -311,7 +311,7 @@ And then add them to our workflow:
 // ...
 ```
 
-What this does is tell Metalsmith to use Handlebars templates, look for them in the `layouts` directory and use a template called `article.html` by default. We also define a pattern for layout files; this is case, they're files with the *.html* extension.
+This snippt tells Metalsmith to use Handlebars templates, look for them in the `layouts` directory and use a template called `article.html` by default. We also define a pattern for layout files; in this case, they're any files with the *.html* extension.
 
 Let's create our layouts directory and write our default template now:
 
@@ -344,9 +344,9 @@ Inside this folder, create a file called `article.html` with these contents:
 </html>
 ```
 
-It's a pretty standard HTML page, except for the Handlebars tags in `{{ }}`. Anything in those tags will be replaced by content from your templates. For example, we want the name of our website in our page's `<title>`, along with the title of the article.
+It's a pretty standard HTML page, except for the Handlebars tags in `{{ }}`. These are placeholders that will be replaced by actual content in the static output. For example, we want the name of our website in our page's `<title>`, along with the title of the article.
 
-Remember we already defined the site name in `build.js` as a global metadata, like so:
+Remember we already defined the site name in `build.js` as global metadata, like so:
 
 ```javascript
 // ...
@@ -359,11 +359,11 @@ metalsmith(__dirname)
 // ...
 ```
 
-In the template, we can access this information via `{{ site.name }}`. The other tags &mdash; `title`, `blurb` and `date` &mdash; come from our article's frontmatter.
+In the template, we can access this information via the `{{ site.name }}` variable. The other tags &mdash; `title`, `blurb` and `date` &mdash; come from our article's frontmatter.
 
 The article itself can be accessed quite through the `{{ content }}` template tag.
 
-To see this in action, `npm start` your website and open `public/hello-world.html`. You should see this:
+To see this in action, `npm start` your website and open `public/hello-universe.html`. You should see this:
 
 ```
 <!DOCTYPE html>
@@ -383,11 +383,11 @@ To see this in action, `npm start` your website and open `public/hello-world.htm
         An introduction to our blog Electroniq.
       </div>
 
-      <p><em>Electroniq</em> is a new blog about pixels and people.</p>
+      <p><em>Electroniq</em> is a new blog about space, distant galaxies and black holes.</p>
 
-      <p>We'll talk about <a href="https://en.wikipedia.org/wiki/Pixel_art">pixel art</a>, artists and the beauty of 8-bit color.</p>
+      <p>We'll talk about <a href="https://en.wikipedia.org/wiki/Holographic_principle">the holographic principle</a>, dark matter and the beauty of space in infrared light.</p>
 
-      <p>This blog is run by <strong>Pixie</strong> and <strong>Elias</strong>.</p>
+      <p>This blog is run by <strong>Tara</strong> and <strong>Elias</strong>.</p>
     </article>
   </body>
 </html>
@@ -409,7 +409,7 @@ What we don't have is an index page that lists all the articles we publish. Let'
     <h1>{{ site.name }}</h1>
 
     <ul class="recent">
-    {{#each publications }}
+    {{#each articles }}
       <li>
         <div class="title"><a href="{{ path }}">{{ title }}</a></div>
         <div class="date">{{ date }}</div>
@@ -423,19 +423,17 @@ What we don't have is an index page that lists all the articles we publish. Let'
 
 In the `<head>` section, we've removed the bit with `{{ title }}`, which only exists for articles and left just the `{{ site.name }}` bit and we've switched out the `{{ blurb }}` for `{{ site.description }}`.
 	
-The bit in between the `<body>` tags introduces new Handsbar code:
+The bit in between the `<body>` tags introduces new Handlebars code:
 	
 ```
-{{#each publications }}
+{{#each articles }}
 ...
 {{/each}}
 ```
 
-This is a loop. It looks into the `publications` collection we created earlier (remember, this collection contains any files ending with *.md* extension under our `/src` folder; essentially, everything) and loops through every item. 
+This is a loop of all articles in our source folder. So this page is a list of all articles we write, with a title and a date for each.
 
-So for every article we write, we're going to display the title and the date.
-
-It's a good start but we're repeating a lot of code. This is not ideal because if we ever want to change something in the header, for example, we'd need to change it on every template that contains it. To avoid this, we can split reusable code into smaller sub-templates, or *partials*, that we can call from our main templates.
+It's a good start but we're repeating code in our two template files. This is not ideal because if we ever want to change something in the header, we'd need to change it on every template that contains it. To avoid this, we can split reusable code into smaller sub-templates, or *partials*, that we can call from our main templates.
 
 Let's create two partials, one for the header and one for the footer. Metalsmith doesn't impose any rules on where you put these files and what you call them; we're free to structure it any way we want. We'll keep things logical and have them live in a folder called `partials` in our `layouts` folder.
 
@@ -466,13 +464,12 @@ We're going to call the same header partial from our index page as well as our a
 
 The conditional *if* tag in handlebars looks like this:
 
-```handlebars
+``` handlebars
 {{#if title }}
   {{ title }}
 {{/if}}
 ```
-
-All this says is that *if the variable title is defined, display it*. But we know that `title` variable only exists for article pages (because we're not going to include a `title` key in the front matter for our index page). So with our code, we're essentially adding the title of an article followed by a dash to the `<title>` tag of an article page, and this in addition to the site name which is always displayed in all cases.
+All this says is that *if the variable title exists, display it*. But we know that `title` variable only exists for article pages (in the YAML frontmatter), not for index pages. So now our very smart header partial always displays the site name in the <title> tag, but also prepends the article title and a dash if called from an article page. Neat.
 
 Same thing for the meta description, except this is an *if... else* conditional block:
 
@@ -484,16 +481,18 @@ Same thing for the meta description, except this is an *if... else* conditional 
 {{/if}}"
 ```
 
-As you've by know figured, this uses the `blurb` key if one exists in the frontmatter. Else, it'll just use the site description we defined in our `build.js` file. This again means that the meta description will be the `blurb` for an article page and the `site.description` and for the index page, which makes sense.
+As you've by know figured, this uses the `blurb` variable if one exists in the frontmatter. Else, it'll just use the site description we defined in our `build.js` file. This again means that the meta description will be the `blurb` for an article page and the `site.description` and for the index page, which makes sense.
 
-Now create a file called 'footer.html' that contains:
+Now create a file called 'footer.html' that contains simply:
 
 ```handlebars
   </body>  
 </html>
 ```
 
-Nothing too surprising here. But now we have to let Metalsmith know that we've created these partials so we can invoke them from inside our templaces. To do this, open `build.js` and modify the parameters for our *layouts* plugin so it looks like this:
+Nothing too surprising here. 
+
+Now we have to let Metalsmith know that we've created these partials so we can invoke them from inside our templaces. To do this, open `build.js` and modify the parameters for our *layouts* plugin so they look like this:
 
 ```javascript
 .use(layouts({
@@ -508,7 +507,7 @@ Nothing too surprising here. But now we have to let Metalsmith know that we've c
     }))
 ```
 
-Now that our partials are defined, it's time to use them. Open both `article.html` and `index.html` and replace this header that's there:
+Now that our partials are defined, it's time to use them. Open both `article.html` and `index.html` and replace the header that's there:
 
 ```html
 <!DOCTYPE html>
@@ -521,7 +520,7 @@ Now that our partials are defined, it's time to use them. Open both `article.htm
   <body>
 ```
 
-with just this one line, which is Handsbars syntax for invoking partials:
+with just this one line, which is Handlebars syntax for calling partials:
 
 ```
 {{> header }}
@@ -560,17 +559,17 @@ Now try building your blog again and moving between the two pages.
 
 ## Routes and Pretty Permalinks
 
-Let's say we're going to have two types of articles on our blog: essays and reviews (kinda like on this website). What woud be cool would be to have URLs that looked like these:
+Right now our index page.
 
 - Home page: `/`
 - Essays page: `/essays`
-- Hello world (essay) page: `/essays/hello-world/`
+- Hello world (essay) page: `/essays/hello-universe/`
 - Reviews page: `/reviews`
 - Interstellar (review) page: `/reviews/interstellar/`
 
 Notice that these are root-relative links, `/` being the root. The root could really be a number of things: a domain like `http://electroniq.org`; a subdomain like `http://electroniq.example.org`; heck, even a local address like `http://localhost:8081/` (we'll see this again in the next section).
 
-To enable this kind of routing and categorization, we'll two plugins: `metalsmith-permlinks` and `metalsmith-collections`. 
+To enable this kind of routing and categorization, we'll two plugins: `metalsmith-permalinks` and `metalsmith-collections`. 
 
 The first will allow us to write custom URLS: with a *date*, maybe, or an *id* or an *author* name. As long as this information exists in the front-matter, you can use it in your URL. In our case, we're only using the `title`.
 
