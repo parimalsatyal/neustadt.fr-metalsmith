@@ -45,7 +45,7 @@ header .back-to-home {
 }
 
 h1 {
-  font-family: 'Karla', 'Alegreya', serif;
+  font-family: 'Karla', 'Cormorant', serif;
 	letter-spacing: -0.1rem;
   font-size: 3.35rem;
   line-height: 3.5rem;
@@ -63,13 +63,13 @@ div.meta p {
 }
 
 h2 {
-  font-family: 'Karla', 'Alegreya', serif;
+  font-family: 'Karla', 'Cormorant', serif;
   font-size: 20pt;
-  margin-top: 2em;
+  margin-top: 2em; 
 }
 
 h3 {
-  font-family: 'Karla', 'Alegreya', serif;
+  font-family: 'Karla', 'Cormorant', serif;
   font-size: 18pt;
   margin-top: 1.5em;
 }
@@ -196,7 +196,7 @@ ul.recent li span.date {
 
 ul.recent li span.title {
 	display: block;
-  font-family: 'Karla', 'Alegreya', serif;
+  font-family: 'Karla', 'Cormorant', serif;
 	font-size: 16.5pt;
 	line-height: 1.7em;
 }
@@ -267,7 +267,7 @@ figure.full-width-image {
 
   figure figcaption {
     font-size: 12pt;
-    font-family: 'Garamond', 'Alegreya', serif;
+    font-family: 'Cormorant', serif;
     color: lightslategrey;
 		font-style: italic;
   }
@@ -288,7 +288,7 @@ figure.full-width-image {
   .article-image-left {
     display: inline-block;
     float: left;
-    margin: 1em 1.6em 1.6em -5em;
+    margin: 0.4em 1.6em 1.4em -5em;
   }
 
   figure.full-length-3c-image, figure.full-length-2c-image {
@@ -315,7 +315,7 @@ figure.full-width-image {
 
   figure figcaption {
     font-size: 13pt;
-    font-family: 'Garamond', 'Alegreya', serif;
+    font-family: 'Cormorant', serif;
     color: lightslategrey;
   }
 
@@ -366,7 +366,7 @@ article ul > li:before {
 }
 
 article blockquote {
-  font-family: 'Garamond', 'Alegreya', serif;
+  font-family: 'Cormorant', serif;
   color: red;
 	font-weight: 400;
   font-size: 17pt;
@@ -374,7 +374,7 @@ article blockquote {
 }
 
 article blockquote strong, article blockquote strong {
-	font-family: 'Garamond', 'Alegreya', serif;
+	font-family: 'Cormorant', serif;
 	font-weight: 700,
 }
 
@@ -383,7 +383,7 @@ article blockquote em {
 }
 
 article .harvard-ref {
-  font-family: 'Garamond', 'Alegreya', serif;
+  font-family: 'Cormorant', serif;
   color: lightslategrey;
 }
 
