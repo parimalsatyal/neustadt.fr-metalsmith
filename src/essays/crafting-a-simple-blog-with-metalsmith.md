@@ -468,10 +468,13 @@ The conditional *if* tag in handlebars looks like this:
 {{#if title }}
   {{ title }}
 {{/if}}
-```
-All this says is that *if the variable title exists, display it*. But we know that `title` variable only exists for article pages (in the YAML frontmatter), not for index pages. So now our very smart header partial always displays the site name in the <title> tag, but also prepends the article title and a dash if called from an article page. Neat.
 
-Same thing for the meta description, except this is an *if... else* conditional block:
+```
+
+All this says is that *if the variable title exists, display it*. But we know that *title* variable only exists for article pages (in the YAML frontmatter), not for index pages. So now our very smart header partial always displays the site name in the title tag. But now it also prepends the article title with a dash if it's called from the article page.
+
+Same thing for the metal description, except this is an *if... else* conditional block:
+
 
 ```handlebars
 {{#if blurb}}
@@ -557,15 +560,15 @@ This just adds a *← Index* link at the top of the page (a little like on this 
 
 Now try building your blog again and moving between the two pages.
 
+## Adding pages
+
+A blog with just an index and a *Hello Universe* is already not bad, but it isn't much. It'd be nice to have an about and at least one other article. 
+
+Let's do an about page now. 
+
 ## Routes and Pretty Permalinks
 
-Right now our index page.
-
-- Home page: `/`
-- Essays page: `/essays`
-- Hello world (essay) page: `/essays/hello-universe/`
-- Reviews page: `/reviews`
-- Interstellar (review) page: `/reviews/interstellar/`
+Right now, to access our index page is only accessible at `/index.html` and any blog post at `/title-of-the-article.html`. Wouldn't it be nice to not have to have the *.html* bit? 
 
 Notice that these are root-relative links, `/` being the root. The root could really be a number of things: a domain like `http://electroniq.org`; a subdomain like `http://electroniq.example.org`; heck, even a local address like `http://localhost:8081/` (we'll see this again in the next section).
 
@@ -608,90 +611,6 @@ And then, finally, add them to our workflow. I'd add them right before `layouts`
 
 Here permalinks takes only one parameter *relative*, which is set to false. If this were set to true, Metalsmith would make a copy of any resource on the source folder in all sub-folders.
 
-The collections plugin doesn't do much if we don't define our collections. Let's do that now. Expand the `collections` bit of our workflow with this:
-
-```javascript
-.use(collections({
-    publications: {
-    pattern: '*/**/*.md',
-    sortBy: 'date',
-    reverse: true,
-    metadata: {
-      name: 'Everything'
-    }
-  },
-  essays: {
-    pattern: 'essays/**/*.md',
-    sortBy: 'date',
-    reverse: true,
-    metadata: {
-      name: 'Essays'
-    }
-  },
-  reviews: {
-    pattern: 'reviews/**/*.md',
-    sortBy: 'date',
-    reverse: true,
-    metadata: {
-      name: 'Reviews'
-    }
-  }
-}))
-.use(permalinks({
-  relative: false
-}))
-```
-
-Here we've defined three collections: *publications* (which is everything), *essays* and *reviews*. 
-
-These collections don't really correspond to different typologies of conent; they're more like views. Or categoties. For each we declare a source pattern -- which files should be considered part of this collection? -- and a a sort order (reverse chronological). We then give it some meta data that we'll be able to access in our templates. 
-
-We can now have different listing pages for our essays and reviews pages. In your `/layouts` folder, create a copy of index.html and name it `essays.html` and make one little change so it looks like this: 
-
-```
-{{> header }}
-  <header>
-    <a class="back-to-index" href="index.html">&larr; Index</a>
-  </header>
-  <article>
-    <h1>{{ title }}</h1>
-
-    <ul class="recent">
-    {{#each essays }}
-      <li>
-        <div class="title"><a href="{{ path }}">{{ title }}</a></div>
-        <div class="date">{{ date }}</div>
-      </li>
-    {{/each}}
-    </ul>
-{{> footer }}
-```
-Notice the change? 
-
-Instead of looping through all publications, our each loop now only loops through essays :
-
-```
-{{#each essays }}
-```
-
-Now go ahead and create a copy of this file and call it 'reviews.html'. Again, change the *each* statement so we're only looping through reviews: 
-
-
-```
-{{#each reviews }}
-```
-
-Great, we now have a general index page and two other index pages for our reviews and essays. But we have no way of accessing these pages from our home; let add it now. Open `/layouts/partials/footer.html` :
-
-
-You'll notice we've defined two folders that don't exist yet: `essays` and `reviews`; create them now.
-
-```
-$ cd src
-$ mkdir essays
-$ mkdir reviews
-```
-
 This is what your root directory should look like now:
 
 ```
@@ -699,10 +618,9 @@ This is what your root directory should look like now:
 ├── node_modules/
 │   └── ...
 ├── src/
-│   └── articles/
-│   └── reviews/
-├── public/
-│   └── index.md
+│   └── hello-universe.md
+│   └── jamming-to-gravitational-waves.md
+│   └── about.md
 ├── layout/
 │   └── index.html
 │   └── articles.html

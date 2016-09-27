@@ -1,3 +1,7 @@
+html {
+	font-size: 100%;
+}
+
 body {
   font-family: 'Karla', sans-serif;
   font-weight: 400;
@@ -16,7 +20,7 @@ body {
 
 header {
   display: block;
-  font-family: 'Karla'; font-size: 16pt; font-weight: bold;
+  font-family: 'Karla'; font-size: 1.4rem; font-weight: 700; letter-spacing: -0.035rem;
   padding: 10px 0;
   color: grey;
 }
@@ -42,16 +46,17 @@ header .back-to-home {
 
 h1 {
   font-family: 'Karla', 'Alegreya', serif;
-	letter-spacing: -1pt;
-  font-size: 40pt;
-  line-height: 1em;
+	letter-spacing: -0.1rem;
+  font-size: 3.35rem;
+  line-height: 3.5rem;
   width: 87%;
 	margin-bottom: 0.5em;
+	font-kerning: auto;
 }
 
 div.meta p {
   display: block;
-  font-size: 15pt; line-height: 1.5em;
+  font-size: 1.23rem; line-height: 1.5em;
   font-weight: bold;
   margin-top: 30px; margin-bottom: 30px;
   font-family: 'Karla';
@@ -70,17 +75,18 @@ h3 {
 }
 
 article {
-  font-size: 14pt;
-  line-height: 1.5em;
-  letter-spacing: -0.04em;
+  font-size: 1.15rem;
+  line-height: 1.85rem;
+  letter-spacing: -0.035rem;
 }
 
 article p {
-  text-align: justify;
+	text-align: justify; 
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
 	margin-bottom: 1.5em;
+	font-kerning: auto;
 }
 
 article em {
@@ -109,6 +115,15 @@ article a:visited {
 article a:hover {
   color: red;
   border-bottom-color: gray;
+}
+
+pre {
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+code {
+	font-size: 12pt;
 }
 
 .update {
