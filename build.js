@@ -29,8 +29,8 @@ metalsmith(__dirname)
       name: 'Neustadt.fr',
       baseurl: 'https://www.neustadt.fr',
       author: 'Parimal Satyal',
-      keywords: 'Neustadt, parimalsatyal, Parimal Satyal',
-      description: 'Neustadt.fr is Paris-based designer Parimal Satyal\'s collection of essays, reviews and music.'
+      keywords: 'Parimal Satyal, Neustadt, parimalsatyal',
+			description: 'Personal website of Parimal Satyal, a designer/geek who enjoys cosmology, dark beer, the open internet, metal music and foreign languages. Essays, music and reviews.'
     }
   })
   .source('./src')

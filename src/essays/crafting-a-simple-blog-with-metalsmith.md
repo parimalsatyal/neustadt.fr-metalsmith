@@ -3,7 +3,7 @@ title: A Beginner's Guide to Crafting a Blog with Metalsmith
 date: 2016-09-23
 blurb: Neustadt.fr is built with Metalsmith, a node.js-based static site generator. In this tutorial I explain how you can build your own Metalsmith blog from scratch.
 type: tutorial
-draft: true
+draft: false
 highlighting: true
 ---
 
@@ -35,7 +35,7 @@ I assume only that you are familiar with basic HTML/CSS and are at least a littl
 
 We'll be writing our posts in [Markdown](https://help.github.com/articles/markdown-basics/), a simple markup language that lets you format your posts easily without having to throw in HTML tags everywhere. It then converts it to HTML for you. If you don't know it, you can learn it in 5 minutes.
 
-You don't need to know [node.js](https://nodejs.org).
+You don't need to know [node.js](https://nodejs.org). I didn't when I started.
 
 To complete this tutorial, you will need:
 
@@ -568,40 +568,41 @@ Let's do an about page now.
 
 ## Routes and Pretty Permalinks
 
-Right now, to access our index page is only accessible at `/index.html` and any blog post at `/title-of-the-article.html`. Wouldn't it be nice to not have to have the *.html* bit? 
+Right now, our index page lives at `/index.html`, the about page at '/about.html' and any blog post at `/title-of-the-article.html`. Wouldn't it be nice to not have to have the *.html* bit? 
 
-Notice that these are root-relative links, `/` being the root. The root could really be a number of things: a domain like `http://electroniq.org`; a subdomain like `http://electroniq.example.org`; heck, even a local address like `http://localhost:8081/` (we'll see this again in the next section).
+Let's say this is the URL structure we want:
 
-To enable this kind of routing and categorization, we'll two plugins: `metalsmith-permalinks` and `metalsmith-collections`. 
+- Home page: `/`
+- About page: `/about`
+- Article page: `/title-of-the-article`
 
-The first will allow us to write custom URLS: with a *date*, maybe, or an *id* or an *author* name. As long as this information exists in the front-matter, you can use it in your URL. In our case, we're only using the `title`.
+Notice that these are root-relative links, `/` being the root. The root could really be a number of other things: a top-level domain like `https://electroniq.org/`; a subdomain like `https://electroniq.example.org/`; heck, even a local address like `localhost:8081/` (we'll see this again in the next section).
 
-The second plugin will be useful to create categories (like 'reviews')
+To enable this kind of routing, we'll need the `metalsmith-permalinks` plugin.
 
-Let's install these two plugins:
+This will allow us to write custom URLs: with a *date*, maybe, or an *id* or an *author* name. As long as this information exists in the front-matter, you can use it in your URL. In our case, we'll only be using the `title`. This will give use the URL structure we want:
+
+Let's install this plugin:
 
 ```
 $ npm install metalsmith-permlinks --save
-$ npm install metalsmith-collections --save
 ```
 
-Then open `build.js` and require them:
+Then open `build.js` and require it:
 
 ```
 var permalinks        = require('metalsmith-permalinks'),
-var collections       = require('metalsmith-collections');
 ```
 
-And then, finally, add them to our workflow. I'd add them right before `layouts`:
+And finally, add it to our workflow. I'd add them right before `layouts`:
 
 ```javascript
 
 // ...
     .use(markdown())
-		.use(collections()
-		)
 		.use(permalinks({
 		  relative: false
+			pattern: ':title',
 		}))
     .use(layouts({
 // ...
@@ -609,7 +610,9 @@ And then, finally, add them to our workflow. I'd add them right before `layouts`
 
 ```
 
-Here permalinks takes only one parameter *relative*, which is set to false. If this were set to true, Metalsmith would make a copy of any resource on the source folder in all sub-folders.
+And that's it. 
+
+Permalinks takes only one parameter *relative*, which is set to false. If this were set to true, Metalsmith would make a copy of any resource on the source folder in all sub-folders.
 
 This is what your root directory should look like now:
 
