@@ -2,6 +2,7 @@
 title: A Beginner's Guide to Crafting a Blog with Metalsmith
 date: 2016-09-30
 blurb: Neustadt.fr is built with Metalsmith, a node.js-based static site generator. In this tutorial, I explain how you can build your own Metalsmith blog from scratch.
+keywords: metalsmith, tutorial, beginner, guide, static site, blog, node, nodejs
 type: tutorial
 draft: false
 highlighting: true
