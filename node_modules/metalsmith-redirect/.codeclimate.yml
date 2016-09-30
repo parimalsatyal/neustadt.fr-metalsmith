@@ -1,0 +1,25 @@
+engines:
+  duplication:
+    enabled: true
+    config:
+      languages:
+        - javascript
+  eslint:
+    enabled: false
+  fixme:
+    enabled: true
+  nodesecurity:
+    enabled: true
+
+exclude_paths:
+  - "example*/**/*"
+  - "node_modules/**/*"
+  - "test/**/*"
+  - "*.json"
+  - "*.md"
+
+ratings:
+  paths:
+    - "**.es6"
+    - "**.js"
+    - "**.jsx"

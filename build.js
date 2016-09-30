@@ -8,6 +8,7 @@ var metalsmith        = require('metalsmith'),
     metallic          = require('metalsmith-metallic'),
     serve             = require('metalsmith-serve'),
     watch             = require('metalsmith-watch');
+		redirect					= require('metalsmith-redirect');
 
 handlebars.registerHelper('moment', require('helper-moment'));
 
@@ -87,6 +88,9 @@ metalsmith(__dirname)
         "layout/**/*": "**/*",
       }
     }))
+		.use(redirect({
+		  '/about': '/parimal-satyal',
+		}))
     .build(function (err) {
       if (err) {
         console.log(err);
