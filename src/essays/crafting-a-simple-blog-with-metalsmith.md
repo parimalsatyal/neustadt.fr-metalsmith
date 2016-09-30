@@ -702,13 +702,13 @@ This is because our about page actually lives at `/about.html` and not `/about`,
 
 ## Routes and Pretty Permalinks
 
-Right now, our index page lives at `/index.html`, the about page at '/about.html' and any blog post at `articles/title-of-the-article.html`. Ideally, we wouldn't need the *.html* bit.
+Right now, our index page lives at `/index.html`, the about page at '/about.html' and any blog post at `/articles/title-of-the-article.html`. Ideally, we wouldn't need the *.html* bit.
 
 This is the URL structure we want:
 
 - Home page: `/`
 - About page: `/about`
-- Article page: `/articles/title-of-the-article`
+- Article page: `/title-of-the-article`
 
 Notice that these are root-relative links, `/` being the root. The root could really be a number of other things: a top-level domain like `https://electroniq.org/`; a subdomain like `https://electroniq.example.org/`; heck, even a local address like `localhost:8081/` (we'll see this again in the next section).
 
@@ -744,11 +744,11 @@ And finally, add it to our workflow, right before `layouts`:
 
 ```
 
-And that's it. By default, it uses the structure of our source folder.
+And that's it. The pattern of our URLs is straightforward, we'll simply use the title of the post as provided in the frontmatter. So a title like "Spooky Action" will become `/spooky-action`. 
 
-We've fed permalinks only one parameter *relative*, which is set to false. If this were set to true, Metalsmith would make a copy of any resource on the source folder in all sub-folders.
+We've also set *relative* to false. If this were set to true, Metalsmith would make a copy of any resource on the source folder in all sub-folders. But in our case, this isn't necessary. 
 
-Build your Metalsmith blog now to see it in action:
+Build your Metalsmith blog now to see your new URLs in action:
 
 ```
 $ npm start
