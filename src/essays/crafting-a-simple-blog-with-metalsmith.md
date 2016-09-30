@@ -1,7 +1,7 @@
 ---
 title: A Beginner's Guide to Crafting a Blog with Metalsmith
-date: 2016-09-23
-blurb: Neustadt.fr is built with Metalsmith, a node.js-based static site generator. In this tutorial I explain how you can build your own Metalsmith blog from scratch.
+date: 2016-09-30
+blurb: Neustadt.fr is built with Metalsmith, a node.js-based static site generator. In this tutorial, I explain how you can build your own Metalsmith blog from scratch.
 type: tutorial
 draft: false
 highlighting: true
@@ -68,7 +68,7 @@ $ mkdir src
 
 We'll use this folder to store all our source files: our posts in Markdown (`.md`) and our site assets (`.css`,  `.js` and image files). But first, we'll need a *package file* for all our dependencies (every plugin in Methalsmith is a dependency). We'll write this in a format called JSON.
 
-On your root folder (`electroniq`), create a file called `package.json` with this text:
+On your root folder (`electroniq`, which I'll refer to simply with the conventional forward slash `/`) , create a file called `package.json` with this text:
 
 ```
 {
@@ -98,7 +98,7 @@ This installs metalsmith and creates a `node_modules` folder with all of metalsm
   "description": "Electroniq is astrophysicist (and retro music enthusiast) Tara Himmels' blog.",
   "author": "Tara Himmels",
   "dependencies": {
-    "metalsmith": "^2.0.1"
+    "metalsmith": "^2.2.0"
   }  
 }
 ```
@@ -109,10 +109,10 @@ Now to start forging.
 
 ## A basic workflow
 
-First things first, we need a build file to define our metalsmith workflow. Create a file called `build.js` and type/paste this in:
+First things first, we need a build file to define our metalsmith workflow -- a succession of plugins. Create a file called `build.js` and type/paste this in:
 
 ```javascript
-var metalsmith        = require('metalsmith');
+var metalsmith = require('metalsmith');
 
 metalsmith(__dirname)
   .metadata({
@@ -145,11 +145,11 @@ We'll need to do this for every plugin we use. Most dependencies on your `packag
 
 Next, we call the main `metalsmith()` function itself and define metadata that'll be useful later. These values can be called from any of our templates. For now, we'll just include a name that we can later use as in `<title>` tag of our blog.
 
-Then, we define our source folder (`./src` that we created earlier), a destination folder where Metalsmith will output our static site (`./public`), and call the `build()` function to build our site.
+Then, we define our source folder (`./src`), a destination folder where Metalsmith will output our static site (`./public`), and call the `build()` function to run our workflow. 
 
 We've also included basic error catching. Should Metalsmith encounter an exception, it'll be appended to the Javascript console, which will be useful for debugging. Otherwise, it'll post a message to the Termnial indicating that the build was successful.
 
-Now, we'll create a bridge between `package.json` to our newly-forged `build.js` file. Open `package.json` and edit it to look like this:
+Now, we'll create a bridge between `package.json` to our newly-forged `build.js` file. Open `package.json` and add the *main* and *scripts* bit at the end, like so: 
 
 ``` json
 {
@@ -159,13 +159,13 @@ Now, we'll create a bridge between `package.json` to our newly-forged `build.js`
   "description": "Electroniq is astrophysicist (and retro music enthusiast) Tara Himmels' blog.",
   "author": "Tara Himmels",
   "dependencies": {
-    "metalsmith": "^2.0.1"
+    "metalsmith": "^2.2.0"
   },
 	"main": "build.js",
-	"scripts": {
-		"prestart": "npm install",
-		"start": "node ."
-	}
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node ."
+	  }
 }
 ```
 
@@ -190,13 +190,29 @@ Give it a go:
 $ npm start
 ```
 
-Now let's make it actually do something.
+It's nice to get that little "Electroniq built!" message on the console, isn't it? Now let's make Metalsmith actually do something.
 
 ## Markdown and Frontmatter
 
 Using Markdown to write your posts makes sense: you can format text, the text remains readable and the whole thing converts easily to standard HTML. In fact, [this tutorial is written in Markdown](https://github.com/parimalsatyal/neustadt.fr-metalsmith/blob/master/src/essays/crafting-a-simple-blog-with-metalsmith.md).
 
-Open `build.js` and add Markdown between `.source()` and `.destination()`, like so:
+To use Markdown, you need to install the plugin first :
+
+```
+$ npm install metalsmith-markdown --save
+```
+
+Open `build.js`. First, before using the plugin, we must *require* it at the start of our file:
+
+```javascript
+var metalsmith = require('metalsmith');
+var markdown = require('metalsmith-markdown');
+// ...
+
+```
+
+Now add Markdown between `.source()` and `.destination()`, like so:
+
 
 ```javascript
 // ...
@@ -207,7 +223,9 @@ Open `build.js` and add Markdown between `.source()` and `.destination()`, like 
 // ...
 ```
 
-And that's it. This is how you add plugins to your workflow. Of course they usually take parameters, but we'll see that later. It's important to remember that the *order* of plugins is important; think of it as a pipeline. Each action passes on its results to the next.
+And that's it. This is how you add plugins to your workflow. 
+
+Of course they usually take parameters, but we'll see that later. It's important to remember that the *order* of plugins is important; think of it as a pipeline. Each action passes on its results to the next.
 
 Now let's write a sample article in Markdown. We'll title it "Hello Universe".
 
@@ -220,7 +238,7 @@ date: 2016-10-12
 blurb: An introduction to our blog Electroniq
 ---
 
-# Welcome to Electroniq
+## Welcome to Electroniq
 
 *Electroniq* is a new blog about space, distant galaxies and black holes.
 
@@ -256,16 +274,15 @@ This will create a new folder called `public` with a file `hello-universe.html`.
 Open the generator `hello-universe.html` file on your editor. It will simply contain:
 
 ```
-<h1>Welcome to Electroniq</h1>
-
+<h1 id="welcome-to-electroniq">Welcome to Electroniq</h1>
 <p><em>Electroniq</em> is a new blog about space, distant galaxies and black holes.</p>
-
-<p>We'll talk about <a href="https://en.wikipedia.org/wiki/Holographic_principle">the holographic principle</a>, dark matter and the beauty of space in infrared light.</p>
-
+<p>We&#39;ll talk about <a href="https://en.wikipedia.org/wiki/Holographic_principle">the holographic principle</a>, dark matter and the beauty of space in infrared light.</p>
 <p>This blog is run by <strong>Tara</strong> and <strong>Elias</strong>.</p>
 ```
 
-Metalsmith has converted your article from Markdown into HTML. This is a good start but our page is incomplete. There's no <head> or navigation or any structure, and we're not using information in our YAML frontmatter. What we need is a template to display this page. Let's make one now.
+Metalsmith has converted your article from Markdown into HTML. This is a good start but our page is incomplete. There's no <head> or navigation or any structure, and we're not using information in our YAML frontmatter. 
+	
+What we need is a template to display this page. Let's make one now.
 
 ## Templates
 
@@ -288,9 +305,10 @@ $ npm install handlebars --save
 We know that these dependencies will automatically be added to our `package.json` file. Now let's add them to our workflow. Open `build.js` and first require our two new packages:
 
 ```javascript
-var metalsmith        = require('metalsmith');
-var layouts           = require('metalsmith-layouts');
-var handlebars        = require('handlebars');
+var metalsmith = require('metalsmith');
+var markdown = require('metalsmith-markdown');
+var layouts = require('metalsmith-layouts');
+var handlebars = require('handlebars');
 // ...
 ```
 
@@ -302,16 +320,16 @@ And then add them to our workflow:
     .destination('./public')
     .use(markdown())
     .use(layouts({
-      engine: 'handlebars',
-      directory: './layout',
-      default: 'article.html',
+			engine: 'handlebars',
+			directory: './layouts',
+			default: 'article.html',
 			pattern: ["*/*/*html","*/*html","*html"]
-    }))
+		}))
     .build(function (err) {
 // ...
 ```
 
-This snippt tells Metalsmith to use Handlebars templates, look for them in the `layouts` directory and use a template called `article.html` by default. We also define a pattern for layout files; in this case, they're any files with the *.html* extension.
+This snippet tells Metalsmith to use Handlebars templates, look for them in the `layouts` directory and use a template called `article.html` by default. We also define a pattern for layout files; in this case, they're any files with the *.html* extension.
 
 Let's create our layouts directory and write our default template now:
 
@@ -333,12 +351,9 @@ Inside this folder, create a file called `article.html` with these contents:
     <article>
       <h1>{{ title }}</h1>
       <div class="meta">
-          Published: {{ date }}
+          {{#if date}}Published: {{ date }}{{/if}}
       </div>
-      <div class="blurb">
-        {{ blurb }}
-      </div>
-      {{ contents}}
+      {{{ contents }}}
     </article>
   </body>
 </html>
@@ -359,11 +374,19 @@ metalsmith(__dirname)
 // ...
 ```
 
-In the template, we can access this information via the `{{ site.name }}` variable. The other tags &mdash; `title`, `blurb` and `date` &mdash; come from our article's frontmatter.
+In the template, we can access this information via the `{{ site.name }}` variable. The other tags &mdash; `title` and and `date` &mdash; come from our article's frontmatter.
 
-The article itself can be accessed quite through the `{{ content }}` template tag.
+The article itself can be accessed quite through the `{{{ content }}}` tag. We're using three curly brackets here instead of the usual two because we don't want Handlebars to *escape* any characters (Markdown does that for us).
 
-To see this in action, `npm start` your website and open `public/hello-universe.html`. You should see this:
+There's also an `{{#if date}}` conditional tag there, but we'll explain that a bit late.
+
+To see what Metalsmith generated for us with this template, build the project:
+
+```
+$ npm start
+```
+
+And open `public/hello-universe.html` in your editor. You should see something like this:
 
 ```
 <!DOCTYPE html>
@@ -371,23 +394,19 @@ To see this in action, `npm start` your website and open `public/hello-universe.
   <head>
     <meta charset="utf-8">
     <title>Hello World - Electroniq</title>
-    <meta name="description" content="An introduction to our blog Electroniq." />
+    <meta name="description" content="An introduction to our blog Electroniq" />
   </head>
   <body>
     <article>
-      <h1>Welcome to Electroniq</h1>
+      <h1>Hello World</h1>
       <div class="meta">
-          Published: 2015-10-12
+          Published: Wed Oct 12 2016 02:00:00 GMT+0200 (CEST)
       </div>
-      <div class="blurb">
-        An introduction to our blog Electroniq.
-      </div>
+      <h2 id="welcome-to-electroniq">Welcome to Electroniq</h2>
+<p><em>Electroniq</em> is a new blog about space, distant galaxies and black holes.</p>
+<p>We&#39;ll talk about <a href="https://en.wikipedia.org/wiki/Holographic_principle">the holographic principle</a>, dark matter and the beauty of space in infrared light.</p>
+<p>This blog is run by <strong>Tara</strong> and <strong>Elias</strong>.</p>
 
-      <p><em>Electroniq</em> is a new blog about space, distant galaxies and black holes.</p>
-
-      <p>We'll talk about <a href="https://en.wikipedia.org/wiki/Holographic_principle">the holographic principle</a>, dark matter and the beauty of space in infrared light.</p>
-
-      <p>This blog is run by <strong>Tara</strong> and <strong>Elias</strong>.</p>
     </article>
   </body>
 </html>
@@ -395,7 +414,75 @@ To see this in action, `npm start` your website and open `public/hello-universe.
 
 So we now have an article page.
 
-What we don't have is an index page that lists all the articles we publish. Let's create a copy of our article page and name it `index.html`. This page can look like this:
+What we don't have is an index page that lists all the articles we publish. To do this, we'll need a plugin called `metalsmith-collections`. Go ahead and install that now.
+
+```
+$ npm install metalsmith-collections --save
+```
+
+As always with a new plugin, require it and then add it do your workflow in `build.js` like so:
+
+
+```javascript
+// ...
+var collections = require('metalsmith-collections');
+// ...
+    .source('./src')
+    .destination('./public')
+    .use(collections({
+      articles: {
+        pattern: 'articles/**/*.md',
+        sortBy: 'date',
+        reverse: true
+	    },
+	  }))
+    .use(markdown())
+    .use(layouts({
+// ...
+```
+
+A collection is like a filter based on certain criteria. Here, we'll simply want a list of all our articles in reverse-chronological order (so newest first). The `pattern: 'articles/**/*.md'` bit is important; it tells the plugin that it should consider any Markdown files in the `/src/articles` directory part of the collection.
+
+But that folder doesn't exist yet; our one article lives in `/src/`. Let's fix that now. Create our articles folder under `/src`:
+
+```sh
+$ cd src
+$ mkdir articles
+```
+ 
+Now let's move our existing article there. 
+
+```
+$ mv hello-universe.md articles
+```
+
+While we're at it, let's add a second article. You should be able to do this on our own. Simple create a new file in the `articles` directory with any filename that ends in `.md`. 
+
+So, for example, you could write about *Spooky Action at a Distance* and name the file `spooky-action.md` :
+
+```
+---
+title: "Spooky Action"
+date: 2016-10-14
+blurb: "What would Einstein make of quantum entanglement today?"
+---
+
+## Spooky Action at a Distance
+
+Some text here.
+
+```
+
+Ok, we now have two articles. This is starting to look more like a blog.
+
+But we don't have a layout for the index page quite yet. Let's create that now. Switch to our `layouts` directory create a copy of our article page and name it `index.html`. 
+
+```sh
+$ cd ../layouts
+$ cp article.html index.html
+```
+
+Change the code so it looks like this:
 
 ```handlebars
 <!DOCTYPE html>
@@ -414,7 +501,7 @@ What we don't have is an index page that lists all the articles we publish. Let'
         <div class="title"><a href="{{ path }}">{{ title }}</a></div>
         <div class="date">{{ date }}</div>
       </li>
-    {{/each_upto}}
+    {{/each}}
     </ul>
 
   </body>
@@ -431,7 +518,17 @@ The bit in between the `<body>` tags introduces new Handlebars code:
 {{/each}}
 ```
 
-This is a loop of all articles in our source folder. So this page is a list of all articles we write, with a title and a date for each.
+This is a loop of all articles (the collection we previously defined). So this page will just be a list of all articles we write, with a title and a date for each.
+
+However, before Metalsmith is able to generate our index page in our `/public` directory, we need a file called `index.md` file in the `/src` folder. Create this file now:
+
+```
+---
+layout: index.html
+---
+```
+
+## Partials
 
 It's a good start but we're repeating code in our two template files. This is not ideal because if we ever want to change something in the header, we'd need to change it on every template that contains it. To avoid this, we can split reusable code into smaller sub-templates, or *partials*, that we can call from our main templates.
 
@@ -500,17 +597,19 @@ Now we have to let Metalsmith know that we've created these partials so we can i
 ```javascript
 .use(layouts({
       engine: 'handlebars',
-      directory: './layout',
+      directory: './layouts',
       default: 'article.html',
       pattern: ["*/*/*html","*/*html","*html"]
-	    partials: {
-	            header: 'partials/header',
-	            footer: 'partials/footer'
-	        }
+      partials: {
+        header: 'partials/header',
+        footer: 'partials/footer'
+        }
     }))
 ```
 
-Now that our partials are defined, it's time to use them. Open both `article.html` and `index.html` and replace the header that's there:
+Now that our partials are defined, it's time to use them. 
+
+Edit both `article.html` and `index.html` and replace the header that's there:
 
 ```html
 <!DOCTYPE html>
@@ -549,7 +648,7 @@ We're almost ready. The only thing missing now is a way to navigate from an arti
 ...
 {{> header }}
   <header>
-    <a class="back-to-index" href="index.html">&larr; Index</a>
+    <a class="back-to-index" href="../index.html">&larr; Index</a>
   </header>
   <article>
     <h1>{{ title }}</h1>
@@ -558,23 +657,57 @@ We're almost ready. The only thing missing now is a way to navigate from an arti
 
 This just adds a *← Index* link at the top of the page (a little like on this website).
 
-Now try building your blog again and moving between the two pages.
+Now try building your blog again and moving between an article page and the index. (Moving the other way might not work yet, we'll fix this when we get to the permalinks bit.)
 
-## Adding pages
 
-A blog with just an index and a *Hello Universe* is already not bad, but it isn't much. It'd be nice to have an about and at least one other article. 
+## Adding an About Page
 
-Let's do an about page now. 
+Finally, let's add an About page. This is simple. Just create an `about.md` file in the `/src` directory. Here too, you can add any key/value pair in the YAML frontmatter. Or remove them, as we've done with *date*, which we won't need.
+
+```
+---
+title: "About"
+blurb: "Tara Himmels is an astrophysicist and retro music enthusiast. Electroniq is her blog."
+---
+
+Hello, my name is Tara Himmels.
+
+If you'd like to get in touch with me, you can contact me [via email](tarahimmels@example.com). 
+
+In the meantime, I do hope you enjoy your day on this *pale blue dot* that is our home.
+```
+
+Let's edit to the footer so there's a link to this page; people wouldn't be able to get to it otherwise!
+
+If you open `/layout/partials/footer.html` in our text editor, it should look like this :
+
+```
+</body>  
+</html>
+```
+
+Change it to this:
+
+
+```
+	<nav>---<br /><a href="/about">About this blog</a></nav> 
+</body>  
+</html>
+```
+
+You could build your blog now and view your page at `/about.html`. It'll have used our default 'article.html' template. But you notice that our in the footer doesn't actually work (yet). 
+
+This is because our about page actually lives at `/about.html` and not `/about`, which is prettier. Let's fix that now. 
 
 ## Routes and Pretty Permalinks
 
-Right now, our index page lives at `/index.html`, the about page at '/about.html' and any blog post at `/title-of-the-article.html`. Wouldn't it be nice to not have to have the *.html* bit? 
+Right now, our index page lives at `/index.html`, the about page at '/about.html' and any blog post at `articles/title-of-the-article.html`. Ideally, we wouldn't need the *.html* bit.
 
-Let's say this is the URL structure we want:
+This is the URL structure we want:
 
 - Home page: `/`
 - About page: `/about`
-- Article page: `/title-of-the-article`
+- Article page: `/articles/title-of-the-article`
 
 Notice that these are root-relative links, `/` being the root. The root could really be a number of other things: a top-level domain like `https://electroniq.org/`; a subdomain like `https://electroniq.example.org/`; heck, even a local address like `localhost:8081/` (we'll see this again in the next section).
 
@@ -585,34 +718,40 @@ This will allow us to write custom URLs: with a *date*, maybe, or an *id* or an 
 Let's install this plugin:
 
 ```
-$ npm install metalsmith-permlinks --save
+$ npm install metalsmith-permalinks --save
 ```
 
 Then open `build.js` and require it:
 
 ```
-var permalinks        = require('metalsmith-permalinks'),
+var permalinks = require('metalsmith-permalinks');
 ```
 
-And finally, add it to our workflow. I'd add them right before `layouts`:
+And finally, add it to our workflow, right before `layouts`:
 
 ```javascript
 
 // ...
     .use(markdown())
-		.use(permalinks({
-		  relative: false
-			pattern: ':title',
-		}))
+    .use(permalinks({
+      relative: false,
+      pattern: ':title',
+    }))
     .use(layouts({
 // ...
 
 
 ```
 
-And that's it. 
+And that's it. By default, it uses the structure of our source folder.
 
-Permalinks takes only one parameter *relative*, which is set to false. If this were set to true, Metalsmith would make a copy of any resource on the source folder in all sub-folders.
+We've fed permalinks only one parameter *relative*, which is set to false. If this were set to true, Metalsmith would make a copy of any resource on the source folder in all sub-folders.
+
+Build your Metalsmith blog now to see it in action:
+
+```
+$ npm start
+```
 
 This is what your root directory should look like now:
 
@@ -620,39 +759,49 @@ This is what your root directory should look like now:
 .
 ├── node_modules/
 │   └── ...
-├── src/
-│   └── hello-universe.md
-│   └── jamming-to-gravitational-waves.md
-│   └── about.md
-├── layout/
+├── layouts/
 │   └── index.html
 │   └── articles.html
 │   └── reviews.html
 │   └── partials/
 │      └── footer.html
 │      └── header.html
+├── src/
+│   └── articles/	
+│      └── hello-universe.md
+│      └── spooky action.md
+│   └── about.md
+├── public/
+│   └── about-tara-himmels/
+│      └── index.html
+│   └── hello-world/
+│      └── index.html
+│   └── spooky-action/
+│      └── index.html
 ├── build.js
 └── package.json
 ```
 
-
+As you can see, the `/public` folder now represents every page as a folder with its own `index.html` file. 
 
 ## Watching, (local) serving and drafts
 
-You'd probably want to preview your articles before you publish them. You could, of course, open the generated `index.html` in your browser and reload your page everytime you change something, or you could have live preview. To do this, Metalsmith would need to *watch* your folder and rebuild any files in which it detects changes and *serve* these pages with its own little webserver. Thankfully, Metalsmih comes with a pair of plugins that do just this: `metalsmith-watch` and `metalsmith-serve`.
+You'd probably want to preview your articles before you publish them. You could, of course, open the generated `index.html` in your browser and reload your page everytime you change something, or you could have live preview. 
+
+To do this, Metalsmith would need to *watch* your folder and rebuild any files in which it detects changes and *serve* these pages with its own little webserver. Thankfully, Metalsmih comes with a pair of plugins that do just this: `metalsmith-watch` and `metalsmith-serve`.
 
 Start by installing them:
 
 ```
 $ npm install metalsmith-watch --save
-$ npm install metalsmith-draft --save
+$ npm install metalsmith-serve --save
 ```
 
 Setting them up is super easy. Open your `build.js` file and first *require* these plugins:
 
 ```
-var serve             = require('metalsmith-serve'),
-var watch             = require'metalsmith-watch');
+var serve = require('metalsmith-serve');
+var watch = require('metalsmith-watch');
 ```
 
 Then just add them to your workflow around the end, right before the `build()` function:
@@ -677,6 +826,15 @@ The `serve` command essentially tells Metalsmith to serve the pages using a loca
 
 The `watch` commands takes paths as parameters; these are essentially folders it should watch for changes. We're going to include the source folder (obviously) and our layout folder.
 
+Build your Metalsmith blog now to test our local server:
+
+
+```
+$ npm start
+```
+
+Now go to address `http://localhost:8081` on your local browser and you should see your index page. 
+
 I should mention that while the serve/watch combo works really well when you're editing single articles, in my experience you shouldn't rely on it for changes to your template file. If you notice anomalies, just rebuild your blog.
 
 To do that, you'll need to first kill your server by hitting `Ctrl + C` (on Unix, Mac or Windows). This interrupts the current process. After that, it's the usual:
@@ -685,32 +843,36 @@ To do that, you'll need to first kill your server by hitting `Ctrl + C` (on Unix
 $ npm start
 ```
 
+Your very simple Metalsmith blog is now ready!
 
 ## Going Live (aka. Deploying)
 
-This is where things get fun. Going live is as simple as copying your `/public` folder to your remote `public_html` (or equivalent) folder. So your deployment process involves invoking `npm start` and uploading these files to your host.
+This is where things get really fun.
 
-For Neustadt.fr, I use a simple deploy shell script that looks like this:
+With a static website, going live is as simple as copying your `/public` folder to your remote `public_html` (or equivalent) folder. So your deployment process involves invoking `npm start` and uploading your public folder to your remote server. This could be any server: on [Neocities](https://neocities.org/), [GitHub Pages](https://pages.github.com/) or any old shared hosting account.
+You don't need PHP, Ruby, node, CGI, MySQl or anything fancy; just any old web server will do.
+
+For Neustadt.fr, I run an Nginx server on a [Digital Ocean](https://www.digitalocean.com/) droplet and deploy using this one-line shell script I've named `deploy.sh`:
 
 ```
 #!/bin/sh
-rsync -av -e ssh public/* parimalsatyal@xxx.xx.xxx.xxx:/var/www/neustadt.fr
+rsync -av -e ssh public/* parimalsatyal@139.59.134.246:/var/www/neustadt.fr
 
 ```
 
-I've named it `deploy.sh`. All it does is use the [rsync](https://linux.die.net/man/1/rsync) command to sync the local public folder with my public folder on my remote host, via SSH. (I've replaced my actual IP address with *xxx.xx.xxx.xxx*). 
+All it does is use the [rsync](https://linux.die.net/man/1/rsync) command to sync the local `/public` folder with the public folder on my remote s (`/var/www/neustadt.fr`), via SSH. 
 
-This way, I can update my website with just two commands: 
+This way, I can update and make as many changes as I please locally and when I'm ready, deploy with just two commands: 
 
 ```
-$ npm start
+$ npm start; 
 $ ./deploy.sh
 ```
 
 ## Final Thoughts
 
-This is one way to craft a very simple (but useful) static website using Metalsmith. If you'd like to go further, I'd recommend consulting the [Awesome Metalsmith](https://github.com/metalsmith/awesome-metalsmith) list.
+What you've just read is one of many ways to craft a simple static website using Metalsmith. If you'd like to go further, I'd recommend checking out the [Awesome Metalsmith](https://github.com/metalsmith/awesome-metalsmith) list and the [Metalsmith Slack channel](https://metalsmith-slack.herokuapp.com/) (where [woody](https://github.com/woodyrew) is very helpful). 
 
-I personally use and love these plugins :
+This website itself is also built with Metalsmith. If you'd like, you can poke around [my Metalsmith setup on GitHub](https://github.com/parimalsatyal/neustadt.fr-metalsmith).
 
-If you spot errors or would like to suggest an edit, you can simply [send a pull request on GitHub](https://github.com/parimalsatyal/neustadt.fr-metalsmith/blob/master/src/essays/crafting-a-simple-blog-with-metalsmith.md). Or get in touch via email (parimal-at-neustadt-dot-fr). Thanks go out to [Metalsmith](https://github.com/metalsmith/metalsmith) and [the community](https://metalsmith.slack.com/) for building and maintaining this beautiful static website generator and to [woody](https://github.com/woodyrew) for his tips.
+If you spot errors or would like to suggest an edit, please get in touch via email (parimal-at-neustadt-dot-fr). Or feel free to [submit a pull request to this article on GitHub](https://github.com/parimalsatyal/neustadt.fr-metalsmith/blob/master/src/essays/crafting-a-simple-blog-with-metalsmith.md) . Thanks go out to [Metalsmith](https://github.com/metalsmith/metalsmith) and the active user/developer community for building and maintaining this beautiful static website generator. 
