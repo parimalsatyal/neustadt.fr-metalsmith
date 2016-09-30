@@ -8,7 +8,7 @@ draft: false
 highlighting: true
 ---
 
-Neustadt.fr started, as many things have, with [a post on Hacker News](https://news.ycombinator.com/item?id=10001996). I stumbled on [Jendrik Poloczek's very simple, readable website](http://www.madewithtea.com/) after one of his articles made it to the front page. His website is apparently *powered by [Pelican](http://blog.getpelican.com/)*, a Python-based static site generator. I didn't really know what that meant but I was intrigued.
+Neustadt.fr started, as many things have, with [a post on Hacker News](https://news.ycombinator.com/item?id=10001996). I stumbled upon [Jendrik Poloczek's very simple, readable website](http://www.madewithtea.com/) after one of his articles made it to the front page. His website is apparently *powered by [Pelican](http://blog.getpelican.com/)*, a Python-based static site generator. I didn't really know what that meant but I was intrigued.
 
 This came at a time when I was getting increasingly frustrated with the wastefulness, bloat and disregard for privacy in modern web design. Not to mention the layers and layers of dependencies. People who want a simple website today often end up with a dynamic database-dependent WordPress blog running a theme that has widgets, infinite scroll, lightbox, a media gallery, Google Analytics and jQuery animations built-in. And all they wanted was to post a few articles and photos every month. It's absurd.
 
@@ -42,7 +42,7 @@ To complete this tutorial, you will need:
 
 - A computer running Windows, Mac OS X or almost any UNIX-based OS
 - Shell access (like Terminal on Mac)
-- A text editor (like [GitHub Atom](https://atom.io/))
+- A text editor (like [Brackets](http://brackets.io/) or [vim](http://www.vim.org/))
 - A web browser
 - A web host if you want to go live (we'll talk about this later)
 
@@ -170,7 +170,7 @@ Now, we'll create a bridge between `package.json` to our newly-forged `build.js`
 }
 ```
 
-These lines we added tells node that `build.js` is the main entry point for our project. We then define two scripts; the *start* bit essentially just tells node to run this main script and the optional *prestart* bit just updates npm before doing so. 
+These lines we added tells node that `build.js` is the main entry point for our project. We then define two scripts; the *start* bit essentially just tells node to run this main script and the optional *prestart* bit just installs or updates all your dependences first.
 
 This is what your `electroniq` directory should now look like :
 
@@ -226,7 +226,7 @@ Now add Markdown between `.source()` and `.destination()`, like so:
 
 And that's it. This is how you add plugins to your workflow. 
 
-Of course they usually take parameters, but we'll see that later. It's important to remember that the *order* of plugins is important; think of it as a pipeline. Each action passes on its results to the next.
+Of course they usually take parameters, but we'll see that later. It's important to remember that the *order* of plugins is usually important; think of it as a pipeline. Each action passes on its results to the next.
 
 Now let's write a sample article in Markdown. We'll title it "Hello Universe".
 
@@ -251,7 +251,7 @@ This blog is run by **Tara** and **Elias**.
 
 The bit at the top between the `---` is called fontmatter. Here, it's in [YAML](http://yaml.org/) but that's not too important. These are just metadata that we'll be able to access in the template. Here we've included a *title*, a *date* and a *blurb*. You could also use add these kind of key/value pairs for keywords, categories, author name, modified date… you get the idea.
 
-We don't have a template to display this content yet, but since we added Markdown to our workflow, Metalsmith will still be able to convert it to HTML. Let's build the website now to check.
+We don't have a template to display this content yet, but since we added Markdown to our workflow, Metalsmith will still be able to convert it to HTML. Build your project to check:
 
 ```
 $ npm start
@@ -272,7 +272,7 @@ This will create a new folder called `public` with a file `hello-universe.html`.
 └── package.json
 ```
 
-Open the generator `hello-universe.html` file on your editor. It will simply contain:
+Open the generated `hello-universe.html` file on your editor. It will simply contain:
 
 ```
 <h1 id="welcome-to-electroniq">Welcome to Electroniq</h1>
@@ -291,7 +291,7 @@ One of the reasons to use a static site generator is to be able to use templates
 
 Metalsmith comes with a plugin that lets you write your templates in pretty much [any templating engine](https://www.npmjs.com/package/consolidate). If you don't know what these are, don't worry. They're a way we can access data and variables from within our templates. For this project, we'll use [Handlebars](http://handlebarsjs.com/).
 
-Let's start by installing the metalsmith templating plugin, called `layouts`:
+Let's start by installing the metalsmith templating plugin, called `metalsmith-layouts`:
 
 ```
 $ npm install metalsmith-layouts --save
@@ -379,7 +379,7 @@ In the template, we can access this information via the `{{ site.name }}` variab
 
 The article itself can be accessed quite through the `{{{ content }}}` tag. We're using three curly brackets here instead of the usual two because we don't want Handlebars to *escape* any characters (Markdown does that for us).
 
-There's also an `{{#if date}}` conditional tag there, but we'll explain that a bit late.
+There's also an `{{#if date}}` conditional tag there, but we'll explain that a bit later.
 
 To see what Metalsmith generated for us with this template, build the project:
 
@@ -569,9 +569,9 @@ The conditional *if* tag in handlebars looks like this:
 
 ```
 
-All this says is that *if the variable title exists, display it*. But we know that *title* variable only exists for article pages (in the YAML frontmatter), not for index pages. So now our very smart header partial always displays the site name in the title tag. But now it also prepends the article title with a dash if it's called from the article page.
+All this says is that *if the variable title exists, display it*. But we know that *title* variable only exists for article pages (in the YAML frontmatter), not for index pages. So now our very smart header partial prepends the article title with a dash to the title if it's called from the article page.
 
-Same thing for the metal description, except this is an *if... else* conditional block:
+Same thing for meta description, except this is an *if... else* conditional block:
 
 
 ```handlebars
@@ -579,10 +579,10 @@ Same thing for the metal description, except this is an *if... else* conditional
   {{ blurb }}
 {{else}}
   {{ site.description }}
-{{/if}}"
+{{/if}}
 ```
 
-As you've by know figured, this uses the `blurb` variable if one exists in the frontmatter. Else, it'll just use the site description we defined in our `build.js` file. This again means that the meta description will be the `blurb` for an article page and the `site.description` and for the index page, which makes sense.
+As you've by know figured, this uses the `blurb` variable if one exists in the frontmatter. Else, it'll just use the site description we defined in our `build.js` file. This again means that the meta description will be the `blurb` for an article page and the `site.description` and for the index page, which makes sense. 
 
 Now create a file called 'footer.html' that contains simply:
 
@@ -872,8 +872,12 @@ $ ./deploy.sh
 
 ## Final Thoughts
 
-What you've just read is one of many ways to craft a simple static website using Metalsmith. If you'd like to go further, I'd recommend checking out the [Awesome Metalsmith](https://github.com/metalsmith/awesome-metalsmith) list and the [Metalsmith Slack channel](https://metalsmith-slack.herokuapp.com/) (where [woody](https://github.com/woodyrew) is very helpful). 
+You can browse the completed example project (exactly as we left it here) [on GitHub](https://github.com/parimalsatyal/electroniq-metalsmith).
+
+This of course is only a start. We've built an exceedingly basic website that doesn't even have CSS styling. We've only scratched the surface of what is possible. But if you've come this far, you already know how to set up a Metalsmith project, edit your templates and add new pages. 
+
+If you'd like to go further, I'd recommend checking out the [Awesome Metalsmith](https://github.com/metalsmith/awesome-metalsmith) list, which also has links to other tutorials. If you have questions, the [Metalsmith Slack channel](https://metalsmith-slack.herokuapp.com/) is a good place to them (I find that [woody](https://github.com/woodyrew) is often there is very helpful). 
 
 This website itself is also built with Metalsmith. If you'd like, you can poke around [my Metalsmith setup on GitHub](https://github.com/parimalsatyal/neustadt.fr-metalsmith).
 
-If you spot errors or would like to suggest an edit, please get in touch via email (parimal-at-neustadt-dot-fr). Or feel free to [submit a pull request to this article on GitHub](https://github.com/parimalsatyal/neustadt.fr-metalsmith/blob/master/src/essays/crafting-a-simple-blog-with-metalsmith.md) . Thanks go out to [Metalsmith](https://github.com/metalsmith/metalsmith) and the active user/developer community for building and maintaining this beautiful static website generator. 
+I hope this tutorial has been of help to you. If you spot errors or would like to suggest an edit, please get in touch via email (parimal-at-neustadt-dot-fr). Or feel free to [submit a pull request to this article on GitHub](https://github.com/parimalsatyal/neustadt.fr-metalsmith/blob/master/src/essays/crafting-a-simple-blog-with-metalsmith.md) . Thanks go out to [Metalsmith](https://github.com/metalsmith/metalsmith) and the active user/developer community for building and maintaining this beautiful static website generator. 
