@@ -6,11 +6,11 @@ layout: about.html
 img: img/parimalsatyal.jpg
 ---
 
-<img src="/img/parimalsatyal2.jpg" alt="Parimal Satyal" class="article-image-left" />
+<img src="/img/parimalsatyal3.jpg" alt="Parimal Satyal" class="article-image-left" />
 
 Neustadt.fr is where I share my thoughts on technology, culture, music, design and language.
 
-I studied interactive media and foreign languages (French, Chinese and Italian) at [Hampshire College](http://hampshire.edu) in the US and went on to do a Master's in Communication at [Sciences Po Paris](http://sciencespo.fr). I'm currently working as a user experience (UX) designer and consultant at [BETC Digital](https://betcdigital.com/). 
+I studied interactive media and foreign languages (French, Chinese and Italian) at [Hampshire College](http://hampshire.edu) in the US and went on to do a Master's in Communication at [Sciences Po Paris](http://sciencespo.fr). I work currently work as a user experience designer/consultant in Paris.
 
 When I'm not appreciating [good beer](http://www.schneider-weisse.de/index.php?lang=en&tpl=brauerei.spezialitaeten.eisbock), I'm probably playing my guitar, cooking something, reading about [how our universe might be a hologram](https://www.youtube.com/watch?v=2DIl3Hfh9tY), [learning German](/essays/teaching-myself-german/) or just watching episodes of a [BBC comedy panel show](http://www.bbc.co.uk/programmes/b007r3n8).
 
