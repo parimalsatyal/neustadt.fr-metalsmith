@@ -212,7 +212,7 @@ var markdown = require('metalsmith-markdown');
 
 ```
 
-Now add Markdown between `.source()` and `.destination()`, like so:
+Now add Markdown between `.destination()` and `.build()` like so:
 
 
 ```javascript
