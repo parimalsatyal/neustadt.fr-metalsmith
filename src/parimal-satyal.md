@@ -22,7 +22,7 @@ The *.fr* part is because I live in France. And because *.com* was not available
 
 ## Free and Open Source
 
-Neustadt.fr is built using [Metalsmith](https://github.com/metalsmith/metalsmith), an open-source node.js-based static site generator.
+Neustadt.fr is built using [Metalsmith](https://github.com/metalsmith/metalsmith), an open-source node.js-based static site generator. If you're interested, you can read my [beginner's guide to creating a static blog with Metalsmith ](https://neustadt.fr/essays/crafting-a-simple-blog-with-metalsmith/).
 
 This website is also open-source and shared with an [MIT license](https://opensource.org/licenses/MIT). You can access the Metalsmith back-end (and all the source files) on [this public GitHub repository](https://github.com/parimalsatyal/neustadt.fr-metalsmith). You are free to reuse the code in any way you please.
 
@@ -40,8 +40,10 @@ All connections to this domain are also encrypted, thanks to [Let's Encrypt](htt
 
 ## Contact
 
-Email is probably the best way to get in touch:
-<a href="mailto:parimal[snail]neustadt[.]fr">parimal[snail]neustadt[.]fr</a>  
-You will also find me on Twitter: [@parimalsatyal](https://twitter.com/parimalsatyal)
+**Email**:
+<a href="mailto:parimal[snail]neustadt[.]fr">parimal[snail]neustadt[.]fr</a> <br />
+**[PGP key](/resc/523DA56F.asc) fingerprint**: 12C2 B4AA 2589 6160 F6DC  C3F6 C801 D31A 523D A56F <br />
 
-I live in Paris. If you'd like to talk in person, I'm usually up for [coffee](http://stradacafe.fr) or [beer](http://kiez.fr/).
+**Twitter:** [@parimalsatyal](https://twitter.com/parimalsatyal)
+
+I live in Paris. If you'd like to talk in person, I'm usually up for [coffee](http://stradacafe.fr) or [beer](https://www.wunderbar-paris.com/). 
