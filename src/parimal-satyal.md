@@ -42,7 +42,7 @@ All connections to this domain are also encrypted, thanks to [Let's Encrypt](htt
 
 **Email**:
 <a href="mailto:parimal[snail]neustadt[.]fr">parimal[snail]neustadt[.]fr</a> <br />
-**[PGP key](/resc/523DA56F.asc) fingerprint**: 12C2 B4AA 2589 6160 F6DC  C3F6 C801 D31A 523D A56F <br />
+**[PGP key](/resc/523DA56F.asc) fingerprint**: 12C2 B4AA 2589 6160 F6DC C3F6 C801 D31A 523D A56F <br />
 
 **Twitter:** [@parimalsatyal](https://twitter.com/parimalsatyal)
 

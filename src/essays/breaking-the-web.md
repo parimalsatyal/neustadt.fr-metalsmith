@@ -1,5 +1,5 @@
 ---
-title: "Towards a User-Hostile Web"
+title: "Against the Increasingly User-Hostile Web"
 date: 2017-03-13
 blurb: "We're quietly replacing the web that connected and empowered with one that restricts and commoditizes people. We need to stop it."
 type: essay
@@ -17,19 +17,19 @@ I don't mean that in the way that someone might say that they love pizza. For ma
 
 It might not seem like much now, but what that noise represented was the stuff of science fiction not too long ago. Near-instantaneous communication at a planetary scale. It was a big deal - for the planet, but also for me.
 
-I wasn't a particularly good student at school. Despite well-meaning and often rather wonderful teachers, I didn't thrive much in a school system that valued test performance and fact-retention over genuine curiosity. Had it not been for the internet, I might have convinced myself that I was a poor learner; instead, I realized that learning is one of my great passions in life. 
+I wasn't a particularly good student at school. Despite well-meaning and often  wonderful teachers, I didn't thrive much in a school system that valued test performance and fact-retention over genuine curiosity. Had it not been for the web, I might have convinced myself that I was a poor learner; instead, I realized that learning is one of my great passions in life. 
 
-I can't overestimate how much the the web shaped me. I was 11 when I set up my first website and felt even back that the entire planet could be my backyard. Growing up in Nepal, this *was* magical. Almost everything I love today — design, metal music, computation, foreign languages, cosmology, philosophy, foreign languages — has roots in the many pages that found their way to my web browser. All I needed curiosity, a phone line and that strange little electrical song. 
+I can't overestimate how much the the web shaped me. I was 11 when I set up my first website. Even back I felt that the entire planet could be my backyard. Growing up in Nepal, this *was* magical. Almost everything I love today — design, metal music, computation, foreign languages, cosmology, philosophy — I discovered through the many pages that found their way to my web browser. All I needed were curiosity, a phone line and that strange little electrical song. 
 
 The web enabled that. One of humanity's greatest inventions. And now, we the architects of the modern web — web designers, UX designers, developers, creative directors, social media managers, data scientists, product managers, start-up people, strategists — are breaking it.
 
-We're very good at talking about *immersive experiences*, *personalized content*, *growth hacking*, *responsive strategy*, *user centered design*, *social media activation*, *retargeting*, *CMS* and *user experience*. But behind all this jargon lies the uncomfortable possibility that we're (unwitting?) accomplicies in the destruction of a platform that was meant to empower and bring people together. The possibility that we are instead building a machine that surveilles, subverts, manipulates and exploits people.
+We're very good at talking about *immersive experiences*, *personalized content*, *growth hacking*, *responsive strategy*, *user centered design*, *social media activation*, *retargeting*, *CMS* and *user experience*. But behind all this jargon lies the uncomfortable possibility that we're accomplicies in the destruction of a platform that was meant to empower and bring people together. The possibility that we are instead building a machine that surveilles, subverts, manipulates and exploits people.
 
 It comes down a simple but very dangerous shift: the major websites of today's web are not built for the visitor, but as means of *using* her. Our visitor has become a data point, a customer profile, a potential lead -- a proverbial fly in the spider's web. In the guise of *user centered design*, we're building an increasingly user-hostile web.
 
 If you work in the design/communication industry, consider this essay introspective soul-searching by one of your own. If you're a regular web user, consider this an appeal to demand a better web, one that respects you instead of abusing you. 
 
-This is quite a long essay, so feel free to skip to individual parts. Each section should be self-contained:
+The entire essay is rather long so feel free to skip to individual parts. The whole thing reads better as one piece, but I've tried to make each section self-contained:
 
 - The Web was Born Open: a very brief history of the web
 - The Modern Web (of Deception): the disturbing state of the web today
@@ -41,17 +41,17 @@ This is quite a long essay, so feel free to skip to individual parts. Each secti
 
 It all began in the early 90s. 
 
-The internet — the physical network that allowed computers around the world to communicate - was already in place but it remained inaccessible to most people. You had to know how to use a local client to connect to a remote FTP, usenet or an email server. This was before the days of ubiquitous graphical user interfaces, so you had to type funny commands into a terminal, the sort the thing that movies suggest that hackers supposedly use to do bad things. The server would respond with cryptic responses that you were supposed to know what to do with. 
+The internet — the physical network that allowed computers around the world to communicate - was already in place but it remained inaccessible to most people. You had to know how to use a local client to connect to a remote FTP, usenet or an email server. This was before the days of ubiquitous graphical user interfaces so you had to type funny commands into a terminal, one of those black screens with green text that that hackers supposedly used to do bad things. The server would respond with cryptic responses that you were supposed to know what to do with. 
 
-Meanwhile, Sir Tim Berners-Lee was working at the Centre National de la Recherche Nucléaire (CERN) in Geneva, the same research center that gave the biggest scientific breakthrough of 2016 -- confirmation of the higgs boson. Frustrated with how difficult it was to find, organize and update technical documentation, he proposed a solution that involved "global computer networked information system" that "presented users with a "web of interlinked documents", called *Mesh*. Pretty soon it became apparent that W3 — world wide web, as it came to be known — could do more than just link technical documents at Europe's biggest nuclear research center.
+Meanwhile, Sir Tim Berners-Lee was working at the Centre National de la Recherche Nucléaire (CERN) in Geneva, the same research center that gave the [biggest scientific breakthrough of 2016](LINK: higgsBoson). Frustrated with how difficult it was to find, organize and update technical documentation, he proposed a solution that involved "global computer networked information system" that "presented users with a "web of interlinked documents", called *Mesh*. Pretty soon it became apparent that W3 — world wide web, as it came to be known — could do more than just link technical documents.
 
 On April 30 1993, CERN made a bold decision. It decided to release W3 into the public domain. It renounced all intellectual property and essentially invited anyone at all, anywhere in the world, to play with it. Later, the director of CERN who approved the decision said that he was inspired Richard Stallman's vision of free, open software.
 
 Had CERN decided otherwise and patented the technology to then license it for money, the web would arguably not have taken off the way it did. The web as we know it was borne of a vision to create an open system that brought people and ideas together, with documents that "may reside on any computer supported by that web". 
 
-Advances in the HTTP protocol, better undersea cable infratructure, improvements in web browser technology, more accessible hosting solutions and the flourishing of web development tools (many also fre and open source), helped create a platform where anyone, anywhere on the planet could have a voice and reach anyone else. 
+Advances in the HTTP protocol, undersea cable infratructure, web browser technology, accessible hosting and web development tools led to a massive democratization and adoption of the web. 
 
-The web empowered. Anyone could put a document and any document could link to any other. It created a completely open platform where a writer in Nepal could freely share her ideas with a painter in Norway. A climate science student in Nairobi could access data from the Murdoch weather station in Antarctica. 
+Soon, anyone could put a document on the web and any document could link to any other. It created a completely open platform where a writer in Nepal could freely share her ideas with a dancer in Norway. A climate science student in Nairobi could access data from the Murdoch weather station in Antarctica. 
 
 You could start reading about logical fallacies and end up on a website about optical illusions. Read about the history of time-keeping and end up learning about Einstein's special theory of relativity. All interests were catered to. Information could truly be free: transverse borders, cultures and politics. That, at least, was the vision. 
 
@@ -61,25 +61,27 @@ My own journey from designing that first website as an 11-year old "webmaster" i
 
 The modern web is different. 
 
-Naturally from a technological standpoint — we have faster connections, better browser standards, tighter security — but also in terms of the values it vehicles. We're so far from the initial goal of linking documents to share information that we now need a plethora of tools to simply browse the web freely, without being constantly tracked and profiled. In the guise of being user-centered, the modern web has become user-hostile. 
+It's naturally different from a technological standpoint — we have faster connections, better browser standards, tighter security and far greater capability. But it is also different in the values it espouses. Today, we are so far from that initial vision of linking documents to share knowledge that it's hard to simply browse the web for information without constantly being asked to buy something, like something, follow someone, share the page on Facebook or sign up to some newsletter. All the while being tracked and profiled. 
 
-Almost every website you go to today reports your activities to third parties that you do not know. They record where you came from, what pages you visit, how long you stay on each, where you clicked and where you went next. In fact, since so many websites report to the same third parties, they can essentially record your entire web history on file as you go from link-to-link, website to website. Like an omnipotent eye embedded on Sir Berners-Lee's global system of interlinked documents, noting down everything you do and reporting to private companies who then sell this information.
+In the guise of being user-centered, the modern web has become user-hostile. 
 
-These companies build profiles, anonymous at first, with your interests and navigational behavior. These profiles then get increasingly personal: they include your email addresses, home adress, income, educational history, political affiliation, perhaps even details on your family members. Over time, they can cross-reference allt his information with your location data to figure out which restaurants you go to, where you work, where you gym is. Once you have that, they look into your behavior and psychology: what kind of ads do you tend to click on? What kind of messages resonate with you? What are the best strategies to influence your opinion?
+Almost every website you go to today reports your activities to third parties that you do not know or trust. They record where you came from, what pages you visit, how long you stay on each, where you clicked and where you went next. In fact, since so many websites report to the same third parties, they can essentially have your entire web history on file as you go from link-to-link, website to website. Like an omnipotent eye embedded on Sir Berners-Lee's global system of interlinked documents, noting down everything you do and reporting to private entities who then sell this information for profit.
+
+These companies build profiles, anonymous at first, with your interests and navigational behavior. These profiles then get increasingly personal: they include your email addresses, home adress, income, educational history, political affiliation, information on your family. Over time, they can cross-reference all this information with your location data to figure out where you work, which restaurants you go to, where you gym is. Once they have that, they can look into your behavior and psychology: what kind of ads do you tend to click on? What kind of messages resonate most with you? What are the best strategies to influence your opinion?
 
 Companies like XX and YY exist to provide their clients a way to individually identify you the minute you land on their pages; no need for you to sign up or provide any information directly. 
 
-Did they ask you if you were okay with it? Not explicitly. In their mind, by simply using their website, you consent to all of this. 
+"But they never asked me if I was okay this?!" you might protest. They didn't explicitly. In their mind, by simply using their website, you consent to all of this. Their response might be something like this: 
 
-- "Didn't you know? It's all explained in a link we place in that annoying cookie warning and in on our privacy policy and terms of use pages."
+	"Didn't you know? It's all explained in a link we place in that annoying cookie warning and in on our privacy policy and terms of use pages."
 
 But how do they get your personal information? Mostly because you volunteer most of it yourself on Facebook, Twitter and Instagram. The little share buttons you see on websites aren't just there to make it easy for you to post a link to Facebook; they also allow Facebook to be present and gather information about you from pretty much any website. 
 
-We are replacing a web that empowered and enabled a free exchange of ideas with one that tracks, subverts, restricts and commoditizes people. But how can you know that any of this is true? 
+But how can you know that any of this is true? 
 
 ## Track the Trackers: An Experiment
 
-Perhaps you think I'm being dramatic. Fair enough. In your defense, all of this does sound like some dystopian fantasy. But I'm not that great a fiction writer (yet, hopefully). Let me give illustrate my point with a little experiment. We'll pick a major website that you might visit regularly and identify third parties it shares your information with.
+Perhaps you think I'm being dramatic. In your defense, all of this does sound like some dystopian fantasy. But I'm not that great a fiction writer quite yet. Let me give illustrate my point with a little experiment. We'll pick a major website that you might visit regularly and identify third parties it shares your information with.
 
 We'll need a few things:
 
@@ -114,7 +116,7 @@ But most of the time we spend on the web today is no longer on the open internet
  
 It is the epitome of centralized. Try posting a picture of the (nude painting) or your naked breasts; you can't. It's against their terms of use. To use their platform, you have to agree to whatever conditions they set, however absurd. If you replace the open web with Facebook, you're giving up your right to publish and share on your terms. 
 
-This works because you'll agree to it. You'll say you don't have a choice, because your friends are all there. And that is Facebook's currency; their actual source of strength. Without the users, it would be nothing. But without Facebook, you'd only be inconvenienced. 
+This works because you'll agree to it. You'll say you don't have a choice, because your friends are all there. The infamous "network effect". This is Facebook's currency, it4s actual source of strength but also a basic dependency. Without its users, it would be nothing. But without Facebook, you'd only be inconvenienced. 
 
 Facebook needs you more than you need it. 
 
@@ -123,6 +125,13 @@ Facebook needs you more than you need it.
 -- It's not a dystopian fantasy -- these are actual strategies being discussed in big companies. And they don't have your best interests at heart.
 -- Even email is open, but Messenger isn't. 
 -- Facebook: page about micro targeting, Cambridge Analytics
+
+I'm not saying that what Facebook is doing is entirely unethical or illegal; it is not. It has to make money to make up for the resources it employs to keep the website running and it does so by advertising. Every time you choose to use a free service like Instagram, LinkedIn, Gmail or Snapchat, you are paying for the convenience with your eyes, your data and your attention. There's nothing inherently wrong as long you as you understand and consent to this exchange of value. 
+
+What I'm against is the centralization of services; Facebook and Google are today virtually everywhere. Through share buttons, login gateways and analytics, they are able to be present on virtually every website you visit. This gives them immense power and control.
+
+
+
 
 You see, the web is actually pretty simple.
 
@@ -135,13 +144,16 @@ In fact, the browser you're reading this on (Chrome, Firefox, Links, whatever), 
 The web is open and democratic by design and it empowers people, whoever or wherever they are. This is the web we're breaking. 
 
 ## Free but not Free
+
 The modern web began, I think, when it expanded from an information system to a broader platform for information and services. 
 
 Hotmail wanted to give everyone in the planet a free email address. Search engines like Google (and Dogpile, Excite, Altavista and Northern Lights, for those who remember) offered to help us find relevant information in a rapidly growing, unorganized collection of linked documents. There was even a period where Mozilla's DMOZ projet had the ambitious goal of being an open, human-run directory of all things on the internet (much like the yellow pages of yore). Then came Wikipedia, perhaps the most ambitious project in organizing human knowledge since the library of Alexandria (but more open). 
 
 The next big breakthrough was e-commerce, the ability to buy and sell over the internet. This naturally brought a lot of value to humanity: people could browse and buy stuff from the comfort of their homes and businesses big and small could reach more people. Amazon went from being a relatively small online bookstore to a global marketplace. eBay became a global marketplace for people wanting to buy and sell second-hand goods. Paypal promised to let anyone send and receive money from anyone, anywhere in the world.
 
-Up to this point, the goal is still broadly to serve people. Companies, though, start realizing that maintaining a large website serving thousands of users requires time, energy and resources. It costs money.
+Up to this point, the goal is still broadly to serve people. Companies, though, start realizing that maintaining a large website serving thousands of users requires time, energy and resources. It costs money. But users wouldn't use your service if it wasn't free.
+
+And therein lies the paradox. Most of us got used to things being free (as in 0€) on the internet, but the services we were using still cost money. It was a race to the bottom and companies were forced to find ways to become profitable -- the best they could come up was was an ad-supported model, where they would provide some service or content, get you to sign up and then use their user base as currency to negotiate payment from advertisers.
 
 ## The Way Forward
 
