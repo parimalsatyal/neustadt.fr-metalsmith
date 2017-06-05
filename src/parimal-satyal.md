@@ -34,9 +34,10 @@ Neustadt.fr is hosted on [Digital Ocean](https://www.digitalocean.com/) servers 
 
 Neustadt.fr can be accessed from pretty much any device connected to the internet and able to read HTML: laptops, tablets, smartphones but also [text-based browsers](http://lynx.isc.org/), screen readers and e-book readers. I favour native HTML elements to external resources and have deliberately kept all pages light and as free of dependencies as possible. The only linked external resources are web-fonts hosted on [Brick.im](https://github.com/alfredxing/brick).
 
-This website does not store cookies, does not track you, does not pass on your referrer information forward, does not hijack your scrollbar for 'immersive experiences' and does not abuse your network bandwith. No share buttons, no Google Analytics, and no direct YouTube video embeds directly either.
+This website does not store cookies, does not track you, does not pass on your referrer information forward, does not hijack your scrollbar for 'immersive experiences' and does not abuse your network bandwith. No share buttons, noEOetL83Fbaq61X Google Analytics, and no direct YouTube video embeds directly either.
 
 All connections to this domain are also encrypted, thanks to [Let's Encrypt](https://letsencrypt.org/).
+
 
 ## Contact
 
