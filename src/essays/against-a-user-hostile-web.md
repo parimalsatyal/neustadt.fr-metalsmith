@@ -110,7 +110,7 @@ Now let's look at some of the third parties that the website connects to when yo
 - [Weborama](weborama.fr): advertising platform for analytics, digital marketing and behavioral targeting
 - [Visual Revenue](visualrevenue.com): predictive analytics platform
 - [AppNexus](adnxs.com): multimedia content monitization service
-- [Outbrain](outbrain.com): "online advertiser specializing in presenting sponsored website links" (Wikiepdia)
+- [Outbrain](outbrain.com): "online advertiser specializing in presenting sponsored website links" (Wikipedia)
 - [Facebook](facebook.com): a social network and micro-targeted advertising platform
 - [Cedexis](https://www.cedexis.com/): a CND/ad-delivery platform
 
