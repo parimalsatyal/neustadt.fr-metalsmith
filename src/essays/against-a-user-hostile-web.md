@@ -13,7 +13,7 @@ Despite its undeniable value, I think Facebook is at odds with the open web that
 
 ## The Web: Backstory 
 
-*(If you want, you can skip the backstory and [jump directly to the table of contents](#table-of-contents)).*
+*(If you want, you can skip the backstory and [jump directly to the table of contents](#table-of-content)).*
 
 I love the web. 
 
@@ -34,7 +34,7 @@ It all comes down a simple but very dangerous shift: the major websites of today
 
 If you work in the design/communication industry, consider this essay introspective soul-searching by one of your own. If you're a regular web user, consider this an appeal to demand a better web, one that respects you instead of abusing and exploiting you.
 
-The entire essay is rather long so feel free to skip to individual parts:
+<a name="table-of-content">Note</a>: The entire essay is rather long so feel free to skip to individual parts:
 
 - [The Web was Born Open: a very brief history of the web](#the-web-was-born-open)
 - [The Modern Web (of Deception): the disturbing state of the web today](#the-modern-web-of-deception)
