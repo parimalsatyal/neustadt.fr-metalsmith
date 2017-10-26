@@ -1,7 +1,7 @@
 ---
 title: "Against an Increasingly User-Hostile Web"
-date: 2017-10-26
-blurb: "We're quietly replacing an open web that connects and empowers with one that restricts, tracks and commoditizes people. We need to stop it."
+date: 2017-05-23
+blurb: "We're quietly replacing an open web that connects and empowers with one that restricts and commoditizes people. We need to stop it."
 type: essay
 draft: false
 keyword: internet, break, empower, designers, open, privacy, rights, free, web, facebook, twitter, centralized, decentralized, strategy, design, respect
@@ -36,11 +36,12 @@ If you work in the design/communication industry, consider this essay introspect
 
 The entire essay is rather long so feel free to skip to individual parts:
 
-- [The Web was Born Open: a very brief history of the web](#ANCHOR)
-- [The Modern Web (of Deception): the disturbing state of the web today](#ANCHOR)
-- [Track the Trackers, a Personal Experiment: whom websites are sharing your information with](#ANCHOR)
-- [Gated Communities: recentralization and closed platforms](#ANCHOR)
-- [The Way Forward: open tools, technologies and services for a better web](#ANCHOR)
+- [The Web was Born Open: a very brief history of the web](#the-web-was-born-open)
+- [The Modern Web (of Deception): the disturbing state of the web today](#the-modern-web-of-deception)
+- [Track the Trackers, a Personal Experiment: whom websites are sharing your information with](#track-the-trackers-an-experiment)
+- [Gated Communities: recentralization and closed platforms](#gated-communities)
+- [Free but Not Free](#free-but-not-free)
+- [The Way Forward: open tools, technologies and services for a better web](#the-way-forward)
 
 ## The Web was Born Open
 
@@ -145,7 +146,7 @@ Those are some very interesting figures. Some highlights:
 
 >> Essentially, this means that about 90% of the data being transferred between you and Le Monde has nothing to do with the article itself. Le Monde might principally be a newspaper in its printed version, but the online version is an invasive, insecure advertising platform with good content (in that order).
 
-If you're curious, trying using [Webbkoll](http://webbkoll.dataskydd.net) on other websites you visit to see how privacy-friendly and respectful these websites are. We'll get into how to protect yourself from these third-party trackers [later on in the article](#ANCHOR).
+If you're curious, trying using [Webbkoll](http://webbkoll.dataskydd.net) on other websites you visit to see how privacy-friendly and respectful these websites are. We'll get into how to protect yourself from these third-party trackers [later on in the article](#the-way-forward).
 
 All this might not be illegal (although there's some doubt, especially now that in the context of up the upcoming [European General Regulation on Data Protection](https://www.eugdpr.org)), but it is rather disrepectful towards the user. Not only are these websites breaking my trust—when I visit your website, I entered into contact with you, not 80 other websites—but they are loading content from websites neither know nor trust. And which may contain malware. 
 
@@ -155,7 +156,7 @@ If you're reading this and are wondering what to do to protect yourself, skip ah
 
 If you run a website and you put official share buttons on your website, use intrusive analytics platforms (like X and Y, instead of Piwik), serve ads through a third-party ad network or use pervasive cookies to share and sell data on your users, you're contributing to a user-hostile web. You're using free and open-source tools created by thousands of collaborators around the world, over an open web and in the spirit of sharing, to subvert users. 
 
-## Gated Communities (or the simple beauty of httpd)
+## Gated Communities
 
 One of the most impressive things about the internet (and consequently also the web) is that it is decentralized. No central authority gets to decide which page is more important than others and you don't have to play by anyone else's terms to publish and read what you want. There's isn't anything like a *main server* that stores the code that runs the Internet; it's just a protocol on a physical backbone (of undersea cables). 
 
@@ -163,7 +164,7 @@ You could buy a [Raspberry Pi Zero](https://www.raspberrypi.org/products/raspber
 
 But most of the time we spend on the web today is no longer on the open internet - it's on private services like Facebook, Twitter and LinkedIn. While Facebook provides a valuable service, it is also a for-profit, company. Their source of revenue is advertising. It is the epitome of centralized. 
 
-Try posting a picture of the Francisco de Goya's "The Nude Maja" or your naked breasts (if you're a woman) on Facebook; it'll almost certainly be removed. It's against their terms of use. To use their platform, you have to agree to whatever conditions they set, however absurd. If you replace the open web with Facebook, you're giving up your right to publish and share on your terms. The data that you post there does not belong to you; you're putting it in a closed system. If one day Facebook decides to shut down — unlikely as that might seem today — your data goes with it. Sure, you might be able to download parts of it, but then what?
+Try posting a picture of the [Francisco de Goya's "The Nude Maja"](https://www.museodelprado.es/en/the-collection/art-work/the-naked-maja/65953b93-323e-48fe-98cb-9d4b15852b18) or your naked breasts (if you're a woman) on Facebook; it'll almost certainly be removed. It's against their terms of use. To use their platform, you have to agree to whatever conditions they set, however absurd. If you replace the open web with Facebook, you're giving up your right to publish and share on your terms. The data that you post there does not belong to you; you're putting it in a closed system. If one day Facebook decides to shut down — unlikely as that might seem today — your data goes with it. Sure, you might be able to download parts of it, but then what?
 
 This works because they know you'll agree to it. You'll say you don't have a choice, because your friends are all there — the infamous "network effect". This is Facebook's currency, its source of strength but also a crucial dependency. 
 
@@ -220,6 +221,7 @@ Here's a basic list:
 - At the very least, consider that the platforms you use need you more than you need them. You have power over them (unfortunately, in numbers) and they know it. If enough people care about privacy and respect for their data and time, platforms will have to adapt to stay relevant.
 
 ### For web professionals (you, fellow industry colleague)
+
 - Consider not putting share buttons everywhere. They're visual noise and make third party connections every time the page is loaded (adding to load time). If you have to, create your own instead of using ones provided by Facebook and co. (so that a click is needed before a request is made to their servers)
 - Support HTTPS. It's super easy (and free!) with Let's Encrypt so you don't have an excuse to not respect your users' privacy
 - Think about accessibility also in terms of page size, load times and tech requirements: will your website work without Javascript? What percentage of your the total weight of your page is actual information? How many third party requests are you making? How long would it take to load on a 56.6k dial-up or on EDGE? How does it render for speech readers? Can it be read via a text-based browser? (It's a fun experiment; try visiting your website with a text-based browser like lynx or Links). 
@@ -232,6 +234,11 @@ Here's a basic list:
 - Consider business models where you actually respect your clients and your website visitors instead of using them. If you can't be honest about your business model with your client, maybe you need to ask questions.
 
 ## Thoughts and feedback
-This article (novella?) took over a year to write, mostly because I had so much to say. If you've read this far, that's impressive; don't you have something better to do? ;) In any case, I hope this has been useful or at the very least interesting, 
 
-If you have thoughts—you agree, disagree, have reservations, other ideas or a suggestion—I'd love to hear them! You can email me at userhostileweb<at>neustadt.fr or, if you're a member of Hacker News or Reddit, add your comment there.
+It all comes down to one simple question: what do we want the web to be? 
+
+>> Do we want the web to be open, accessible, empowering and collaborative? Free, in the spirit of CERN’s decision in 1993 or that open source tools it's built on? Or do we want it to be just another means of endless consumption, where people become eyeballs, targets and profiles? Where companies use your data to control your behaviour and which enables a surveillance society — what do we want?
+
+For me, the choice is clear. And it's worth fighting for.
+
+I hope this article has been interesting. If you have thoughts—you agree, disagree, have reservations, other ideas or a suggestion—I'd love to hear them! You can email me at *userhostileweb<at>neustadt.fr*. or, if you're a member of Hacker News or Reddit, add your comment there.
