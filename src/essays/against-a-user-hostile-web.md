@@ -4,7 +4,7 @@ date: 2017-05-23
 blurb: "We're quietly replacing an open web that connects and empowers with one that restricts and commoditizes people. We need to stop it."
 type: essay
 draft: false
-keyword: internet, break, empower, designers, open, privacy, rights, free, web, facebook, twitter, centralized, decentralized, strategy, design, respect
+keyword: internet, break, empower, designers, design, respect, open, privacy, user-hostile, rights, free, web, facebook, twitter, centralized, decentralized, strategy, design, respect, https, advertising, ads, invasive, track, webbkoll, dataskydd, history, gopher, usenet 
 ---
 
 I quit Facebook seven months ago.
@@ -152,7 +152,7 @@ All this might not be illegal (although there's some doubt, especially now that 
 
 >> Using an ad/content-blocker isn't cheating the system; it's taking very basic precautions that websites like Le Monde can't be bothered to take to protect you. For me, it's a basic necessity in the modern web. 
 
-If you're reading this and are wondering what to do to protect yourself, skip ahead to the [The Way Forward](#ANCHOR) section. 
+If you're reading this and are wondering what to do to protect yourself, skip ahead to the [The Way Forward](#the-way-forward) section. 
 
 If you run a website and you put official share buttons on your website, use intrusive analytics platforms (like X and Y, instead of Piwik), serve ads through a third-party ad network or use pervasive cookies to share and sell data on your users, you're contributing to a user-hostile web. You're using free and open-source tools created by thousands of collaborators around the world, over an open web and in the spirit of sharing, to subvert users. 
 
@@ -211,31 +211,31 @@ If you're a web professional (a designer, UX consultant, strategist, programmer.
 Here's a basic list:
 
 ### For end users (you, dear reader)
-- If you use Chrome as your main browser, consider switching to Chromium, the open-source version of the browser. Consider minimalist browsers like Min (and choose to block all ads, trackers and scripts) to browser news websites. If you like a certain news source, support it by subscribing if you're able!
-- Install a content/ad blocker for your browser: I recommend uBlock Origin (available for Firefox, Chrome and Safari on most platforms). 
-- Install HTTP Everywhere for your browser; this forces your information through secure, encrypted channels (HTTPS vs HTTP one) if possible. It can also be configured to only allow connections to HTTPS websites.
+- If you use Chrome as your main browser, consider switching to [Chromium](https://www.chromium.org), the open-source version of the browser. Consider minimalist browsers like [Min](#https://minbrowser.github.io/min/) (and choose to block all ads, trackers and scripts) to browser news websites. If you like a certain news source, support it by subscribing if you're able!
+- Install a content/ad blocker for your browser: I recommend [uBlock Origin](#https://github.com/gorhill/uBlock) (available for Firefox, Chrome and Safari on most platforms). 
+- Install [HTTP Everywhere](https://www.eff.org/https-everywhere) for your browser; this forces your information through secure, encrypted channels (HTTPS vs HTTP one) if possible. It can also be configured to only allow connections to HTTPS websites.
 - Think about how much information/details you provide to social media platforms like Facebook, Linked, Twitter and Instagram. They already have quite a lot (including the ability to recognize you by name on photographs), but what other information are you volunteering? Where you are, whom you're with, information about your friends?
 - Consider quitting social networks, especially Facebook (but download your data first!). What would you miss the most? Are there alternatives? 
-- Consider alternatives to free services provided by the likes of Google and Facebook. Today, if both of these companies shut down (or implement policies I don't like), I would mostly be fine because my contact with them is limited. I use DuckDuckGo and Startpage for search (free); Fastmail for email and calender (less than 40€ a year) ; HERE WeGo for maps (free); Signal, email and IRC for messaging (free, along with iMessage, Whatsapp and Twitter); Digital Ocean for web hosting (about 5€ per month). 
-- Pay for services and content tha you like, if you are able. If you like reading The Guardian, for example, consider subscribing. If your favourite YouTube channel is on Patreon, consider pledging a small amount per video. If you like services like Pinboard.in that charge in return for a useful service, buy it. There's mutual respect when both the user and the service provider know what basic service they are buying/selling.
+- Consider alternatives to free services provided by the likes of Google and Facebook. Today, if both of these companies shut down (or implement policies I don't like), I would mostly be fine because my contact with them is limited. I use [DuckDuckGo](https://ddg.co) and [Startpage](https://http://startpage.com) for search (free); [Fastmail](https://fastmail.com) for email and calender (less than 40€ a year) ; [HERE WeGo](https://wego.here.com) for maps (free); [Signal](https://signal.org), email and IRC for messaging (free, along with iMessage, Whatsapp and Twitter); [Digital Ocean](https://digitalocean.com) for web hosting (about 5€ per month). 
+- Pay for services and content tha you like, if you are able. If you like reading [The Guardian](https://theguardian.com), for example, consider subscribing. If your [favourite YouTube channel is on Patreon](https://www.patreon.com/easygerman), consider pledging a small amount per video. If you like services like [Pinboard.in](https:/http://pinboard.in) that charge in return for a useful service, buy it. There's mutual respect when both the user and the service provider know what basic service they are buying/selling.
 - At the very least, consider that the platforms you use need you more than you need them. You have power over them (unfortunately, in numbers) and they know it. If enough people care about privacy and respect for their data and time, platforms will have to adapt to stay relevant.
 
 ### For web professionals (you, fellow industry colleague)
 
 - Consider not putting share buttons everywhere. They're visual noise and make third party connections every time the page is loaded (adding to load time). If you have to, create your own instead of using ones provided by Facebook and co. (so that a click is needed before a request is made to their servers)
-- Support HTTPS. It's super easy (and free!) with Let's Encrypt so you don't have an excuse to not respect your users' privacy
-- Think about accessibility also in terms of page size, load times and tech requirements: will your website work without Javascript? What percentage of your the total weight of your page is actual information? How many third party requests are you making? How long would it take to load on a 56.6k dial-up or on EDGE? How does it render for speech readers? Can it be read via a text-based browser? (It's a fun experiment; try visiting your website with a text-based browser like lynx or Links). 
-- Refuse client requests to impement hyper-invasive technologies like canvas fingerprinting 
-- Consider replacing Google Analytics with a more privacy-respecting analytics software like Piwik. Even better if you can host it yourself!
-- Minimize third-party dependencies like Google Fonts (this website uses Brick.im instead).
-- Avoid ad networks (like the plague!) if possible. Serve your own ads by selling ad space the old school way if you're able. If not, explore privacy-respecting methods of serving ads, including developments powered by the blockchain (like the Basic Attention Token). 
-- Respect Do Not Track!
+- Support HTTPS. It's super easy (and free!) with [Let's Encrypt](https://letsencrypt.org) so you don't have an excuse to not respect your users' privacy
+- Think about accessibility also in terms of page size, load times and tech requirements: will your website work without Javascript? What percentage of your the total weight of your page is actual information? How many third party requests are you making? How long would it take to load on a 56.6k dial-up or on EDGE? How does it render for speech readers? Can it be read via a text-based browser? (It's a fun experiment; try visiting your website with a text-based browser like [lynx](http://lynx.browser.org) or [Links](http://links.twibright.com)). 
+- Refuse client requests to impement hyper-invasive technologies like canvas fingerprinting.
+- Consider replacing Google Analytics with a more privacy-respecting analytics software like [Piwik](https://piwik.org). Even better if you can host it yourself!
+- Minimize third-party dependencies like Google Fonts (this website uses [Brick.im](https://brick.im) instead).
+- Avoid ad networks (like the plague!) if possible. Serve your own ads by selling ad space the old school way if you're able. If not, explore privacy-respecting methods of serving ads, including developments powered by the blockchain (like the [Basic Attention Token](https://basicattentiontoken.org)). 
+- Respect [Do Not Track](http://donottrack.us)!
 - Carefully consider the benefits of hyper personalisation and retargeting. The benefits are debatable but the long term consequences might be desasterous. Ask yourself: would you be okay with a company collecting as much data (as you seek to collect) on your teenage daughter, your nephew in college, your husband or your grand-mother?
 - Consider business models where you actually respect your clients and your website visitors instead of using them. If you can't be honest about your business model with your client, maybe you need to ask questions.
 
 ## Thoughts and feedback
 
-It all comes down to one simple question: what do we want the web to be? 
+It all comes down to one simple question: **what do we want the web to be?** 
 
 >> Do we want the web to be open, accessible, empowering and collaborative? Free, in the spirit of CERN’s decision in 1993 or that open source tools it's built on? Or do we want it to be just another means of endless consumption, where people become eyeballs, targets and profiles? Where companies use your data to control your behaviour and which enables a surveillance society — what do we want?
 
