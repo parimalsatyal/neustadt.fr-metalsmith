@@ -1,11 +1,25 @@
 ---
 title: "Against an Increasingly User-Hostile Web"
-date: 2017-05-23
+date: 2017-10-27
 blurb: "We're quietly replacing an open web that connects and empowers with one that restricts and commoditizes people. We need to stop it."
 type: essay
 draft: false
 keyword: internet, break, empower, designers, design, respect, open, privacy, user-hostile, rights, free, web, facebook, twitter, centralized, decentralized, strategy, design, respect, https, advertising, ads, invasive, track, webbkoll, dataskydd, history, gopher, usenet 
 ---
+
+*Multimedia:*
+
+- Modem handshake noise
+- My first website or Netscape Navigator
+- Gopher or early www in a black terminal (to do Bad Things)\
+- Photo of the document that permitted the web to be released freely into the public domain 
+- Screenshot of Cambridge Analytica guy with quote in caption
+- Screenshot of Le Monde article
+- Photo of Francisco de Goya's "The Nude Maja
+- Screenshot: absurd Facebook/Twitter notification or request (bad UX)
+- Our incredible adventure
+- Screenshot: choose from Hotmail, Dogpile, Altavista, Northern Lights...
+
 
 I quit Facebook seven months ago.
 
@@ -30,14 +44,13 @@ The web enabled that. It's one of humanity's greatest inventions. And now, we th
 We're very good at talking about *immersive experiences*, *personalized content*, *growth hacking*, *responsive strategy*, *user centered design*, *social media activation*, *retargeting*, *CMS* and *user experience*. But behind all this jargon lurks the uncomfortable idea that we might be accomplicies in the destruction of a platform that was meant to empower and bring people together; the possibility that we are instead building a machine that surveilles, subverts, manipulates, overwhelms and exploits people. 
 
 It all comes down a simple but very dangerous shift: the major websites of today's web are not built for the visitor, but as means of *using* her. Our visitor has become a data point, a customer profile, a potential lead -- a proverbial fly in the spider's web. In the guise of *user centered design*, we're building an increasingly *user-hostile* web.
-<span id="table-of-contents">&nbsp</span>
 
 If you work in the design/communication industry, consider this essay introspective soul-searching by one of your own. If you're a regular web user, consider this an appeal to demand a better web, one that respects you instead of abusing and exploiting you.
 
 <a name="table-of-content">Note</a>: The entire essay is rather long so feel free to skip to individual parts:
 
 - [The Web was Born Open: a very brief history of the web](#the-web-was-born-open)
-- [The Modern Web (of Deception): the disturbing state of the web today](#the-modern-web-of-deception)
+- [The Modern Web (of Deception): the disturbing state of the web today](#the-modern-web-of-deception-)
 - [Track the Trackers, a Personal Experiment: whom websites are sharing your information with](#track-the-trackers-an-experiment)
 - [Gated Communities: recentralization and closed platforms](#gated-communities)
 - [Free but Not Free](#free-but-not-free)
@@ -59,7 +72,7 @@ Advances in the hyper-text transfer protocol (HTTP), undersea cable infratructur
 
 Soon, anyone could put a document on the web and any document could link to any other. It created a completely open platform where a writer in Nepal could freely share her ideas with a dancer in Denmark. A climate science student in Nairobi could access data from the Murdoch weather station in Antarctica. You could start reading about logical fallacies and end up on a website about optical illusions. Read about the history of time-keeping and end up learning about Einstein's special theory of relativity. All interests were catered to. Information could truly be free: transverse borders, cultures and politics. 
 
-That was the web at its best.
+That is the web at its best.
 
 My own journey from designing that first website as an 11-year old "webmaster" in Nepal to writing this article as a UX Consultant in France has its origin in that 1993 decision by CERN.
 
@@ -97,9 +110,9 @@ We'll need a few things:
 - Dataskydd.net, a Swedish associaion for data protection and privacy (of which I'm a proud member) and
 - Pingdom Website Speed Test
 
-Let's take an article that was published around the time I first started working on this article (which is last year; I'm a slow writer): [Astronomie : la sonde Juno s’est mise en orbite autour de Jupiter](http://www.lemonde.fr/sciences/article/2016/07/04/astronomie-juno-aux-portes-de-jupiter_4963440_1650684.html) (*Astronomy: space probe Juno in orbit around Jupiter*).
+Let's take an article that was published around the time I first started working on this article (which is last year; I'm a slow writer): [Astronomie : la sonde Juno s’est mise en orbite autour de Jupiter](http://www.lemonde.fr/sciences/article/2016/07/04/astronomie-juno-aux-portes-de-jupiter_4963440_1650684.html) (*Astronomy: space probe Juno put in orbit around Jupiter*).
 
-If you run this URL through [Dataskydd's Webbkoll](http://webbkoll.dataskydd.net) and [Pingdom's Website Speed Test](https://www.pingdom.com/product/page-speed)(*note: the tool is no longer freely accessible*), you learn a few interesting things: the page is **3.9 MB** in size, makes about **600 HTTP requests** of which **442 are third-party requests** (outside of its parent domain) and takes **3.74 seconds** to load from Stockholm, Sweden.
+If you run this URL through [Dataskydd's Webbkoll](http://webbkoll.dataskydd.net) and [Pingdom's Website Speed Test](https://www.pingdom.com/product/page-speed) (*note: the tool seems to no longer be freely accessible*), you learn a few interesting things: the page is **3.9 MB** in size, makes about **600 HTTP requests** of which **442 are third-party requests** (outside of its parent domain) and takes **3.74 seconds** to load from Stockholm, Sweden.
 
 It also stores **104 cookies** (these are little pieces of text stored on your computer by websites other than lemonde.fr; cookies are normally used to save session information but are also used to identify and track you) and contacts **122 third-parties**. And if all this weren't enough, your connection to LeMonde and the majority of third-party connections are over **unsecure HTTP** (instead of the more secure HTTPS, which should be a requirement). 
 
@@ -120,7 +133,7 @@ What's surprising is that the bulk of the information transferred between LeMond
 
 If fact, I did just take and made three versions :
 
-- **[Version A](https://webfiles.neustadt.fastmail.com.user.fm/leMondeJupiterArticle.html)**: With the original text (including comments, images and video
+- **[Version A](http://webfiles.neustadt.fastmail.com.user.fm/leMondeJupiterArticle.html)**: With the original text (including comments, images and video
 - **[Version B](http://webfiles.neustadt.fastmail.com.user.fm/leMondeJupiterArticle-noVideo.html)**: With the original text (including comments), images but no video
 - **[Version C](http://webfiles.neustadt.fastmail.com.user.fm/leMondeJupiterArticle-noVideoImages.html)**: With just the original text (including comments), no images or video
 
@@ -138,11 +151,9 @@ Some numbers:
 
 Those are some very interesting figures. Some highlights:
 
-- The entire article (text, video, images) is only 50% of the page size. The other half is all the things you don't want. 
-
-- In fact, if you remove the one video, the entire article goes down to less than 5% of the total size. Turns out, that one video makes 72 requests to 24 different 3rd parties and stores 15 cookies all by itself. That number should be around between 1 to 5 (very generous max) each for a normal video (depending on where the video is hosted). The video is not just a video; it's also a tracking tool.
-
-- Version B (text + images) loads 6x faster, makes just 5 requests (4 third-party).
+- The entire article (text, video, images) is **only 50% of the page size**. The other half is all the things you don't want. 
+- If you remove that one video, the entire article goes down to **less than 5% of the total size**. Turns out, that one video makes 72 requests to 24 different 3rd parties and stores 15 cookies all by itself. That number should be around between 1 to 5 (very generous max) each for a normal video (depending on where the video is hosted). The video is not just a video; it's also a tracking tool.
+- Version B (text + images) **loads 6x faster, makes just 5 requests (4 third-party) and needs just 4 cookies**, instead of 429 in the original article.
 
 >> Essentially, this means that about 90% of the data being transferred between you and Le Monde has nothing to do with the article itself. Le Monde might principally be a newspaper in its printed version, but the online version is an invasive, insecure advertising platform with good content (in that order).
 
@@ -182,7 +193,7 @@ A web server, a public address and an HTML file are all that you need to share y
 
 That's what the web makes possible. It's friendship over hyperlink, knowledge over the network, romance over HTTP.
 
-In fact, the browser you're reading this on (Chrome, Firefox, Links, whatever), the web server that's hosting this website (Nginx), the operating system that this server runs on (Ubuntu), the programming tools used to make it all work (python, gcc, node.js...) -- all of these things were created collectively by contributors all around the world, brought together by HTTP. And given away for free in the spirit of sharing.
+In fact, the browser you're reading this on ([Chrome](https://google.com/intl/en/chrome/browser/ ), [Firefox](https://getfirefox.com), [Links](http://links.twibright.com), whatever), the web server that's hosting this website ([Nginx](httos://nginx.com)), the operating system that this server runs on ([Ubuntu](https:// ubuntu.com)), the programming tools used to make it all work ([python](python.org), [gcc](gcc.gnu.org), [node.js](nodejs.org)...) -- all of these things were created collectively by contributors all around the world, brought together by HTTP. And given away for free in the spirit of sharing.
 
 The web is open and democratic by design and it empowers people. This is the web we're breaking and replacing with one that subverts, manipulates and creates addiction.
 
@@ -190,7 +201,7 @@ The web is open and democratic by design and it empowers people. This is the web
 
 The modern web began, I think, when it expanded from an information system to a broader platform for information and services. 
 
-Hotmail wanted to give everyone in the planet a free email address. Search engines like Google (and Dogpile, Excite, Altavista and Northern Lights, for those who remember) offered to help us find relevant information in a rapidly growing, unorganized collection of linked documents. There was even a period where Mozilla's DMOZ projet had the ambitious goal of being an open, human-run directory of all things on the internet (much like an online version of the Yellow Pages of yore). Then came Wikipedia, perhaps the most ambitious project in organizing human knowledge since the library of Alexandria.
+*Hotmail* wanted to give everyone in the planet a free email address. Search engines like Google (and *Dogpile*, *Excite*, *Altavista* and *Northern Lights*, for those who remember) offered to help us find relevant information in a rapidly growing, unorganized collection of linked documents. There was even a period where Mozilla's *DMOZ* projet had the ambitious goal of being an open, human-run directory of all things on the internet (much like an online version of the Yellow Pages of yore). Then came *Wikipedia*, perhaps the most ambitious project in organizing human knowledge since the library of Alexandria.
 
 The next big breakthrough was e-commerce, the ability to buy and sell over the internet. This naturally brought a lot of value to humanity: people could browse and buy stuff from the comfort of their homes and businesses big and small could reach more people. Amazon went from being a relatively small online bookstore to a global marketplace. eBay became a global marketplace for people wanting to buy and sell second-hand goods. Paypal promised to let anyone send and receive money from anyone, anywhere in the world.
 
@@ -221,7 +232,6 @@ Here's a basic list:
 - At the very least, consider that the platforms you use need you more than you need them. You have power over them (unfortunately, in numbers) and they know it. If enough people care about privacy and respect for their data and time, platforms will have to adapt to stay relevant.
 
 ### For web professionals (you, fellow industry colleague)
-
 - Consider not putting share buttons everywhere. They're visual noise and make third party connections every time the page is loaded (adding to load time). If you have to, create your own instead of using ones provided by Facebook and co. (so that a click is needed before a request is made to their servers)
 - Support HTTPS. It's super easy (and free!) with [Let's Encrypt](https://letsencrypt.org) so you don't have an excuse to not respect your users' privacy
 - Think about accessibility also in terms of page size, load times and tech requirements: will your website work without Javascript? What percentage of your the total weight of your page is actual information? How many third party requests are you making? How long would it take to load on a 56.6k dial-up or on EDGE? How does it render for speech readers? Can it be read via a text-based browser? (It's a fun experiment; try visiting your website with a text-based browser like [lynx](http://lynx.browser.org) or [Links](http://links.twibright.com)). 
@@ -229,7 +239,7 @@ Here's a basic list:
 - Consider replacing Google Analytics with a more privacy-respecting analytics software like [Piwik](https://piwik.org). Even better if you can host it yourself!
 - Minimize third-party dependencies like Google Fonts (this website uses [Brick.im](https://brick.im) instead).
 - Avoid ad networks (like the plague!) if possible. Serve your own ads by selling ad space the old school way if you're able. If not, explore privacy-respecting methods of serving ads, including developments powered by the blockchain (like the [Basic Attention Token](https://basicattentiontoken.org)). 
-- Respect [Do Not Track](http://donottrack.us)!
+- Respect [Do Not Track](http://donottrack.us).
 - Carefully consider the benefits of hyper personalisation and retargeting. The benefits are debatable but the long term consequences might be desasterous. Ask yourself: would you be okay with a company collecting as much data (as you seek to collect) on your teenage daughter, your nephew in college, your husband or your grand-mother?
 - Consider business models where you actually respect your clients and your website visitors instead of using them. If you can't be honest about your business model with your client, maybe you need to ask questions.
 
@@ -241,4 +251,4 @@ It all comes down to one simple question: **what do we want the web to be?**
 
 For me, the choice is clear. And it's worth fighting for.
 
-I hope this article has been interesting. If you have thoughts—you agree, disagree, have reservations, other ideas or a suggestion—I'd love to hear them! You can email me at *userhostileweb<at>neustadt.fr*. or, if you're a member of Hacker News or Reddit, add your comment there.
+I hope this article has been interesting. If you have thoughts—you agree, disagree, have reservations, other ideas or a suggestion—I'd love to hear them! You can email me at *userhostileweb**—at—**neustadt.fr*. or, if you're a member of Hacker News or Reddit, add your comment there.
