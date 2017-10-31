@@ -107,12 +107,12 @@ In your defense, all of this does sound like some dystopian fantasy. But I'm not
 We'll need a few things:
 
 - a test website (we'll take an article on Le Monde, France's biggest national daily)
-- Webbkoll from Dataskydd.net, a Swedish associaion for data protection and privacy (of which I'm a proud member) and
-- Pingdom Website Speed Test
+- Dataskydd.net, a Swedish associaion for data protection and privacy (of which I'm a proud member) and
+- A web inspector
 
 Let's take an article that was published around the time I first started working on this article (which is last year; I'm a slow writer): [Astronomie : la sonde Juno s’est mise en orbite autour de Jupiter](http://www.lemonde.fr/sciences/article/2016/07/04/astronomie-juno-aux-portes-de-jupiter_4963440_1650684.html) (*Astronomy: space probe Juno put in orbit around Jupiter*).
 
-If you run this URL through [Dataskydd's Webbkoll](http://webbkoll.dataskydd.net) and [Pingdom's Website Speed Test](https://www.pingdom.com/product/page-speed) (*note: the Pingdom tool seems to no longer be freely accessible*), you learn a few interesting things: the page is **3.9 MB** in size, makes about **600 HTTP requests** of which **442 are third-party requests** (outside of its parent domain) and takes **3.74 seconds** to load from Paris, France.
+If you run this URL through [Dataskydd's Webbkoll](http://webbkoll.dataskydd.net) and a web inspector tool (I used Chromium's web inspector), you learn a few interesting things: the page is **3.9 MB** in size, makes about **600 HTTP requests** of which **442 are third-party requests** (outside of its parent domain) and takes **3.74 seconds** to load from Stockholm, Sweden.
 
 It also stores **104 cookies** (these are little pieces of text stored on your computer by websites other than lemonde.fr; cookies are normally used to save session information but are also used to identify and track you) and contacts **122 third-parties**. And if all this weren't enough, your connection to LeMonde and the majority of third-party connections are over **unsecure HTTP** (instead of the more secure HTTPS, which should be a requirement). 
 
@@ -139,23 +139,31 @@ If fact, I did just take and made three versions :
 
 Some numbers: 
 
+|                                        	| **Original (LeMonde.fr)** 	| **Version A**     	| **Version B**     	| **Version C**     	|
+|----------------------------------------	|-----------------------	|---------------	|---------------	|---------------	|
+| **Page Size**                              	| 3,1 MB                	| 1 MB *(32%)*    	| 183 KB *(5,8%)* 	| 17 KB *(0,54%)* 	|
+| **Load Time**                              	| 20,9 s                	| 4,6 s *(19,4%)* 	| 2,8 s *(9,6%)*  	| 662 ms *(3,2%)* 	|
+| **Requests (total)**                       	| 459                   	| 108 *(23,5%)*   	| 5 *(1%)*        	| 1 *(0,2%)*      	|
+| **Requests (third-party)**                 	| 436                   	| 64 *(14,7%)*    	| 4 *(0,9%)*      	| 0             	|
+| **Third Parties Contacted**                	| 118                   	| 17 *(14,4%)*    	| 2 *(11,8%)*     	| 0             	|
+| **Cookies (total)**                        	| 100                   	| 16 *(16%)*      	| 0             	| 0             	|
+| **Cookies (third-party)**                  	| 73                    	| 16 *(21,9%)*    	| 0             	| 0             	|
+|                                        	|                       	|               	|               	|               	|
+| **Text** (% of Page Size)                  	| 0,5 %                 	| 1,7 %         	| 9,5 %         	| 100 %         	|
+| **Text + Images** (% of Page Size)         	| 5,8 %                 	| 17,9 %        	| 100 %         	|               	|
+| **Text + Images + Video** (% of Page Size) 	| 32,3 %                	| 100 %         	|               	|               	|
 
-|                       	| Original 	| Version A Text, Images, Video 	| Version B Text, Images, No Video 	| Version C Text only, No Images/Video 	|
-|-----------------------	|----------	|-------------------------------	|----------------------------------	|--------------------------------------	|
-| Page Size             	| 3,9 MB   	| 2,0 MB (51% of original)      	| 174 KB (4,36% of original)       	| 8 KB (0,2% of original)              	|
-| Load Time             	| 3,74 s   	| 1,20 s (3× faster)            	| 0.624 s (5× faster)              	| 0.225 s (16× faster)                 	|
-| 3rd Party Requests    	| 680      	| 77 (11% of original)          	| 5 (0,74% of original)            	| 1 (0.14% of original)                	|
-| Cookies               	| 429      	| 28                            	| 4                                	| 0                                    	|
-| % Content (HTML + Img)    | 21       	| 5%                            	| 100%                             	| 100%                                 	|
-| 3rd Parties Connected 	| 122      	| 12                            	| 2                                	| 0                                    	|
+*Note: Data on the number of requests (first- and third-party) and cookies (first- and third-party) comes from Dataskydd Webbkoll. The rest of the data comes from Chromium's built-in web inspector. All connections were made from Paris, France with cacheing disabled and the bandwidth throttled to simulate a "fast 3G" connection. You can run these numbers yourself; they should vary only nominally depending on where you are. If you find errors, please let me know.*
 
 Those are some very interesting figures. Some highlights:
 
-- The entire article (text, video, images) is **only 50% of the page size**. The other half is all the things you don't want. 
-- If you remove that one video, the entire article goes down to **less than 5% of the total size**. Turns out, that one video makes 72 requests to 24 different 3rd parties and stores 15 cookies all by itself. That number should be around between 1 to 5 (very generous max) each for a normal video (depending on where the video is hosted). The video is not just a video; it's also a tracking tool.
-- Version B (text + images) **loads 6x faster, makes just 5 requests (4 third-party) and needs just 4 cookies**, instead of 429 in the original article.
+- The article **text makes up less than 0.6% of the total size of the page** (Version C), and requires exactly 1 request and 0 cookies.	
+- If you include the three images along with the text (Version B), that’s still less than 6% of the total size of the LeMonde article (and still zero cookies). This means that **94% of the data transferred between you and LeMonde.fr has nothing to do with the article**.
+- What about the video, you ask? Before you even play it, **that one video adds over a 100 requests (60 of which are to 15 additional third parties) and 16 third-party cookies**. It also adds over 800 KB of data. Again, this is before you even decide to play the video. The video might be related to the content, but it’s doing a lot more than that.	
+- Even compared to the version with the video, **the LeMonde article makes about 450 additional third party requests, of which 370 are to about 100 additional third parties, storing 100 additional cookies (55 of which are third party cookies)**. It also adds over 2 MB to the page. That’s a lot of crap that that has nothing to do with the article you're reading.
+- The text + image version (B) is **able to load the entire text and the 3 images with only 5 requests and no cookies whatsoever**. Adding a video should reasonably add one or two more requests and maybe one cookie, not 450 requests and 100 cookies, the majority of which on behalf of companies you neither know nor trust, including those who track and sell your data for profit.	
 
->> Essentially, this means that about 90% of the data being transferred between you and Le Monde has nothing to do with the article itself. Le Monde might principally be a newspaper in its printed version, but the online version is an invasive, insecure advertising platform with good content (in that order).
+>> Essentially, this means that about 94% of the data being transferred and 99% of the requests being made have nothing to do with the article itself. Le Monde might principally be a newspaper in its printed version, but the online version is an invasive, insecure advertising platform with good content (in that order).
 
 If you're curious, trying using [Webbkoll](http://webbkoll.dataskydd.net) on other websites you visit to see how privacy-friendly and respectful these websites are. We'll get into how to protect yourself from these third-party trackers [later on in the article](#the-way-forward).
 
@@ -165,7 +173,7 @@ All this might not be illegal (although there's some doubt, especially now that 
 
 If you're reading this and are wondering what to do to protect yourself, skip ahead to the [The Way Forward](#the-way-forward) section. 
 
-If you run a website and you put official share buttons on your website, use intrusive analytics platforms (like Google Analytics instead of Piwik), serve ads through a third-party ad network or use pervasive cookies to share and sell data on your users, you're contributing to a user-hostile web. You're using free and open-source tools created by thousands of collaborators around the world, over an open web and in the spirit of sharing, to subvert users. 
+If you run a website and you put official share buttons on your website, use intrusive analytics platforms (like X and Y, instead of Piwik), serve ads through a third-party ad network or use pervasive cookies to share and sell data on your users, you're contributing to a user-hostile web. You're using free and open-source tools created by thousands of collaborators around the world, over an open web and in the spirit of sharing, to subvert users. 
 
 ## Gated Communities
 
