@@ -1,6 +1,6 @@
 ---
 title: "Against an Increasingly User-Hostile Web"
-date: 2017-10-27
+date: 2017-11-01
 blurb: "We're quietly replacing an open web that connects and empowers with one that restricts and commoditizes people. We need to stop it."
 type: essay
 draft: false
@@ -45,12 +45,12 @@ If you work in the design/communication industry, consider this essay introspect
 
 <a name="table-of-content">Note</a>: The entire essay is rather long so feel free to skip to individual parts:
 
-- [The Web was Born Open: a very brief history of the web](#the-web-was-born-open)
-- [The Modern Web (of Deception): the disturbing state of the web today](#the-modern-web-of-deception-)
-- [Track the Trackers, a Personal Experiment: whom websites are sharing your information with](#track-the-trackers-an-experiment)
-- [Gated Communities: recentralization and closed platforms](#gated-communities)
-- [Free but Not Free](#free-but-not-free)
-- [The Way Forward: open tools, technologies and services for a better web](#the-way-forward)
+1. [The Web was Born Open: a very brief history of the web](#the-web-was-born-open)
+2. [The Modern Web (of Deception): the disturbing state of the web today](#the-modern-web-of-deception-)
+3. [Track the Trackers, a Personal Experiment: whom websites are sharing your information with](#track-the-trackers-an-experiment)
+4. [Gated Communities: recentralization and closed platforms](#gated-communities)
+5. [Free but Not Free](#free-but-not-free)
+6. [The Way Forward: open tools, technologies and services for a better web](#the-way-forward)
 
 ## The Web was Born Open
 
@@ -117,8 +117,8 @@ In your defense, all of this does sound like some dystopian fantasy. But I'm not
 
 We'll need a few things:
 
-- a test website (we'll take an article on Le Monde, France's biggest national daily)
-- Dataskydd.net, a Swedish associaion for data protection and privacy (of which I'm a proud member) and
+- a test website 
+- Webbkoll, a web privacy check tool by Dataskydd.net, a Swedish association for data protection and privacy (of which I'm a proud member) and
 - A web inspector
 
 Let's take an article that was published around the time I first started working on this article (which is last year; I'm a slow writer): [Astronomie : la sonde Juno s’est mise en orbite autour de Jupiter](http://www.lemonde.fr/sciences/article/2016/07/04/astronomie-juno-aux-portes-de-jupiter_4963440_1650684.html) (*Astronomy: space probe Juno put in orbit around Jupiter*).
@@ -128,9 +128,9 @@ Let's take an article that was published around the time I first started working
   <figcaption>Le Monde article <a href="http://www.lemonde.fr/sciences/article/2016/07/04/astronomie-juno-aux-portes-de-jupiter_4963440_1650684.html">Astronomie : la sonde Juno s’est mise en orbite autour de Jupiter</a></figcaption>
 </figure>
 
-If you run this URL through [Dataskydd's Webbkoll](http://webbkoll.dataskydd.net) and a web inspector tool (I used Chromium's web inspector), you learn a few interesting things: the page is **3.9 MB** in size, makes about **600 HTTP requests** of which **442 are third-party requests** (outside of its parent domain) and takes **3.74 seconds** to load from Stockholm, Sweden.
+If you run this URL through [Dataskydd's Webbkoll](http://webbkoll.dataskydd.net) and a web inspector tool (I used Chromium's web inspector), you learn a few interesting things: the page is **3.1 MB** in size, makes about **460 HTTP requests** of which **430 are third-party requests** (outside of its parent domain) and takes **20 seconds** to fully load on a fast 3G connection (from Paris, France).
 
-It also stores **104 cookies** (these are little pieces of text stored on your computer by websites other than lemonde.fr; cookies are normally used to save session information but are also used to identify and track you) and contacts **122 third-parties**. And if all this weren't enough, your connection to LeMonde and the majority of third-party connections are over **unsecure HTTP** (instead of the more secure HTTPS, which should be a requirement). 
+It also stores **100 cookies** (these are little pieces of text stored on your computer by websites other than lemonde.fr; cookies are normally used to save session information but are also used to identify and track you) and contacts **118 third-parties**. And if all this weren't enough, your connection to LeMonde and the majority of third-party connections are over **unsecure HTTP** (instead of the more secure HTTPS, which should be a requirement). 
 
 That's a lot of big numbers for an article of 1500 words, three images and one video.
 
@@ -169,7 +169,7 @@ Some numbers:
 | **Text + Images** (% of Page Size)         	| 5,8 %                 	| 17,9 %        	| 100 %         	|               	|
 | **Text + Images + Video** (% of Page Size) 	| 32,3 %                	| 100 %         	|               	|               	|
 
-*Note: Data on the number of requests (first- and third-party) and cookies (first- and third-party) comes from Dataskydd Webbkoll. The rest of the data comes from Chromium's built-in web inspector. All connections were made from Paris, France with cacheing disabled and the bandwidth throttled to simulate a "fast 3G" connection. You can run these numbers yourself; they should vary only nominally depending on where you are. If you find errors, please let me know.*
+<span class="update">Note: Data on the number of requests (first- and third-party) and cookies (first- and third-party) comes from Dataskydd Webbkoll. The rest of the data comes from Chromium's built-in web inspector. All connections were made from Paris, France with cacheing disabled and the bandwidth throttled to simulate a "fast 3G" connection. You can run these numbers yourself; they should vary only nominally depending on where you are. If you find errors, please let me know.</span>
 
 Those are some very interesting figures. Some highlights:
 
