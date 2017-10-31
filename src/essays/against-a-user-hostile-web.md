@@ -33,6 +33,8 @@ I love the web.
 
 I don't mean that in the way that someone might say that they love pizza. For many of us in the early 2000s, the web was magical. You connected a phone line to your computer, let it make [a funny noise](#recording_OGG_Vorbis) and suddenly you had access to a seemingly-unending repository of thoughts and ideas from people around the world. 
 
+<a class="song" onclick="playPause(this)"><audio><source src="/music/dial_up_modem_noises.ogg" type="audio/ogg"></audio></a>
+
 It might not seem like much now, but what that noise represented was the stuff of science fiction at the time: near-instantaneous communication at a planetary scale. It was a big deal.
 
 I was an average student at school. Despite well-meaning and often wonderful teachers, I didn't thrive much in a school system that valued test performance and fact-retention over genuine curiosity. Had it not been for the web, I might have convinced myself that I was a poor learner; instead, I realized that learning is one of my great passions in life. 
@@ -232,7 +234,7 @@ Here's a basic list:
 ### For end users (you, dear reader)
 - If you use Chrome as your main browser, consider switching to [Chromium](https://www.chromium.org), the open-source version of the browser. Consider minimalist browsers like [Min](https://minbrowser.github.io/min/) (and choose to block all ads, trackers and scripts) to browser news websites. If you like a certain news source, support it by subscribing if you're able!
 - Install a content/ad blocker for your browser: I recommend [uBlock Origin](#https://github.com/gorhill/uBlock) (available for Firefox, Chrome and Safari on most platforms). 
-- Install [HTTP Everywhere](https://www.eff.org/https-everywhere) for your browser; this forces your information through secure, encrypted channels (HTTPS vs HTTP one) if possible. It can also be configured to only allow connections to HTTPS websites.
+- Install [HTTPS Everywhere](https://www.eff.org/https-everywhere) for your browser; this forces your information through secure, encrypted channels (HTTPS vs HTTP one) if possible. It can also be configured to only allow connections to HTTPS websites.
 - Think about how much information/details you provide to social media platforms like Facebook, Linked, Twitter and Instagram. They already have quite a lot (including the ability to recognize you by name on photographs), but what other information are you volunteering? Where you are, whom you're with, information about your friends?
 - Consider quitting social networks, especially Facebook (but download your data first!). What would you miss the most? Are there alternatives? 
 - Consider alternatives to free services provided by the likes of Google and Facebook. Today, if both of these companies shut down (or implement policies I don't like), I would mostly be fine because my contact with them is limited. I use [DuckDuckGo](https://ddg.co) and [Startpage](https://http://startpage.com) for search (free); [FastMail](https://fastmail.com) for email and calender (less than 40€ a year) ; [HERE WeGo](https://wego.here.com) for maps (free); [Signal](https://signal.org), email and IRC for messaging (free, along with iMessage, Whatsapp and Twitter); [Digital Ocean](https://digitalocean.com) for web hosting (about 5€ per month). 
