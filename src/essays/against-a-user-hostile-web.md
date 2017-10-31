@@ -154,7 +154,8 @@ If fact, I did just take and made three versions :
 - **[Version C](http://webfiles.neustadt.fastmail.com.user.fm/leMondeJupiterArticle-noVideoImages.html)**: With just the original text (including comments), no images or video
 
 Some numbers: 
-
+<div class="comparison-table" style="overflow-x:auto">
+	
 |                                        	| **Original (LeMonde.fr)** 	| **Version A**     	| **Version B**     	| **Version C**     	|
 |----------------------------------------	|-----------------------	|---------------	|---------------	|---------------	|
 | **Page Size**                              	| 3,1 MB                	| 1 MB *(32%)*    	| 183 KB *(5,8%)* 	| 17 KB *(0,54%)* 	|
@@ -169,6 +170,7 @@ Some numbers:
 | **Text + Images** (% of Page Size)         	| 5,8 %                 	| 17,9 %        	| 100 %         	|               	|
 | **Text + Images + Video** (% of Page Size) 	| 32,3 %                	| 100 %         	|               	|               	|
 
+</div>
 <span class="update">Note: Data on the number of requests (first- and third-party) and cookies (first- and third-party) comes from Dataskydd Webbkoll. The rest of the data comes from Chromium's built-in web inspector. All connections were made from Paris, France with cacheing disabled and the bandwidth throttled to simulate a "fast 3G" connection. You can run these numbers yourself; they should vary only nominally depending on where you are. If you find errors, please let me know.</span>
 
 Those are some very interesting figures. Some highlights:
