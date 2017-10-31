@@ -7,20 +7,6 @@ draft: false
 keyword: internet, break, empower, designers, design, respect, open, privacy, user-hostile, rights, free, web, facebook, twitter, centralized, decentralized, strategy, design, respect, https, advertising, ads, invasive, track, webbkoll, dataskydd, history, gopher, usenet 
 ---
 
-*Multimedia:*
-
-- Modem handshake noise
-- My first website or Netscape Navigator
-- Gopher or early www in a black terminal (to do Bad Things)\
-- Photo of the document that permitted the web to be released freely into the public domain 
-- Screenshot of Cambridge Analytica guy with quote in caption
-- Screenshot of Le Monde article
-- Photo of Francisco de Goya's "The Nude Maja
-- Screenshot: absurd Facebook/Twitter notification or request (bad UX)
-- Our incredible adventure
-- Screenshot: choose from Hotmail, Dogpile, Altavista, Northern Lights...
-
-
 I quit Facebook seven months ago.
 
 Despite its undeniable value, I think Facebook is at odds with the open web that I love and defend. This essay is my attempt to explain not only why I quit Facebook but why I believe we're slowly replacing a web that empowers with one that restricts and commoditizes people. And why we should, at the very least, stop and think about it.
@@ -31,15 +17,23 @@ Despite its undeniable value, I think Facebook is at odds with the open web that
 
 I love the web. 
 
-I don't mean that in the way that someone might say that they love pizza. For many of us in the early 2000s, the web was magical. You connected a phone line to your computer, let it make [a funny noise](#recording_OGG_Vorbis) and suddenly you had access to a seemingly-unending repository of thoughts and ideas from people around the world. 
-
-<a class="song" onclick="playPause(this)"><audio><source src="/music/dial_up_modem_noises.ogg" type="audio/ogg"></audio></a>
+I don't mean that in the way that someone might say that they love pizza. For many of us in the early 2000s, the web was magical. You connected a phone line to your computer, let it make [a funny noise](/resc/dial_up_modem_noises.ogg) and suddenly you had access to a seemingly-unending repository of thoughts and ideas from people around the world. 
 
 It might not seem like much now, but what that noise represented was the stuff of science fiction at the time: near-instantaneous communication at a planetary scale. It was a big deal.
 
 I was an average student at school. Despite well-meaning and often wonderful teachers, I didn't thrive much in a school system that valued test performance and fact-retention over genuine curiosity. Had it not been for the web, I might have convinced myself that I was a poor learner; instead, I realized that learning is one of my great passions in life. 
 
+<figure>
+  <img src="/img/against-user-hostile-web/gamma-ray-fan-2001.png" alt="One of my earlier websites, from 2011" />
+  <figcaption>What remains of my fan site for German powermetal band Gamma Ray from 2011, archived thanks to the wonderful folks over at <a href="https://archive.org">Archive.org</a></figcaption>
+</figure>
+
 I was 11 when I set up my first website. Growing up in Nepal, this *was* magical. Almost everything I love today — design, cosmology, metal music, computation, foreign languages, philosophy — I discovered through the many pages that found their way to my web browser. All I needed were curiosity, a phone line and that strange little electrical song. And good old [Netscape Navigator](http://sillydog.org/narchive/full123.php).
+
+<figure>
+  <img src="/img/against-user-hostile-web/Netscape-4-04-1997.png" alt="Netscape Navigator 4.04" />
+  <figcaption>Netscape Navigator 4.04, source: <a href="http://www.andrewturnbull.net/mozilla/history.html">A Visual Browser History, from Netscape 4 to Mozilla Firefox</a></figcaption>
+</figure>
 
 The web enabled that. It's one of humanity's greatest inventions. And now, we the architects of the modern web — web designers, UX designers, developers, creative directors, social media managers, data scientists, product managers, start-up people, strategists — are destroying it. 
 
@@ -64,7 +58,17 @@ It all began in the early 90s.
 
 The Internet — the physical network that allowed computers around the world to communicate - was already in place but it remained inaccessible to most people. You had to know how to use a local client to connect to a remote FTP, [Usenet](https://en.wikipedia.org/wiki/Usenet), [Gopher](https://ils.unc.edu/callee/gopherpaper.htm) or an email server. This was before the days of ubiquitous graphical user interfaces so you had to type funny commands into a terminal, one of those black screens with green text that that hackers supposedly use to do *Bad Things*. 
 
+<figure>
+  <img src="/img/against-user-hostile-web/Gopher-Usenet-Archives-1981.png" alt="Usenet Archives from 1981 on gopher server Quux.org" />
+  <figcaption>Usenet Archives from 1981 on <a href="http://gopher.floodgap.com/gopher/gw?gopher://gopher.quux.org:70/1/Archives/usenet-a-news">gopher server Quux.org</a>, accessed 31 October 2017 via <a href="https://lynx.browser.org">lynx</a></figcaption>
+</figure>
+
 Meanwhile, Tim Berners-Lee was working as an independent contractor at CERN in Geneva. Frustrated with how difficult it was to find, organize and update technical documentation, he proposed a solution that involved "global computer networked information system" that "presented users with a web of interlinked documents", called *Mesh*. Pretty soon it became apparent that WWW — World Wide Web, as it [came to be known](https://www.w3.org/Proposal.html) — could do more than just link technical documents.
+
+<figure>
+  <img src="/img/against-user-hostile-web/world-wide-web-1992.png" alt="Usenet Archives from 1981 on gopher server Quux.org" />
+  <figcaption><a href="http://info.cern.ch/hypertext/WWW/TheProject.html">The world's first website</a>, accessed 31 October 2017 via <a href="https://lynx.browser.org">lynx</a></figcaption>
+</figure>
 
 On April 30 1993, CERN made a bold decision. It decided to release WWW into the public domain. It renounced all intellectual property and essentially invited anyone at all, anywhere in the world, to play with it. Later, the director of CERN who approved the decision said that he was inspired [Richard Stallman](https://stallman.org)'s vision of [free, open software](https://www.gnu.org/philosophy/free-sw.en.html).
 
@@ -90,6 +94,11 @@ Almost every website you go to today reports your activities to third parties th
 
 These companies build profiles, anonymous at first, with your interests and navigational behavior. These profiles can then get increasingly personal: they might include your email addresses, home adress, income, educational history, political affiliation, information on your family. Over time, they can cross-reference all this information with your location data to figure out where you work, which restaurants you go to, where you gym is. Recently, we even learnt that Google was able to associate your offline purchases with your online ad viewing history (albeit *anonymously*, it would appear). Once they have that, they can look into your behavior and psychology: what kind of ads do you tend to click on? What kind of messages resonate most with you? What are the best strategies to influence your opinion?
 
+<figure>
+  <img src="/img/against-user-hostile-web/Cambridge-Analytica-youtube-2017.png" alt="Screenshot of Mr. Alexander Nix presenting the work of Cambridge Analytica, video The Power of Big Data and Psychographics on Youtube" />
+  <figcaption>Screenshot of Mr. Alexander Nix presenting the work of Cambridge Analytica, video [The Power of Big Data and Psychographics on Youtube](https://www.youtube.com/watch?v=n8Dd5aVXLCc) </figcaption>
+</figure>
+
 The Leave campaign responsible for Brexit in the United Kingdom and Donald Trump's 2016 presidential campaign both bought the services of a certain [Cambridge Analytica](https://www.theguardian.com/politics/2017/feb/26/robert-mercer-breitbart-war-on-media-steve-bannon-donald-trump-nigel-farage), a company that boasts a gigantic database containing personal details amounting to "close to four or five thousand data points  on every adult in the United States" ([their own words](https://youtu.be/n8Dd5aVXLCc?t=478)). The goal? Craft hyper-personalized messages to change voting behavior based on your individual personalities, and by extension, your attitudes, opinions and fears. So if you are identified as a dad of three young kids in rural Texas, the message is nuanced to suggest that only a certain candidate will be able to protect your family against real or imagined threats. If you are identified as a patriot who's previously posted comments about gun rights and the second amendment, it might be about crime rates and how the opposition is trying to take your constitutional rights away from you. 
 
 >>You become a manipulable data point at the mercy of big corporations who sell their ability to manipulate you based on the data you volunteer.
@@ -113,6 +122,11 @@ We'll need a few things:
 - A web inspector
 
 Let's take an article that was published around the time I first started working on this article (which is last year; I'm a slow writer): [Astronomie : la sonde Juno s’est mise en orbite autour de Jupiter](http://www.lemonde.fr/sciences/article/2016/07/04/astronomie-juno-aux-portes-de-jupiter_4963440_1650684.html) (*Astronomy: space probe Juno put in orbit around Jupiter*).
+
+<figure>
+  <img src="/img/against-user-hostile-web/LeMonde-sonde-jupiter-article-2016.png" alt="Le Monde article 'Astronomie : la sonde Juno s’est mise en orbite autour de Jupiter'" />
+  <figcaption>Le Monde article <a href="http://www.lemonde.fr/sciences/article/2016/07/04/astronomie-juno-aux-portes-de-jupiter_4963440_1650684.html">Astronomie : la sonde Juno s’est mise en orbite autour de Jupiter</a></figcaption>
+</figure>
 
 If you run this URL through [Dataskydd's Webbkoll](http://webbkoll.dataskydd.net) and a web inspector tool (I used Chromium's web inspector), you learn a few interesting things: the page is **3.9 MB** in size, makes about **600 HTTP requests** of which **442 are third-party requests** (outside of its parent domain) and takes **3.74 seconds** to load from Stockholm, Sweden.
 
@@ -185,7 +199,17 @@ You could buy a [Raspberry Pi Zero](https://www.raspberrypi.org/products/raspber
 
 But most of the time we spend on the web today is no longer on the open Internet - it's on private services like Facebook, Twitter and LinkedIn. While Facebook provides a valuable service, it is also a for-profit, company. Their source of revenue is advertising. It is the epitome of centralized. 
 
-Try posting a picture of the [Francisco de Goya's "The Nude Maja"](https://www.museodelprado.es/en/the-collection/art-work/the-naked-maja/65953b93-323e-48fe-98cb-9d4b15852b18) or your naked breasts (if you're a woman) on Facebook; it'll almost certainly be removed. It's against their terms of use. To use their platform, you have to agree to whatever conditions they set, however absurd. If you replace the open web with Facebook, you're giving up your right to publish and share on your terms. The data that you post there does not belong to you; you're putting it in a closed system. If one day Facebook decides to shut down — unlikely as that might seem today — your data goes with it. Sure, you might be able to download parts of it, but then what?
+<figure>
+  <img src="/img/against-user-hostile-web/naked-maja-francisco-goya.jpg" alt="Francisco Goya's paintain The Naked Maja " />
+  <figcaption>Francisco Goya's *The Naked Maja* (1800)</figcaption>
+</figure>
+
+Try posting a picture of the [Francisco de Goya's "The Naked Maja"](https://www.museodelprado.es/en/the-collection/art-work/the-naked-maja/65953b93-323e-48fe-98cb-9d4b15852b18) or your naked breasts (if you're a woman) on Facebook; it'll almost certainly be removed. It's against their terms of use. To use their platform, you have to agree to whatever conditions they set, however absurd. If you replace the open web with Facebook, you're giving up your right to publish and share on your terms. The data that you post there does not belong to you; you're putting it in a closed system. If one day Facebook decides to shut down — unlikely as that might seem today — your data goes with it. Sure, you might be able to download parts of it, but then what?
+
+<figure>
+  <img src="/img/against-user-hostile-web/incredible-journey-2017.png" alt="Tumblr Blog Our Incredible Journey, a short history of start ups " />
+  <figcaption>Tumblr Blog <a href="https://ourincrediblejourney.tumblr.com/">Our Incredible Journey</a>, *"cataloging the thrilling opportunities start-ups are offered when their incredible journey continues by being bought by an exciting company. However, as a user of the start-up’s service, your own incredible journey must end, because all of your photos and writing and checkins and messages and relationships must now be deleted"*. </figcaption>
+</figure>
 
 This works because they know you'll agree to it. You'll say you don't have a choice, because your friends are all there — the infamous "network effect". This is Facebook's currency, its source of strength but also a crucial dependency. 
 
@@ -211,7 +235,12 @@ The web is open and democratic by design and it empowers people. This is the web
 
 The modern web began, I think, when it expanded from an information system to a broader platform for information and services. 
 
-*Hotmail* wanted to give everyone in the planet a free email address. Search engines like Google (and *Dogpile*, *Excite*, *AltaVista* and *Northern Lights*, for those who remember) offered to help us find relevant information in a rapidly growing, unorganized collection of linked documents. There was even a period where Mozilla's *DMOZ* projet had the ambitious goal of being an open, human-run directory of all things on the Internet (much like an online version of the Yellow Pages of yore). Then came *Wikipedia*, perhaps the most ambitious project in organizing human knowledge since the library of Alexandria.
+*Hotmail* wanted to give everyone in the planet a free email address. Free hosting services like *Geocities* let pretty much anyone create their own website. Search engines like Google (and *Dogpile*, *Excite*, *AltaVista* and *Northern Lights*, for those who remember) offered to help us find relevant information in a rapidly growing, unorganized collection of linked documents. There was even a period where Mozilla's *DMOZ* projet had the ambitious goal of being an open, human-run directory of all things on the Internet (much like an online version of the Yellow Pages of yore). Then came *Wikipedia*, perhaps the most ambitious project in organizing human knowledge since the library of Alexandria.
+
+<figure>
+  <img src="/img/against-user-hostile-web/DoomLevelDesign-Geocities-1999.png" alt="A website about Doom Level design" />
+  <figcaption>A website on Doom level design on Geocities from 1999, accessed October 31, 20017 via <a href="https://web.archive.org/web/20010404034632/http://www.geocities.com:80/Hollywood/2979/">Archive.org</a></figcaption>
+</figure>
 
 The next big breakthrough was e-commerce, the ability to buy and sell over the Internet. This naturally brought a lot of value to humanity: people could browse and buy stuff from the comfort of their homes and businesses big and small could reach more people. Amazon went from being a relatively small online bookstore to a global marketplace. eBay became a global marketplace for people wanting to buy and sell second-hand goods. PayPal promised to let anyone send money to anyone, anywhere in the world.
 
@@ -257,8 +286,8 @@ Here's a basic list:
 
 It all comes down to one simple question: **what do we want the web to be?** 
 
-**Do we want the web to be open, accessible, empowering and collaborative? Free, in the spirit of CERN’s decision in 1993 or that open source tools it's built on? Or do we want it to be just another means of endless consumption, where people become eyeballs, targets and profiles? Where companies use your data to control your behaviour and which enables a surveillance society — what do we want?**
+>> Do we want the web to be open, accessible, empowering and collaborative? Free, in the spirit of CERN’s decision in 1993 or that open source tools it's built on? Or do we want it to be just another means of endless consumption, where people become eyeballs, targets and profiles? Where companies use your data to control your behaviour and which enables a surveillance society — what do we want?
 
-For me, the choice is clear. And it's worth fighting for.
+For me, the choice is clear. And it's something worth fighting for.
 
 I hope this article has been interesting. If you have thoughts—you agree, disagree, have reservations, other ideas or a suggestion—I'd love to hear them! You can email me at *userhostileweb**—at—**neustadt.fr*. or, if you're a member of Hacker News or Reddit, add your comment there.
