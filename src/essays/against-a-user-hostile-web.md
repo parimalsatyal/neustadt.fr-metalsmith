@@ -157,23 +157,23 @@ Some numbers:
 
 Those are some very interesting figures. Some highlights:
 
-- The article **text makes up less than 0.6% of the total size of the page** (Version C), and requires exactly 1 request and 0 cookies.	
-- If you include the three images along with the text (Version B), that’s still less than 6% of the total size of the LeMonde article (and still zero cookies). This means that **94% of the data transferred between you and LeMonde.fr has nothing to do with the article**.
+- The article **text makes up less than 0.6% of the total size of the page** *(Version C)*, and requires exactly 1 request and 0 cookies.	
+- If you include the three images along with the text *(Version B)*, that’s still less than 6% of the total size of the LeMonde article (and still zero cookies). This means that **94% of the data transferred between you and LeMonde.fr has nothing to do with the article**.
 - What about the video, you ask? Before you even play it, **that one video adds over a 100 requests (60 of which are to 15 additional third parties) and 16 third-party cookies**. It also adds over 800 KB of data. Again, this is before you even decide to play the video. The video might be related to the content, but it’s doing a lot more than that.	
-- Even compared to the version with the video, **the LeMonde article makes about 450 additional third party requests, of which 370 are to about 100 additional third parties, storing 100 additional cookies (55 of which are third party cookies)**. It also adds over 2 MB to the page. That’s a lot of crap that that has nothing to do with the article you're reading.
-- The text + image version (B) is **able to load the entire text and the 3 images with only 5 requests and no cookies whatsoever**. Adding a video should reasonably add one or two more requests and maybe one cookie, not 450 requests and 100 cookies, the majority of which on behalf of companies you neither know nor trust, including those who track and sell your data for profit.	
+- Even compared to the version with the video *(Version A)*, **the LeMonde article makes about 450 additional third party requests, of which 370 are to about 100 additional third parties, storing 100 additional cookies (55 of which are third party cookies)**. It also adds over 2 MB to the page. That’s a lot of crap that that has nothing to do with the article you're reading.
+- The text + image version *(Version B)* is **able to load the entire text and the 3 images with only 5 requests and no cookies whatsoever**. Adding a video should reasonably add one or two more requests and maybe one cookie, not 450 requests and 100 cookies, the majority of which on behalf of companies you neither know nor trust, including those who track and sell your data for profit.	
 
 >> Essentially, this means that about 94% of the data being transferred and 99% of the requests being made have nothing to do with the article itself. Le Monde might principally be a newspaper in its printed version, but the online version is an invasive, insecure advertising platform with good content (in that order).
 
 If you're curious, trying using [Webbkoll](http://webbkoll.dataskydd.net) on other websites you visit to see how privacy-friendly and respectful these websites are. We'll get into how to protect yourself from these third-party trackers [later on in the article](#the-way-forward).
 
-All this might not be illegal (although there's some doubt, especially now that in the context of up the upcoming [European General Regulation on Data Protection](https://www.eugdpr.org)), but it is rather disrepectful towards the user. Not only are these websites breaking my trust—when I visit your website, I entered into contact with you, not 80 other websites—but they are loading content from websites neither know nor trust. And which may contain malware. 
+All this might not be illegal (although there's some doubt, especially now that in the context of up the upcoming [European General Regulation on Data Protection](https://www.eugdpr.org)), but it is rather disrepectful towards the user. Not only are these websites breaking my trust—when I visit your website, I entered into contact with you, not 80 other websites—but they are loading content from websites neither know nor trust. Some of which have been [know to spread malware](https://www.theguardian.com/technology/2016/mar/16/major-sites-new-york-times-bbc-ransomware-malvertising). 
 
 >> Using an ad/content-blocker isn't cheating the system; it's taking very basic precautions that websites like Le Monde can't be bothered to take to protect you. For me, it's a basic necessity in the modern web. 
 
 If you're reading this and are wondering what to do to protect yourself, skip ahead to the [The Way Forward](#the-way-forward) section. 
 
-If you run a website and you put official share buttons on your website, use intrusive analytics platforms (like X and Y, instead of Piwik), serve ads through a third-party ad network or use pervasive cookies to share and sell data on your users, you're contributing to a user-hostile web. You're using free and open-source tools created by thousands of collaborators around the world, over an open web and in the spirit of sharing, to subvert users. 
+If you run a website and you put official share buttons on your website, use intrusive analytics platforms, serve ads through a third-party ad network or use pervasive cookies to share and sell data on your users, you're contributing to a user-hostile web. You're using free and open-source tools created by thousands of collaborators around the world, over an open web and in the spirit of sharing, to subvert users. 
 
 ## Gated Communities
 
@@ -255,7 +255,7 @@ Here's a basic list:
 
 It all comes down to one simple question: **what do we want the web to be?** 
 
->> Do we want the web to be open, accessible, empowering and collaborative? Free, in the spirit of CERN’s decision in 1993 or that open source tools it's built on? Or do we want it to be just another means of endless consumption, where people become eyeballs, targets and profiles? Where companies use your data to control your behaviour and which enables a surveillance society — what do we want?
+**Do we want the web to be open, accessible, empowering and collaborative? Free, in the spirit of CERN’s decision in 1993 or that open source tools it's built on? Or do we want it to be just another means of endless consumption, where people become eyeballs, targets and profiles? Where companies use your data to control your behaviour and which enables a surveillance society — what do we want?**
 
 For me, the choice is clear. And it's worth fighting for.
 
