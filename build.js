@@ -7,8 +7,8 @@ var metalsmith        = require('metalsmith'),
     handlebars        = require('handlebars'),
     metallic          = require('metalsmith-metallic'),
     serve             = require('metalsmith-serve'),
-    watch             = require('metalsmith-watch');
-		redirect					= require('metalsmith-redirect');
+    watch             = require('metalsmith-watch'),
+    redirect		  = require('metalsmith-redirect');
 
 handlebars.registerHelper('moment', require('helper-moment'));
 

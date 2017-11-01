@@ -1,6 +1,6 @@
 ---
 title: "Against an Increasingly User-Hostile Web"
-date: 2017-11-01
+date: 2017-11-02
 blurb: "We're quietly replacing an open web that connects and empowers with one that restricts and commoditizes people. We need to stop it."
 type: essay
 draft: false
@@ -9,7 +9,7 @@ keyword: internet, break, empower, designers, design, respect, open, privacy, us
 
 I quit Facebook seven months ago.
 
-Despite its undeniable value, I think Facebook is at odds with the open web that I love and defend. This essay is my attempt to explain not only why I quit Facebook but why I believe we're slowly replacing a web that empowers with one that restricts and commoditizes people. And why we should, at the very least, stop and think about it.
+Despite its undeniable value, I think Facebook is at odds with the open web that I love and defend. This essay is my attempt to explain not only why I quit Facebook but why I believe we're slowly replacing a web that empowers with one that restricts and commoditizes people. And why we should, at the very least, stop and think about the consequences of that shift.
 
 ## The Web: Backstory 
 
@@ -24,11 +24,11 @@ It might not seem like much now, but what that noise represented was the stuff o
 I was an average student at school. Despite well-meaning and often wonderful teachers, I didn't thrive much in a school system that valued test performance and fact-retention over genuine curiosity. Had it not been for the web, I might have convinced myself that I was a poor learner; instead, I realized that learning is one of my great passions in life. 
 
 <figure>
-  <img src="/img/against-user-hostile-web/gamma-ray-fan-2001.png" alt="One of my earlier websites, from 2011" />
-  <figcaption>What remains of my fan site for German powermetal band Gamma Ray from 2011, archived thanks to the wonderful folks over at <a href="https://archive.org">Archive.org</a></figcaption>
+  <img src="/img/against-user-hostile-web/gamma-ray-fan-2001.png" alt="One of my earlier websites, from 2001" />
+  <figcaption>What remains of my fan site for German powermetal band Gamma Ray from 2001, archived thanks to the wonderful folks over at <a href="https://archive.org">Archive.org</a></figcaption>
 </figure>
 
-I was 11 when I set up my first website. Growing up in Nepal, this *was* magical. Almost everything I love today — design, cosmology, metal music, computation, foreign languages, philosophy — I discovered through the many pages that found their way to my web browser. All I needed were curiosity, a phone line and that strange little electrical song. And good old [Netscape Navigator](http://sillydog.org/narchive/full123.php).
+I was 11 when I set up my first website. Growing up in Nepal, this *was* magical. Almost everything I love today — design, aviation, cosmology, metal music, computation, foreign languages, philosophy — I discovered through the many pages that found their way to my web browser. All I needed were curiosity, a phone line and that strange little electrical song. And good old [Netscape Navigator](http://sillydog.org/narchive/full123.php).
 
 <figure>
   <img src="/img/against-user-hostile-web/Netscape-4-04-1997.png" alt="Netscape Navigator 4.04" />
@@ -37,7 +37,7 @@ I was 11 when I set up my first website. Growing up in Nepal, this *was* magical
 
 The web enabled that. It's one of humanity's greatest inventions. And now, we the architects of the modern web — web designers, UX designers, developers, creative directors, social media managers, data scientists, product managers, start-up people, strategists — are destroying it. 
 
-We're very good at talking about *immersive experiences*, *personalized content*, *growth hacking*, *responsive strategy*, *user centered design*, *social media activation*, *retargeting*, *CMS* and *user experience*. But behind all this jargon lurks the uncomfortable idea that we might be accomplicies in the destruction of a platform that was meant to empower and bring people together; the possibility that we are instead building a machine that surveils, subverts, manipulates, overwhelms and exploits people. 
+We're very good at talking about *immersive experiences*, *personalized content*, *growth hacking*, *responsive strategy*, *user centered design*, *social media activation*, *retargeting*, *CMS* and *user experience*. But behind all this jargon lurks the uncomfortable idea that we might be accomplices in the destruction of a platform that was meant to empower and bring people together; the possibility that we are instead building a machine that surveils, subverts, manipulates, overwhelms and exploits people. 
 
 It all comes down a simple but very dangerous shift: the major websites of today's web are not built for the visitor, but as means of *using* her. Our visitor has become a data point, a customer profile, a potential lead -- a proverbial fly in the spider's web. In the guise of *user centered design*, we're building an increasingly *user-hostile* web.
 
@@ -105,7 +105,7 @@ The Leave campaign responsible for Brexit in the United Kingdom and Donald Trump
 
 This is the equivalent of someone following you in real life as you go about your everyday business, like a private eye who notes down with whom you meet, what you talk about with whom, what you spend time looking at in stores. A private eye who takes notes and then sells it to the highest bidder. But you got to enter the the store for free, so you should be so glad. The stores might also justify it. *"Sure it's a bit creepy, but we'll be able to give you better recommendations if we know what you like"*. 
 
-But how do they get all this personal information -- where you live, who your friends are, what your relgion and ethnicity are, where you were last night, what you bought on Monday? Most of it you volunteer yourself on social platforms like Facebook, Twitter and Instagram. The little share buttons you see on websites aren't just there to make it easy for you to post a link to Facebook; they also allow Facebook to be present and gather information about you from pretty much any website. 
+But how do they get all this personal information -- where you live, who your friends are, what your religion and ethnicity are, where you were last night, what you bought on Monday? Most of it you volunteer yourself on social platforms like Facebook, Twitter and Instagram. The little share buttons you see on websites aren't just there to make it easy for you to post a link to Facebook; they also allow Facebook to be present and gather information about you from pretty much any website. 
 
 But how can you know that any of this is true? 
 
@@ -185,7 +185,7 @@ Those are some very interesting figures. Some highlights:
 
 If you're curious, trying using [Webbkoll](http://webbkoll.dataskydd.net) on other websites you visit to see how privacy-friendly and respectful these websites are. We'll get into how to protect yourself from these third-party trackers [later on in the article](#the-way-forward).
 
-All this might not be illegal (although there's some doubt, especially now that in the context of up the upcoming [European General Regulation on Data Protection](https://www.eugdpr.org)), but it is rather disrepectful towards the user. Not only are these websites breaking my trust—when I visit your website, I entered into contact with you, not 80 other websites—but they are loading content from websites neither know nor trust. Some of which have been [know to spread malware](https://www.theguardian.com/technology/2016/mar/16/major-sites-new-york-times-bbc-ransomware-malvertising). 
+All this might not be illegal (although there's some doubt, especially now that in the context of up the upcoming [European General Regulation on Data Protection](https://www.eugdpr.org)), but it is rather disrespectful towards the user. Not only are these websites breaking my trust—when I visit your website, I entered into contact with you, not 80 other websites—but they are loading content from websites neither know nor trust. Some of which have been [know to spread malware](https://www.theguardian.com/technology/2016/mar/16/major-sites-new-york-times-bbc-ransomware-malvertising). 
 
 >> Using an ad/content-blocker isn't cheating the system; it's taking very basic precautions that websites like Le Monde can't be bothered to take to protect you. For me, it's a basic necessity in the modern web. 
 
@@ -268,8 +268,8 @@ Here's a basic list:
 - Install [HTTPS Everywhere](https://www.eff.org/https-everywhere) for your browser; this forces your information through secure, encrypted channels (HTTPS vs HTTP one) if possible. It can also be configured to only allow connections to HTTPS websites.
 - Think about how much information/details you provide to social media platforms like Facebook, Linked, Twitter and Instagram. They already have quite a lot (including the ability to recognize you by name on photographs), but what other information are you volunteering? Where you are, whom you're with, information about your friends?
 - Consider quitting social networks, especially Facebook (but download your data first!). What would you miss the most? Are there alternatives? 
-- Consider alternatives to free services provided by the likes of Google and Facebook. Today, if both of these companies shut down (or implement policies I don't like), I would mostly be fine because my contact with them is limited. I use [DuckDuckGo](https://ddg.co) and [Startpage](https://http://startpage.com) for search (free); [FastMail](https://fastmail.com) for email and calender (less than 40€ a year) ; [HERE WeGo](https://wego.here.com) for maps (free); [Signal](https://signal.org), email and IRC for messaging (free, along with iMessage, Whatsapp and Twitter); [Digital Ocean](https://digitalocean.com) for web hosting (about 5€ per month). 
-- Pay for services and content tha you like, if you are able. If you like reading [The Guardian](https://theguardian.com), for example, consider subscribing. If your [favourite YouTube channel is on Patreon](https://www.patreon.com/easygerman), consider pledging a small amount per video. If you like services like [Pinboard.in](https:/http://pinboard.in) that charge in return for a useful service, buy it. There's mutual respect when both the user and the service provider know what basic service they are buying/selling.
+- Consider alternatives to free services provided by the likes of Google and Facebook. Today, if both of these companies shut down (or implement policies I don't like), I would mostly be fine because my contact with them is limited. I use [DuckDuckGo](https://ddg.co) and [Startpage](https://http://startpage.com) for search (free); [FastMail](https://fastmail.com) for email and calendar (less than 40€ a year) ; [HERE WeGo](https://wego.here.com) for maps (free); [Signal](https://signal.org), email and IRC for messaging (free, along with iMessage, Whatsapp and Twitter); [Digital Ocean](https://digitalocean.com) for web hosting (about 5€ per month). 
+- Pay for services and content that you like, if you are able. If you like reading [The Guardian](https://theguardian.com), for example, consider subscribing. If your [favourite YouTube channel is on Patreon](https://www.patreon.com/easygerman), consider pledging a small amount per video. If you like services like [Pinboard.in](https:/http://pinboard.in) that charge in return for a useful service, buy it. There's mutual respect when both the user and the service provider know what basic service they are buying/selling.
 - At the very least, consider that the platforms you use need you more than you need them. You have power over them (unfortunately, in numbers) and they know it. If enough people care about privacy and respect for their data and time, platforms will have to adapt to stay relevant.
 
 ### For web professionals (you, fellow industry colleague)
@@ -281,7 +281,7 @@ Here's a basic list:
 - Minimize third-party dependencies like Google Fonts (you can [self-host them](https://google-webfonts-helper.herokuapp.com/fonts) instead).
 - Avoid ad networks (like the plague!) if possible. Serve your own ads by selling ad space the old school way if you're able. If not, explore privacy-respecting methods of serving ads, including developments powered by the blockchain (like the [Basic Attention Token](https://basicattentiontoken.org)). 
 - Respect [Do Not Track](http://donottrack.us).
-- Carefully consider the benefits of hyper personalisation and retargeting. The benefits are debatable but the long term consequences might be desasterous. Ask yourself: would you be okay with a company collecting as much data (as you seek to collect) on your teenage daughter, your nephew in college, your husband or your grand-mother?
+- Carefully consider the benefits of hyper personalisation and retargeting. The benefits are debatable but the long term consequences might be disastrous. Ask yourself: would you be okay with a company collecting as much data (as you seek to collect) on your teenage daughter, your nephew in college, your husband or your grand-mother?
 - Consider business models where you actually respect your clients and your website visitors instead of using them. If you can't be honest about your business model with your client, maybe you need to ask questions.
 
 ## Thoughts and feedback
@@ -292,4 +292,4 @@ It all comes down to one simple question: **what do we want the web to be?**
 
 For me, the choice is clear. And it's something worth fighting for.
 
-I hope this article has been interesting. If you have thoughts—you agree, disagree, have reservations, other ideas or a suggestion—I'd love to hear them! You can email me at *userhostileweb**—at—**neustadt.fr*. or, if you're a member of Hacker News or Reddit, add your comment there.
+I hope this article has been interesting. If you have thoughts—you agree, disagree, have reservations, other ideas or a suggestion—I'd love to hear them! This [article is on GitHub](https://github.com/parimalsatyal/neustadt.fr-metalsmith/blob/master/src/essays/against-a-user-hostile-web.md); if you'd like you can send a pull request with edit suggestions (like [Anders](https://anders.unix.se) did, thank you!). You can also get in touch via email (*userhostileweb**—at—**neustadt.fr*) or, if you're on Hacker News or Reddit, share your thoughts there.
