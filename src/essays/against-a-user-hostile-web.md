@@ -47,10 +47,9 @@ If you work in the design/communication industry, consider this essay introspect
 
 1. [The Web was Born Open: a very brief history of the web](#the-web-was-born-open)
 2. [The Modern Web (of Deception): the disturbing state of the web today](#the-modern-web-of-deception-)
-3. [Track the Trackers, a Personal Experiment: whom websites are sharing your information with](#track-the-trackers-an-experiment)
+3. [Track the Trackers, an Experiment: with whom websites are sharing your information](#track-the-trackers-an-experiment)
 4. [Gated Communities: recentralization and closed platforms](#gated-communities)
-5. [Free but Not Free](#free-but-not-free)
-6. [The Way Forward: open tools, technologies and services for a better web](#the-way-forward)
+5. [The Way Forward: open tools, technologies and services for a better web](#the-way-forward)
 
 ## The Web was Born Open
 
@@ -70,7 +69,7 @@ Meanwhile, Tim Berners-Lee was working as an independent contractor at CERN in G
   <figcaption><a href="http://info.cern.ch/hypertext/WWW/TheProject.html">The world's first website</a>, accessed 31 October 2017 via <a href="https://lynx.browser.org">lynx</a></figcaption>
 </figure>
 
-On April 30 1993, CERN made a bold decision. It decided to release WWW into the public domain. It renounced all intellectual property and essentially invited anyone at all, anywhere in the world, to play with it. Later, the director of CERN who approved the decision said that he was inspired [Richard Stallman](https://stallman.org)'s vision of [free, open software](https://www.gnu.org/philosophy/free-sw.en.html).
+On April 30 1993, CERN made a bold decision. It decided to release WWW into the public domain. It renounced all intellectual property rights and essentially invited anyone at all, anywhere in the world, to play with it. Later, the director of CERN who approved the decision said that he was inspired [Richard Stallman](https://stallman.org)'s vision of [free, open software](https://www.gnu.org/philosophy/free-sw.en.html).
 
 Had CERN decided otherwise and patented the technology to then license it for money, the web would arguably not have taken off the way it did. It might have died out like the [Minitel](https://en.wikipedia.org/wiki/Minitel) did in France. The web as we know it was borne of a vision to create an open system that brought people and ideas together, with documents that "may reside on any computer supported by that web". 
 
@@ -145,9 +144,9 @@ Now let's look at some of the third parties that the website connects to when yo
 
 These are mostly advertising or content monetization platforms; companies like Weborama make money by selling information about you. When people say, "you're the product", it isn't just some analogy, it accurately reflecs the business propositions of such companies. 
 
-What's surprising is that the bulk of the information transferred between LeMonde and you don't even concern the actual article. If you were to isolate the actual content—the words, images and video—and put it in an HTML file, it would weigh considerably less than 3.7MB and would make a lot fewer requests. 
+What's surprising is that the bulk of the information transferred between LeMonde and you don't even concern the actual article. If you were to isolate the actual content—the words, images and video—and put it in an HTML file, it would weigh considerably less than 3.1 MB and would make a lot fewer requests. 
 
-If fact, I did just take and made three versions :
+If fact, I did just that and made three versions :
 
 - **[Version A](http://webfiles.neustadt.fastmail.com.user.fm/leMondeJupiterArticle.html)**: With the original text (including comments, images and video
 - **[Version B](http://webfiles.neustadt.fastmail.com.user.fm/leMondeJupiterArticle-noVideo.html)**: With the original text (including comments), images but no video
@@ -165,21 +164,22 @@ Some numbers:
 | **Third Parties Contacted**                	| 118                   	| 17 *(14,4%)*    	| 2 *(11,8%)*     	| 0             	|
 | **Cookies (total)**                        	| 100                   	| 16 *(16%)*      	| 0             	| 0             	|
 | **Cookies (third-party)**                  	| 73                    	| 16 *(21,9%)*    	| 0             	| 0             	|
-|                                        	|                       	|               	|               	|               	|
-| **Text** (% of Page Size)                  	| 0,5 %                 	| 1,7 %         	| 9,5 %         	| 100 %         	|
-| **Text + Images** (% of Page Size)         	| 5,8 %                 	| 17,9 %        	| 100 %         	|               	|
-| **Text + Images + Video** (% of Page Size) 	| 32,3 %                	| 100 %         	|               	|               	|
+|                                       		 	|                       	|               	|               	|               	|
+| **Text** <br /> (% of Page Size)                  	| 0,5 %                 	| 1,7 %         	| 9,5 %         	| 100 %         	|
+| **Text + Images** <br /> (% of Page Size)         	| 5,8 %                 	| 17,9 %        	| 100 %         	|               	|
+| **Text + Images + Video** <br />  (% of Page Size) 	| 32,3 %                	| 100 %         	|               	|               	|
 
 </div>
 <span class="update">Note: Data on the number of requests (first- and third-party) and cookies (first- and third-party) comes from Dataskydd Webbkoll. The rest of the data comes from Chromium's built-in web inspector. All connections were made from Paris, France with cacheing disabled and the bandwidth throttled to simulate a "fast 3G" connection. You can run these numbers yourself; they should vary only nominally depending on where you are. If you find errors, please let me know.</span>
 
-Those are some very interesting figures. Some highlights:
+Those are some very interesting figures. Some observations:
 
-- The article **text makes up less than 0.6% of the total size of the page** *(Version C)*, and requires exactly 1 request and 0 cookies.	
-- If you include the three images along with the text *(Version B)*, that’s still less than 6% of the total size of the LeMonde article (and still zero cookies). This means that **94% of the data transferred between you and LeMonde.fr has nothing to do with the article**.
+- The actual article (text and three images, *version B*) **makes up less than 6% of the total size of the page** on LeMonde.fr. This means that **94% of the data transferred between you and LeMonde.fr has nothing to do with the article**.
 - What about the video, you ask? Before you even play it, **that one video adds over a 100 requests (60 of which are to 15 additional third parties) and 16 third-party cookies**. It also adds over 800 KB of data. Again, this is before you even decide to play the video. The video might be related to the content, but it’s doing a lot more than that.	
-- Even compared to the version with the video *(Version A)*, **the LeMonde article makes about 450 additional third party requests, of which 370 are to about 100 additional third parties, storing 100 additional cookies (55 of which are third party cookies)**. It also adds over 2 MB to the page. That’s a lot of crap that that has nothing to do with the article you're reading.
+- Even compared to the version with the video *(Version A)*, **the LeMonde article makes about 450 additional third party requests, of which 370 are to about 100 additional third parties, storing 100 additional cookies (55 of which are third party cookies)**. It also adds over 2 MB to the page. All that is data that has nothing do with and completely unnecessary to load the article you're reading.
 - The text + image version *(Version B)* is **able to load the entire text and the 3 images with only 5 requests and no cookies whatsoever**. Adding a video should reasonably add one or two more requests and maybe one cookie, not 450 requests and 100 cookies, the majority of which on behalf of companies you neither know nor trust, including those who track and sell your data for profit.	
+- The Le Monde page will **continue to periodically transfer data and make additional requests even after it has completely loaded** and as you scroll and interact with the page. If you monitor network traffic, a lot of this data is going to third-party tracking scripts. For example, a request is made to Xiti.com (a web analytics company) every few seconds.
+- If you don't use a content blocker, you will notice that **in just a matter of minutes, over 30 MB of data will data will be transfered between your browser and the 100+ third parties**. The number of requests will go into the thousands. This will continue to rise as long as you leave your browser open.
 
 >> Essentially, this means that about 94% of the data being transferred and 99% of the requests being made have nothing to do with the article itself. Le Monde might principally be a newspaper in its printed version, but the online version is an invasive, insecure advertising platform with good content (in that order).
 
@@ -227,32 +227,16 @@ You see, the web wasn't meant to be a gated community. It's actually pretty simp
 
 A web server, a public address and an HTML file are all that you need to share your thoughts (or indeed, art, sound or software) with anyone in the world. No authority from which to seek approval, no editorial board, no publisher. No content policy, no dependence on a third party startup that might fold in three years to begin [a new adventure](https://ourincrediblejourney.tumblr.com/about/).
 
-That's what the web makes possible. It's friendship over hyperlink, knowledge over the network, romance over HTTP.
-
-In fact, the browser you're reading this on ([Chrome](https://google.com/intl/en/chrome/browser/ ), [Firefox](https://getfirefox.com), [Links](http://links.twibright.com), whatever), the web server that's hosting this website ([Nginx](httos://nginx.com)), the operating system that this server runs on ([Ubuntu](https:// ubuntu.com)), the programming tools used to make it all work ([python](python.org), [gcc](gcc.gnu.org), [node.js](nodejs.org)...) -- all of these things were created collectively by contributors all around the world, brought together by HTTP. And given away for free in the spirit of sharing.
-
-The web is open and democratic by design and it empowers people. This is the web we're breaking and replacing with one that subverts, manipulates and creates addiction.
-
-## Free but not Free
-
-The modern web began, I think, when it expanded from an information system to a broader platform for information and services. 
-
-*Hotmail* wanted to give everyone in the planet a free email address. Free hosting services like *Geocities* let pretty much anyone create their own website. Search engines like Google (and *Dogpile*, *Excite*, *AltaVista* and *Northern Lights*, for those who remember) offered to help us find relevant information in a rapidly growing, unorganized collection of linked documents. There was even a period where Mozilla's *DMOZ* projet had the ambitious goal of being an open, human-run directory of all things on the Internet (much like an online version of the Yellow Pages of yore). Then came *Wikipedia*, perhaps the most ambitious project in organizing human knowledge since the library of Alexandria.
-
 <figure>
   <img src="/img/against-user-hostile-web/DoomLevelDesign-Geocities-1999.png" alt="A website about Doom Level design" />
   <figcaption>A website on Doom level design on Geocities from 1999, accessed October 31, 20017 via <a href="https://web.archive.org/web/20010404034632/http://www.geocities.com:80/Hollywood/2979/">Archive.org</a></figcaption>
 </figure>
 
-The next big breakthrough was e-commerce, the ability to buy and sell over the Internet. This naturally brought a lot of value to humanity: people could browse and buy stuff from the comfort of their homes and businesses big and small could reach more people. Amazon went from being a relatively small online bookstore to a global marketplace. eBay became a global marketplace for people wanting to buy and sell second-hand goods. PayPal promised to let anyone send money to anyone, anywhere in the world.
+That's what the web makes possible. It's friendship over hyperlink, knowledge over the network, romance over HTTP.
 
-Up to this point, the goal was still broadly to serve people. Companies, though, start realizing that maintaining a large website serving thousands of users requires time, energy and resources. It costs money. But users wouldn't use your service if it wasn't free.
+In fact, the browser you're reading this on ([Chrome](https://google.com/intl/en/chrome/browser/ ), [Firefox](https://getfirefox.com), [Links](http://links.twibright.com), whatever), the web server that's hosting this website ([Nginx](httos://nginx.com)), the operating system that this server runs on ([Ubuntu](https:// ubuntu.com)), the programming tools used to make it all work ([python](python.org), [gcc](gcc.gnu.org), [node.js](nodejs.org)...) -- all of these things were created collectively by contributors all around the world, brought together by HTTP. And given away for free in the spirit of sharing.
 
-Therein lies the problem.
-
-Most of us got used to things being free (as in 0€) on the Internet, but the services we were using still cost money. It was a race to the bottom and companies were forced to find ways to become profitable -- the best they could come up was was an ad-supported model, where they would provide some service or content, get you to sign up and then use their user base as currency to negotiate payment from advertisers.
-
-Most user who now expect services at zero cost and are unwilling to pay with money now simply pay for them in other ways: with their data, attention, time, 'good' behavior and, I'm afraid, sovereignty. 
+The web is open by design and built to empower people. This is the web we're breaking and replacing with one that subverts, manipulates and creates new needs and addiction.
 
 ## The Way Forward
 
