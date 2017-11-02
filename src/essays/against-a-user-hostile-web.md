@@ -136,11 +136,11 @@ That's a lot of big numbers for an article of 1500 words, three images and one v
 Now let's look at some of the third parties that the website connects to when you load it: 
 
 - [Weborama](https://weborama.fr): advertising platform for analytics, digital marketing and behavioral targeting
-- [Visual Revenue](https://visualrevenue.com): predictive analytics platform
-- [AppNexus](https://adnxs.com): multimedia content monitization service
+- [Visual Revenue](http://visualrevenue.com): predictive analytics platform
+- [AppNexus](http://adnxs.com): multimedia content monitization service
 - [Outbrain](https://outbrain.com): "online advertiser specializing in presenting sponsored website links" (Wikipedia)
 - [Facebook](https://facebook.com): a social network and micro-targeted advertising platform
-- [Cedexis](https://www.cedexis.com/): a CND/ad-delivery platform
+- [Cedexis](https://www.cedexis.com): a CND/ad-delivery platform
 
 These are mostly advertising or content monetization platforms; companies like Weborama make money by selling information about you. When people say, "you're the product," it isn't just some analogy, it accurately reflecs the business propositions of such companies. 
 
@@ -185,7 +185,7 @@ Those are some very interesting figures. Some observations:
 
 If you're curious, try using [Webbkoll](https://webbkoll.dataskydd.net) on other websites you visit to see how privacy-friendly and respectful these websites are. We'll get into how to protect yourself from these third-party trackers [later on in the article](#the-way-forward).
 
-All this might not be illegal (although there's some doubt, especially now that in the context of up the upcoming [European General Regulation on Data Protection](https://www.eugdpr.org)), but it is rather disrespectful towards the user. Not only are these websites breaking my trust—when I visit your website, I entered into contact with you, not 80 other websites—but they are loading content from websites neither know nor trust. Some of which have been [know to spread malware](https://www.theguardian.com/technology/2016/mar/16/major-sites-new-york-times-bbc-ransomware-malvertising). 
+All this might not be illegal (although there's some doubt, especially now that in the context of up the upcoming [European General Regulation on Data Protection](http://ec.europa.eu/justice/data-protection/reform/index_en.htm)), but it is rather disrespectful towards the user. Not only are these websites breaking my trust—when I visit your website, I entered into contact with you, not 80 other websites—but they are loading content from websites neither know nor trust. Some of which have been [know to spread malware](https://www.theguardian.com/technology/2016/mar/16/major-sites-new-york-times-bbc-ransomware-malvertising). 
 
 >> Using an ad/content-blocker isn't cheating the system; it's taking very basic precautions that websites like Le Monde can't be bothered to take to protect you. For me, it's a basic necessity in the modern web. 
 
@@ -234,7 +234,7 @@ A web server, a public address and an HTML file are all that you need to share y
 
 That's what the web makes possible. It's friendship over hyperlink, knowledge over the network, romance over HTTP.
 
-In fact, the browser you're reading this on ([Chrome](https://google.com/intl/en/chrome/browser/ ), [Firefox](https://getfirefox.com), [lynx](https://lynx.invisible-island.net), whatever), the web server that's hosting this website ([Nginx](https://nginx.com), the operating system that this server runs on ([Ubuntu](https://ubuntu.com), the programming tools used to make it all work ([python](https://python.org), [gcc](https://gcc.gnu.org), [node.js](nodejs.org)...) -- all of these things were created collectively by contributors all around the world, brought together by HTTP. And given away for free in the spirit of sharing.
+In fact, the browser you're reading this on ([Chrome](https://google.com/intl/en/chrome/browser/ ), [Firefox](https://getfirefox.com), [lynx](https://lynx.invisible-island.net), whatever), the web server that's hosting this website ([Nginx](https://nginx.com), the operating system that this server runs on ([Ubuntu](https://ubuntu.com), the programming tools used to make it all work ([python](https://python.org), [gcc](https://gcc.gnu.org), [node.js](https://nodejs.org)...) -- all of these things were created collectively by contributors all around the world, brought together by HTTP. And given away for free in the spirit of sharing.
 
 The web is open by design and built to empower people. This is the web we're breaking and replacing with one that subverts, manipulates and creates new needs and addiction.
 
