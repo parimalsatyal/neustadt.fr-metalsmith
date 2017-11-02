@@ -127,7 +127,7 @@ Let's take an article that was published around the time I first started working
   <figcaption>Le Monde article <a href="http://www.lemonde.fr/sciences/article/2016/07/04/astronomie-juno-aux-portes-de-jupiter_4963440_1650684.html">Astronomie : la sonde Juno s’est mise en orbite autour de Jupiter</a></figcaption>
 </figure>
 
-If you run this URL through [Dataskydd's Webbkoll](http://webbkoll.dataskydd.net) and a web inspector tool (I used Chromium's web inspector), you learn a few interesting things: the page is **3.1 MB** in size, makes about **460 HTTP requests** of which **430 are third-party requests** (outside of its parent domain) and takes **20 seconds** to fully load on a fast 3G connection (from Paris, France).
+If you run this URL through [Dataskydd's Webbkoll](https://webbkoll.dataskydd.net) and a web inspector tool (I used Chromium's web inspector), you learn a few interesting things: the page is **3.1 MB** in size, makes about **460 HTTP requests** of which **430 are third-party requests** (outside of its parent domain) and takes **20 seconds** to fully load on a fast 3G connection (from Paris, France).
 
 It also stores **100 cookies** (these are little pieces of text stored on your computer by websites other than lemonde.fr; cookies are normally used to save session information but are also used to identify and track you) and contacts **118 third-parties**. And if all this weren't enough, your connection to LeMonde and the majority of third-party connections are over **unsecure HTTP** (instead of the more secure HTTPS, which should be a requirement). 
 
@@ -183,7 +183,7 @@ Those are some very interesting figures. Some observations:
 
 >> Essentially, this means that about 94% of the data being transferred and 99% of the requests being made have nothing to do with the article itself. Le Monde might principally be a newspaper in its printed version, but the online version is an invasive, insecure advertising platform with good content (in that order).
 
-If you're curious, try using [Webbkoll](http://webbkoll.dataskydd.net) on other websites you visit to see how privacy-friendly and respectful these websites are. We'll get into how to protect yourself from these third-party trackers [later on in the article](#the-way-forward).
+If you're curious, try using [Webbkoll](https://webbkoll.dataskydd.net) on other websites you visit to see how privacy-friendly and respectful these websites are. We'll get into how to protect yourself from these third-party trackers [later on in the article](#the-way-forward).
 
 All this might not be illegal (although there's some doubt, especially now that in the context of up the upcoming [European General Regulation on Data Protection](https://www.eugdpr.org)), but it is rather disrespectful towards the user. Not only are these websites breaking my trust—when I visit your website, I entered into contact with you, not 80 other websites—but they are loading content from websites neither know nor trust. Some of which have been [know to spread malware](https://www.theguardian.com/technology/2016/mar/16/major-sites-new-york-times-bbc-ransomware-malvertising). 
 
@@ -234,7 +234,7 @@ A web server, a public address and an HTML file are all that you need to share y
 
 That's what the web makes possible. It's friendship over hyperlink, knowledge over the network, romance over HTTP.
 
-In fact, the browser you're reading this on ([Chrome](https://google.com/intl/en/chrome/browser/ ), [Firefox](https://getfirefox.com), [lynx](http://lynx.invisible-island.net), whatever), the web server that's hosting this website ([Nginx](https://nginx.com), the operating system that this server runs on ([Ubuntu](https://ubuntu.com), the programming tools used to make it all work ([python](https://python.org), [gcc](https://gcc.gnu.org), [node.js](nodejs.org)...) -- all of these things were created collectively by contributors all around the world, brought together by HTTP. And given away for free in the spirit of sharing.
+In fact, the browser you're reading this on ([Chrome](https://google.com/intl/en/chrome/browser/ ), [Firefox](https://getfirefox.com), [lynx](https://lynx.invisible-island.net), whatever), the web server that's hosting this website ([Nginx](https://nginx.com), the operating system that this server runs on ([Ubuntu](https://ubuntu.com), the programming tools used to make it all work ([python](https://python.org), [gcc](https://gcc.gnu.org), [node.js](nodejs.org)...) -- all of these things were created collectively by contributors all around the world, brought together by HTTP. And given away for free in the spirit of sharing.
 
 The web is open by design and built to empower people. This is the web we're breaking and replacing with one that subverts, manipulates and creates new needs and addiction.
 
@@ -259,7 +259,7 @@ Here's a basic list:
 ### For web professionals (you, fellow industry colleague)
 - Consider not putting share buttons everywhere. They're visual noise and make third party connections every time the page is loaded (adding to load time). If you have to, create your own instead of using ones provided by Facebook and co. (so that a click is needed before a request is made to their servers)
 - Support HTTPS. It's super easy (and free!) with [Let's Encrypt](https://letsencrypt.org) so you don't have an excuse to not respect your users' privacy
-- Think about accessibility also in terms of page size, load times and tech requirements: will your website work without Javascript? What percentage of your the total weight of your page is actual information? How many third party requests are you making? How long would it take to load on a 56.6k dial-up or on EDGE? How does it render for speech readers? Can it be read via a text-based browser? (It's a fun experiment; try visiting your website with a text-based browser like [lynx](http://lynx.browser.org) or [Links](http://links.twibright.com)). 
+- Think about accessibility also in terms of page size, load times and tech requirements: will your website work without Javascript? What percentage of your the total weight of your page is actual information? How many third party requests are you making? How long would it take to load on a 56.6k dial-up or on EDGE? How does it render for speech readers? Can it be read via a text-based browser? (It's a fun experiment; try visiting your website with a text-based browser like [lynx](https://lynx.invisible-island.net/) or [Links](http://links.twibright.com)). 
 - Refuse client requests to implement hyper-invasive technologies like canvas fingerprinting.
 - Consider replacing Google Analytics with a more privacy-respecting analytics software like [Piwik](https://piwik.org). Even better if you can host it yourself!
 - Minimize third-party dependencies like Google Fonts (you can [self-host them](https://google-webfonts-helper.herokuapp.com/fonts) instead).
