@@ -442,3 +442,34 @@ a.song:link, a.song:visited, a.song:hover {
 	width: 100%;
 	max-width: 800px;
 }
+
+/* Article table */ 
+
+article table  {
+  border: 1px solid lightgrey;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+	font-size: 0.85em;
+}
+article table td, table th {
+  border: 1px solid lightgrey;
+	padding: 0.6%;
+}
+article table tr:nth-child(even) {
+  background: #E9F2F5;
+}
+article table thead {
+  background: lightgrey;
+  border-bottom: 2px solid lightgrey;
+}
+article table thead th {
+  font-size: 13px;
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+}
+
+article table em {
+	color: grey;
+}

@@ -55,7 +55,7 @@ If you work in the design/communication industry, consider this essay introspect
 
 It all began in the early 90s. 
 
-The Internet — the physical network that allowed computers around the world to communicate - was already in place but it remained inaccessible to most people. You had to know how to use a local client to connect to a remote FTP, [Usenet](https://en.wikipedia.org/wiki/Usenet), [Gopher](https://ils.unc.edu/callee/gopherpaper.htm) or an email server. This was before the days of ubiquitous graphical user interfaces so you had to type funny commands into a terminal, one of those black screens with green text that that hackers supposedly use to do *Bad Things*. 
+The Internet — the physical network that allowed computers around the world to communicate — was already in place but it remained inaccessible to most people. You had to know how to use a local client to connect to a remote FTP, [Usenet](https://en.wikipedia.org/wiki/Usenet), [Gopher](https://ils.unc.edu/callee/gopherpaper.htm) or an email server. This was before the days of ubiquitous graphical user interfaces so you had to type funny commands into a terminal, one of those black screens with green text that that hackers supposedly use to do *Bad Things*. 
 
 <figure>
   <img src="/img/against-user-hostile-web/Gopher-Usenet-Archives-1981.png" alt="Usenet Archives from 1981 on gopher server Quux.org" />
@@ -87,11 +87,9 @@ The modern web is different.
 
 It's naturally different from a technological standpoint: we have faster connections, better browser standards, tighter security and new media formats. But it is also different in the values it espouses. Today, we are so far from that initial vision of linking documents to share knowledge that it's hard to simply browse the web for information without constantly being asked to buy something, like something, follow someone, share the page on Facebook or sign up to some newsletter. All the while being tracked and profiled. 
 
-In the guise of being user-centered, the modern web has become user-hostile. 
-
 Almost every website you go to today reports your activities to third parties that you most likely neither know nor trust. They record where you come from, what pages you visit, how long you stay on each, where you click and where you go next. In fact, since so many websites report to the same third parties, these companies can essentially have your web history on file as you go from link-to-link, website to website. Like an omnipotent eye embedded on Sir Berners-Lee's global system of interlinked documents, noting down everything you do and reporting to private entities who then sell this information for profit.
 
-These companies build profiles, anonymous at first, with your interests and navigational behavior. These profiles can then get increasingly personal: they might include your email addresses, home address, income, educational history, political affiliation, information on your family. Over time, they can cross-reference all this information with your location data to figure out where you work, which restaurants you go to, where you gym is. Recently, we even learned that Google was able to associate your offline purchases with your online ad viewing history (albeit *anonymously*, it would appear). Once they have that, they can look into your behavior and psychology: what kind of ads do you tend to click on? What kind of messages resonate most with you? What are the best strategies to influence your opinion?
+These companies build profiles, anonymous at first, with your interests and navigational behavior. These profiles can then get increasingly personal: they might include your email addresses, home address, income, educational history, political affiliation, information on your family. Over time, they can cross-reference all this information with your location data to figure out where you work, which restaurants you go to, where your gym is. Recently, we even learned that Google was able to associate your offline purchases with your online ad viewing history (albeit *anonymously*, it would appear). Once they have that, they can look into your behavior and psychology: what kind of ads do you tend to click on? What kind of messages resonate most with you? What are the best strategies to influence your opinion?
 
 <figure>
   <img src="/img/against-user-hostile-web/Cambridge-Analytica-youtube-2017.png" alt="Screenshot of Mr. Alexander Nix presenting the work of Cambridge Analytica, video The Power of Big Data and Psychographics on Youtube" />
@@ -102,7 +100,7 @@ The Leave campaign responsible for Brexit in the United Kingdom and Donald Trump
 
 >>You become a manipulable data point at the mercy of big corporations who sell their ability to manipulate you based on the data you volunteer.
 
-This is the equivalent of someone following you in real life as you go about your everyday business, like a private eye who notes down with whom you meet, what you talk about with whom, what you spend time looking at in stores. A private eye who takes notes and then sells it to the highest bidder. But you got to enter the the store for free, so you should be so glad. The stores might also justify it. *"Sure it's a bit creepy, but we'll be able to give you better recommendations if we know what you like"*. 
+This is the equivalent of someone following you in real life as you go about your everyday business, like a private eye who notes down with whom you meet, what you talk about, what you spend time looking at in stores. A private eye who takes notes and then sells it to the highest bidder. But you got to enter the the store for free, so you should be so glad. The stores might also justify it. *"Sure it's a bit invasive, but we'll be able to give you better recommendations if we know what you like"*. 
 
 But how do they get all this personal information -- where you live, who your friends are, what your religion and ethnicity are, where you were last night, what you bought on Monday? Most of it you volunteer yourself on social platforms like Facebook, Twitter and Instagram. The little share buttons you see on websites aren't just there to make it easy for you to post a link to Facebook; they also allow Facebook to be present and gather information about you from pretty much any website. 
 
@@ -117,7 +115,7 @@ In your defense, all of this does sound like some dystopian fantasy. But I'm not
 We'll need a few things:
 
 - a test website 
-- Webbkoll, a web privacy check tool by Dataskydd.net, a Swedish association for data protection and privacy (of which I'm a proud member) and
+- [Webbkoll](https://http://webbkoll.dataskydd.net/), a web privacy check tool by [Dataskydd.net](https://dataskydd.net/), a Swedish association for data protection and privacy (of which I'm a proud member) and
 - A web inspector
 
 Let's take an article that was published around the time I first started working on this article (which is last year; I'm a slow writer): [Astronomie : la sonde Juno s’est mise en orbite autour de Jupiter](http://www.lemonde.fr/sciences/article/2016/07/04/astronomie-juno-aux-portes-de-jupiter_4963440_1650684.html) (*Astronomy: space probe Juno put in orbit around Jupiter*).
@@ -129,26 +127,28 @@ Let's take an article that was published around the time I first started working
 
 If you run this URL through [Dataskydd's Webbkoll](https://webbkoll.dataskydd.net) and a web inspector tool (I used Chromium's web inspector), you learn a few interesting things: the page is **3.1 MB** in size, makes about **460 HTTP requests** of which **430 are third-party requests** (outside of its parent domain) and takes **20 seconds** to fully load on a fast 3G connection (from Paris, France).
 
-It also stores **100 cookies** (these are little pieces of text stored on your computer by websites other than lemonde.fr; cookies are normally used to save session information but are also used to identify and track you) and contacts **118 third-parties**. And if all this weren't enough, your connection to LeMonde and the majority of third-party connections are over **unsecure HTTP** (instead of the more secure HTTPS, which should be a requirement). 
+It also stores **100 cookies** (these are little pieces of text stored on your computer by websites other than lemonde.fr; cookies are normally used to save session information but can also be used to identify and track you) and contacts **118 third-parties**. And if all this weren't enough, your connection to LeMonde and the majority of third-party connections are over **unsecure HTTP** protocol (instead of the more secure HTTPS, which should be a basic requirement). 
 
 That's a lot of big numbers for an article of 1500 words, three images and one video.
 
-Now let's look at some of the third parties that the website connects to when you load it: 
+Now let's look at some of the third parties that the page connects to when you load it: 
 
 - [Weborama](https://weborama.fr): advertising platform for analytics, digital marketing and behavioral targeting
 - [Visual Revenue](http://visualrevenue.com): predictive analytics platform
-- [AppNexus](http://adnxs.com): multimedia content monitization service
+- [AppNexus](http://adnxs.com): multimedia content monetization service
 - [Outbrain](https://outbrain.com): "online advertiser specializing in presenting sponsored website links" (Wikipedia)
 - [Facebook](https://facebook.com): a social network and micro-targeted advertising platform
-- [Cedexis](https://www.cedexis.com): a CND/ad-delivery platform
+- [Cedexis](https://www.cedexis.com): a multi-CDN application delivery platform
 
-These are mostly advertising or content monetization platforms; companies like Weborama make money by selling information about you. When people say, "you're the product," it isn't just some analogy, it accurately reflecs the business propositions of such companies. 
+<span class="update">Note: In an earlier version of the article, I had mistakenly identified Cedexis as an "ad-delivery platform", which it is not. My apologies to Cedexis for the error.</span>
 
-What's surprising is that the bulk of the information transferred between LeMonde and you don't even concern the actual article. If you were to isolate the actual content—the words, images and video—and put it in an HTML file, it would weigh considerably less than 3.1 MB and would make a lot fewer requests. 
+Some of these are simply tools to manage content delivery but many are advertising or content monetization platforms. Companies like Weborama make money by selling information about you. When people say, "you're the product," it isn't just some analogy, it accurately reflects the business propositions of many such companies. 
+
+What's surprising is that the bulk of the information transferred between LeMonde and you doesn't even concern the actual article. If you were to isolate the actual content—the words, images and video—and put it in an HTML file, it would weigh considerably less than 3.1 MB and would make a lot fewer requests. 
 
 If fact, I did just that and made three versions :
 
-- **[Version A](http://webfiles.neustadt.fastmail.com.user.fm/leMondeJupiterArticle.html)**: With the original text (including comments, images and video
+- **[Version A](http://webfiles.neustadt.fastmail.com.user.fm/leMondeJupiterArticle.html)**: With the original text (including comments, images and video)
 - **[Version B](http://webfiles.neustadt.fastmail.com.user.fm/leMondeJupiterArticle-noVideo.html)**: With the original text (including comments), images but no video
 - **[Version C](http://webfiles.neustadt.fastmail.com.user.fm/leMondeJupiterArticle-noVideoImages.html)**: With just the original text (including comments), no images or video
 
@@ -165,9 +165,9 @@ Some numbers:
 | **Cookies (total)**                        	| 100                   	| 16 *(16%)*      	| 0             	| 0             	|
 | **Cookies (third-party)**                  	| 73                    	| 16 *(21,9%)*    	| 0             	| 0             	|
 |                                       		 	|                       	|               	|               	|               	|
-| **Text** <br /> (% of Page Size)                  	| 0,5 %                 	| 1,7 %         	| 9,5 %         	| 100 %         	|
-| **Text + Images** <br /> (% of Page Size)         	| 5,8 %                 	| 17,9 %        	| 100 %         	|               	|
-| **Text + Images + Video** <br />  (% of Page Size) 	| 32,3 %                	| 100 %         	|               	|               	|
+| **Text** <br /> _(% of Page Size)_                  	| 0,5 %                 	| 1,7 %         	| 9,5 %         	| 100 %         	|
+| **Text + Images** <br /> _(% of Page Size)_         	| 5,8 %                 	| 17,9 %        	| 100 %         	|               	|
+| **Text + Images + Video** <br />  _(% of Page Size)_ 	| 32,3 %                	| 100 %         	|               	|               	||
 
 </div>
 <span class="update">Note: Data on the number of requests (first- and third-party) and cookies (first- and third-party) comes from Dataskydd Webbkoll. The rest of the data comes from Chromium's built-in web inspector. All connections were made from Paris, France with cacheing disabled and the bandwidth throttled to simulate a "fast 3G" connection. You can run these numbers yourself; they should vary only nominally depending on where you are. If you find errors, please let me know.</span>
