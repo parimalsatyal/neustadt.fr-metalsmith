@@ -17,7 +17,7 @@ Despite its undeniable value, I think Facebook is at odds with the open web that
 
 I love the web. 
 
-I don't mean that in the way that someone might say that they love pizza. For many of us in the early 2000s, the web was magical. You connected a phone line to your computer, let it make [a funny noise](/resc/dial_up_modem_noises.ogg) and suddenly you had access to a seemingly-unending repository of thoughts and ideas from people around the world. 
+I don't mean that in the way that someone might say that they love pizza. For many of us in the early 2000s, the web was magical. You connected a phone line to your computer, let it make [a funny noise](/resc/Dial_up_modem_noises.ogg) and suddenly you had access to a seemingly-unending repository of thoughts and ideas from people around the world. 
 
 It might not seem like much now, but what that noise represented was the stuff of science fiction at the time: near-instantaneous communication at a planetary scale. It was a big deal.
 
@@ -135,11 +135,11 @@ That's a lot of big numbers for an article of 1500 words, three images and one v
 
 Now let's look at some of the third parties that the website connects to when you load it: 
 
-- [Weborama](weborama.fr): advertising platform for analytics, digital marketing and behavioral targeting
-- [Visual Revenue](visualrevenue.com): predictive analytics platform
-- [AppNexus](adnxs.com): multimedia content monitization service
-- [Outbrain](outbrain.com): "online advertiser specializing in presenting sponsored website links" (Wikipedia)
-- [Facebook](facebook.com): a social network and micro-targeted advertising platform
+- [Weborama](https://weborama.fr): advertising platform for analytics, digital marketing and behavioral targeting
+- [Visual Revenue](https://visualrevenue.com): predictive analytics platform
+- [AppNexus](https://adnxs.com): multimedia content monitization service
+- [Outbrain](https://outbrain.com): "online advertiser specializing in presenting sponsored website links" (Wikipedia)
+- [Facebook](https://facebook.com): a social network and micro-targeted advertising platform
 - [Cedexis](https://www.cedexis.com/): a CND/ad-delivery platform
 
 These are mostly advertising or content monetization platforms; companies like Weborama make money by selling information about you. When people say, "you're the product," it isn't just some analogy, it accurately reflecs the business propositions of such companies. 
@@ -234,7 +234,7 @@ A web server, a public address and an HTML file are all that you need to share y
 
 That's what the web makes possible. It's friendship over hyperlink, knowledge over the network, romance over HTTP.
 
-In fact, the browser you're reading this on ([Chrome](https://google.com/intl/en/chrome/browser/ ), [Firefox](https://getfirefox.com), [Links](http://links.twibright.com), whatever), the web server that's hosting this website ([Nginx](httos://nginx.com)), the operating system that this server runs on ([Ubuntu](https:// ubuntu.com)), the programming tools used to make it all work ([python](python.org), [gcc](gcc.gnu.org), [node.js](nodejs.org)...) -- all of these things were created collectively by contributors all around the world, brought together by HTTP. And given away for free in the spirit of sharing.
+In fact, the browser you're reading this on ([Chrome](https://google.com/intl/en/chrome/browser/ ), [Firefox](https://getfirefox.com), [lynx](http://lynx.invisible-island.net), whatever), the web server that's hosting this website ([Nginx](https://nginx.com), the operating system that this server runs on ([Ubuntu](https://ubuntu.com), the programming tools used to make it all work ([python](https://python.org), [gcc](https://gcc.gnu.org), [node.js](nodejs.org)...) -- all of these things were created collectively by contributors all around the world, brought together by HTTP. And given away for free in the spirit of sharing.
 
 The web is open by design and built to empower people. This is the web we're breaking and replacing with one that subverts, manipulates and creates new needs and addiction.
 
@@ -252,7 +252,7 @@ Here's a basic list:
 - Install [HTTPS Everywhere](https://www.eff.org/https-everywhere) for your browser; this forces your information through secure, encrypted channels (HTTPS vs HTTP one) if possible. It can also be configured to only allow connections to HTTPS websites.
 - Think about how much information/details you provide to social media platforms like Facebook, Linked, Twitter and Instagram. They already have quite a lot (including the ability to recognize you by name on photographs), but what other information are you volunteering? Where you are, whom you're with, information about your friends?
 - Consider quitting social networks, especially Facebook (but download your data first!). What would you miss the most? Are there alternatives? 
-- Consider alternatives to free services provided by the likes of Google and Facebook. Today, if both of these companies shut down (or implement policies I don't like), I would mostly be fine because my contact with them is limited. I use [DuckDuckGo](https://ddg.co) and [Startpage](https://startpage.com) for search (free); [FastMail](https://fastmail.com) for email and calendar (less than 40€ a year) ; [HERE WeGo](https://wego.here.com) for maps (free); [Signal](https://signal.org), email and IRC for messaging (free, along with iMessage, Whatsapp and Twitter); [Digital Ocean](https://digitalocean.com) for web hosting (about 5€ per month). 
+- Consider alternatives to free services provided by the likes of Google and Facebook. Today, if both of these companies shut down (or implement policies I don't like), I would mostly be fine because my contact with them is limited. I use [DuckDuckGo](https://duckduckgo.com) and [Startpage](https://startpage.com) for search (free); [FastMail](https://fastmail.com) for email and calendar (less than 40€ a year) ; [HERE WeGo](https://wego.here.com) for maps (free); [Signal](https://signal.org), email and IRC for messaging (free, along with iMessage, Whatsapp and Twitter); [Digital Ocean](https://digitalocean.com) for web hosting (about 5€ per month). 
 - Pay for services and content that you like, if you are able. If you like reading [The Guardian](https://theguardian.com), for example, consider subscribing. If your [favourite YouTube channel is on Patreon](https://www.patreon.com/easygerman), consider pledging a small amount per video. If you like services like [Pinboard.in](https://pinboard.in) that charge in return for a useful service, buy it. There's mutual respect when both the user and the service provider know what basic service they are buying/selling.
 - At the very least, consider that the platforms you use need you more than you need them. You have power over them (unfortunately, in numbers) and they know it. If enough people care about privacy and respect for their data and time, platforms will have to adapt to stay relevant.
 
@@ -276,4 +276,4 @@ It all comes down to one simple question: **what do we want the web to be?**
 
 For me, the choice is clear. And it's something worth fighting for.
 
-I hope this article has been interesting. If you have thoughts—you agree, disagree, have reservations, other ideas or a suggestion—I'd love to hear them! This [article is on GitHub](https://github.com/parimalsatyal/neustadt.fr-metalsmith/blob/master/src/essays/against-a-user-hostile-web.md); if you'd like you can send a pull request with edit suggestions (like [Anders](https://anders.unix.se) did, thank you!). You can also get in touch via email (*userhostileweb**—at—**neustadt.fr*) or, if you're on Hacker News or Reddit, share your thoughts there.
+I hope this article has been interesting. If you have thoughts—you agree, disagree, have reservations, other ideas or a suggestion—I'd love to hear them! This [article is on GitHub](https://github.com/parimalsatyal/neustadt.fr-metalsmith/blob/master/src/essays/against-a-user-hostile-web.md); if you'd like you can send a pull request with edit suggestions (like [Anders](https://anders.unix.se) did, thank you!). You can also get in touch via email (*userhostileweb**—at—**neustadt.fr*) or, if you're on [Hacker News](https://news.ycombinator.com/item?id=15611122) or Reddit, share your thoughts there.
