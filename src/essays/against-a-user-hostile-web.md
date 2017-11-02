@@ -39,7 +39,7 @@ The web enabled that. It's one of humanity's greatest inventions. And now, we th
 
 We're very good at talking about *immersive experiences*, *personalized content*, *growth hacking*, *responsive strategy*, *user centered design*, *social media activation*, *retargeting*, *CMS* and *user experience*. But behind all this jargon lurks the uncomfortable idea that we might be accomplices in the destruction of a platform that was meant to empower and bring people together; the possibility that we are instead building a machine that surveils, subverts, manipulates, overwhelms and exploits people. 
 
-It all comes down a simple but very dangerous shift: the major websites of today's web are not built for the visitor, but as means of *using* her. Our visitor has become a data point, a customer profile, a potential lead -- a proverbial fly in the spider's web. In the guise of *user centered design*, we're building an increasingly *user-hostile* web.
+It all comes down a simple but very dangerous shift: the major websites of today's web are not built for the visitor, but as means of *using* her. Our visitor has become a data point, a customer profile, a potential lead -- a proverbial fly in the spider's web. In the guise of *user-centered design*, we're building an increasingly *user-hostile* web.
 
 If you work in the design/communication industry, consider this essay introspective soul-searching by one of your own. If you're a regular web user, consider this an appeal to demand a better web, one that respects you instead of abusing and exploiting you.
 
@@ -91,7 +91,7 @@ In the guise of being user-centered, the modern web has become user-hostile.
 
 Almost every website you go to today reports your activities to third parties that you most likely neither know nor trust. They record where you come from, what pages you visit, how long you stay on each, where you click and where you go next. In fact, since so many websites report to the same third parties, these companies can essentially have your web history on file as you go from link-to-link, website to website. Like an omnipotent eye embedded on Sir Berners-Lee's global system of interlinked documents, noting down everything you do and reporting to private entities who then sell this information for profit.
 
-These companies build profiles, anonymous at first, with your interests and navigational behavior. These profiles can then get increasingly personal: they might include your email addresses, home adress, income, educational history, political affiliation, information on your family. Over time, they can cross-reference all this information with your location data to figure out where you work, which restaurants you go to, where you gym is. Recently, we even learnt that Google was able to associate your offline purchases with your online ad viewing history (albeit *anonymously*, it would appear). Once they have that, they can look into your behavior and psychology: what kind of ads do you tend to click on? What kind of messages resonate most with you? What are the best strategies to influence your opinion?
+These companies build profiles, anonymous at first, with your interests and navigational behavior. These profiles can then get increasingly personal: they might include your email addresses, home adress, income, educational history, political affiliation, information on your family. Over time, they can cross-reference all this information with your location data to figure out where you work, which restaurants you go to, where you gym is. Recently, we even learned that Google was able to associate your offline purchases with your online ad viewing history (albeit *anonymously*, it would appear). Once they have that, they can look into your behavior and psychology: what kind of ads do you tend to click on? What kind of messages resonate most with you? What are the best strategies to influence your opinion?
 
 <figure>
   <img src="/img/against-user-hostile-web/Cambridge-Analytica-youtube-2017.png" alt="Screenshot of Mr. Alexander Nix presenting the work of Cambridge Analytica, video The Power of Big Data and Psychographics on Youtube" />
@@ -112,7 +112,7 @@ But how can you know that any of this is true?
 
 Perhaps you think I'm being a tad too dramatic. 
 
-In your defense, all of this does sound like some dystopian fantasy. But I'm not that great a fiction writer quite yet. Let me give illustrate my point with a little experiment. We'll pick a major website that you might visit regularly and identify third parties it shares your information with.
+In your defense, all of this does sound like some dystopian fantasy. But I'm not that great a fiction writer quite yet. Let me illustrate my point with a little experiment. We'll pick a major website that you might visit regularly and identify third parties it shares your information with.
 
 We'll need a few things:
 
@@ -142,7 +142,7 @@ Now let's look at some of the third parties that the website connects to when yo
 - [Facebook](facebook.com): a social network and micro-targeted advertising platform
 - [Cedexis](https://www.cedexis.com/): a CND/ad-delivery platform
 
-These are mostly advertising or content monetization platforms; companies like Weborama make money by selling information about you. When people say, "you're the product", it isn't just some analogy, it accurately reflecs the business propositions of such companies. 
+These are mostly advertising or content monetization platforms; companies like Weborama make money by selling information about you. When people say, "you're the product," it isn't just some analogy, it accurately reflecs the business propositions of such companies. 
 
 What's surprising is that the bulk of the information transferred between LeMonde and you don't even concern the actual article. If you were to isolate the actual content—the words, images and video—and put it in an HTML file, it would weigh considerably less than 3.1 MB and would make a lot fewer requests. 
 
@@ -195,7 +195,7 @@ If you run a website and you put official share buttons on your website, use int
 
 ## Gated Communities
 
-One of the most impressive things about the Internet (and consequently also the web) is that it is decentralized. No central authority gets to decide which page is more important than others and you don't have to play by anyone else's terms to publish and read what you want. There's isn't anything like a *main server* that stores the code that runs the Internet; it's just a protocol on a physical backbone (of undersea cables). 
+One of the most impressive things about the Internet (and consequently also the web) is that it is decentralized. No central authority gets to decide which page is more important than others and you don't have to play by anyone else's terms to publish and read what you want. There isn't anything like a *main server* that stores the code that runs the Internet; it's just a protocol on a physical backbone (of undersea cables). 
 
 You could buy a [Raspberry Pi Zero](https://www.raspberrypi.org/products/raspberry-pi-zero/) today for less than 10€, connect it to the Internet, set up a chat server on it, give it a public address and the world would be able to connect to it and talk to one other. Sure, it might not perform too well and no one might actually use it, but it is technically possible.
 
