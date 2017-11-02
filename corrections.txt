@@ -1,0 +1,6 @@
+### Against a User-Hostile Web
+
+- "home adress", missing d
+- "where you gym" = where your gym is
+- "enter the the store" = "enter the store"
+- "Version A: With the original text (including comments, images and video" = didn't close the parenthesis
