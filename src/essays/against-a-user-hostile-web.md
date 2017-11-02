@@ -248,7 +248,7 @@ Here's a basic list:
 
 ### For end users (you, dear reader)
 - If you use Chrome as your main browser, consider switching to [Chromium](https://www.chromium.org), the open-source version of the browser. Consider minimalist browsers like [Min](https://minbrowser.github.io/min/) (and choose to block all ads, trackers and scripts) to browser news websites. If you like a certain news source, support it by subscribing if you're able!
-- Install a content/ad blocker for your browser: I recommend [uBlock Origin](#https://github.com/gorhill/uBlock) (available for Firefox, Chrome and Safari on most platforms). 
+- Install a content/ad blocker for your browser: I recommend [uBlock Origin](https://github.com/gorhill/uBlock) (available for Firefox, Chrome and Safari on most platforms). 
 - Install [HTTPS Everywhere](https://www.eff.org/https-everywhere) for your browser; this forces your information through secure, encrypted channels (HTTPS vs HTTP one) if possible. It can also be configured to only allow connections to HTTPS websites.
 - Think about how much information/details you provide to social media platforms like Facebook, Linked, Twitter and Instagram. They already have quite a lot (including the ability to recognize you by name on photographs), but what other information are you volunteering? Where you are, whom you're with, information about your friends?
 - Consider quitting social networks, especially Facebook (but download your data first!). What would you miss the most? Are there alternatives? 
