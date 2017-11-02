@@ -229,7 +229,7 @@ A web server, a public address and an HTML file are all that you need to share y
 
 <figure>
   <img src="/img/against-user-hostile-web/DoomLevelDesign-Geocities-1999.png" alt="A website about Doom Level design" />
-  <figcaption>A website on Doom level design on Geocities from 1999, accessed October 31, 20017 via <a href="https://web.archive.org/web/20010404034632/http://www.geocities.com:80/Hollywood/2979/">Archive.org</a></figcaption>
+  <figcaption>A website on Doom level design on Geocities from 1999, accessed October 31, 2017 via <a href="https://web.archive.org/web/20010404034632/http://www.geocities.com:80/Hollywood/2979/">Archive.org</a></figcaption>
 </figure>
 
 That's what the web makes possible. It's friendship over hyperlink, knowledge over the network, romance over HTTP.
