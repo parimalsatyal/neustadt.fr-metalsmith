@@ -6,8 +6,6 @@ layout: about.html
 img: img/parimalsatyal.jpg
 ---
 
-<img src="/img/parimalsatyal3.jpg" alt="Parimal Satyal" class="article-image-left" />
-
 Neustadt.fr is where I share my thoughts on technology, culture, music, design and language.
 
 I studied interactive media and foreign languages (French, Chinese and Italian) at [Hampshire College](http://hampshire.edu) in the US and went on to do a Master's in Communication at [Sciences Po Paris](http://sciencespo.fr). I work currently work as user experience consultant in Paris.
