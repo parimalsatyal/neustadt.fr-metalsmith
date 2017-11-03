@@ -115,7 +115,7 @@ In your defense, all of this does sound like some dystopian fantasy. But I'm not
 We'll need a few things:
 
 - a test website 
-- [Webbkoll](https://http://webbkoll.dataskydd.net/), a web privacy check tool by [Dataskydd.net](https://dataskydd.net/), a Swedish association for data protection and privacy (of which I'm a proud member) and
+- [Webbkoll](https://webbkoll.dataskydd.net/), a web privacy check tool by [Dataskydd.net](https://dataskydd.net/), a Swedish association for data protection and privacy (of which I'm a proud member) and
 - A web inspector
 
 Let's take an article that was published around the time I first started working on this article (which is last year; I'm a slow writer): [Astronomie : la sonde Juno s’est mise en orbite autour de Jupiter](http://www.lemonde.fr/sciences/article/2016/07/04/astronomie-juno-aux-portes-de-jupiter_4963440_1650684.html) (*Astronomy: space probe Juno put in orbit around Jupiter*).
