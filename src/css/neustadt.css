@@ -185,7 +185,7 @@ ul.recent {
 	list-style-type: none;
 	color: grey;
 	font-size: 0.9rem;
-	padding-left: 2em;
+	padding: 0;
 }
 
 ul.recent li {

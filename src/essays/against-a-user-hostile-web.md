@@ -234,7 +234,7 @@ A web server, a public address and an HTML file are all that you need to share y
 
 That's what the web makes possible. It's friendship over hyperlink, knowledge over the network, romance over HTTP.
 
-In fact, the browser you're reading this on ([Chrome](https://google.com/intl/en/chrome/browser/ ), [Firefox](https://getfirefox.com), [lynx](https://lynx.invisible-island.net), whatever), the web server that's hosting this website ([Nginx](https://nginx.com), the operating system that this server runs on ([Ubuntu](https://ubuntu.com), the programming tools used to make it all work ([python](https://python.org), [gcc](https://gcc.gnu.org), [node.js](https://nodejs.org)...) -- all of these things were created collectively by contributors all around the world, brought together by HTTP. And given away for free in the spirit of sharing.
+In fact, the browser you're reading this on ([Chrome](https://google.com/intl/en/chrome/browser/ ), [Firefox](https://getfirefox.com), [lynx](https://lynx.invisible-island.net), whatever), the web server that's hosting this website ([Nginx](https://nginx.com)), the operating system that this server runs on ([Ubuntu](https://ubuntu.com)), the programming tools used to make it all work ([python](https://python.org), [gcc](https://gcc.gnu.org), [node.js](https://nodejs.org)...) -- all of these things were created collectively by contributors all around the world, brought together by HTTP. And given away for free in the spirit of sharing.
 
 The web is open by design and built to empower people. This is the web we're breaking and replacing with one that subverts, manipulates and creates new needs and addiction.
 
