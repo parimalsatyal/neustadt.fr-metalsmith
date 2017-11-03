@@ -18,7 +18,7 @@ Neustadt, or *newcity* in German, is a common name for towns in Germanic regions
 
 ## Free and Open Source
 
-I built Neustadt.fr using [Metalsmith](https://github.com/metalsmith/metalsmith), an open-source node.js-based static site generator. If you're interested, you can read my [beginner's guide to creating a static blog with Metalsmith ](https://neustadt.fr/essays/crafting-a-simple-blog-with-metalsmith/).
+I built Neustadt.fr using [Metalsmith](https://github.com/metalsmith/metalsmith), an open-source node.js-based static site generator. If you're interested, you can read my [beginner's guide to creating a static blog with Metalsmith ](/essays/crafting-a-simple-blog-with-metalsmith/).
 
 This website is also open-source and shared with an [MIT license](https://opensource.org/licenses/MIT). You can access the Metalsmith back-end (and all the source files) on [this public GitHub repository](https://github.com/parimalsatyal/neustadt.fr-metalsmith). You are free to reuse the code in any way you please.
 
@@ -28,7 +28,7 @@ Neustadt.fr is served over [Nginx](https://nginx.org) running on an [Ubuntu](htt
 
 Neustadt.fr can be accessed from pretty much any device connected to the internet and able to read HTML: laptops, tablets, smartphones but also old text-based browsers like [lynx](http://lynx.isc.org/), screen readers and e-book readers. I favour native HTML elements to external resources and have deliberately kept all pages light and as free of dependencies as possible. 
 
-This website does not store cookies, does not track you, does not pass on your referrer information forward, does not hijack your scrollbar for 'immersive experiences' and does not abuse your network bandwith. No share buttons, no Google Analytics, and no direct YouTube video embeds.
+This website does not store cookies, does not track you, does not pass on your referrer information forward, does not hijack your scrollbar for 'immersive experiences' and does not abuse your network bandwith. No share buttons, no Google Analytics, and no direct YouTube video embeds. Why? Because I believe it's important to fight [against an increasingly user-hostile web](/essays/against-a-user-hostile-web/).
 
 All connections to this domain are also encrypted, thanks to [Let's Encrypt](https://letsencrypt.org/).
 
