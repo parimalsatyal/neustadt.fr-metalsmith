@@ -149,7 +149,7 @@ What's surprising is that the bulk of the information transferred between LeMond
 If fact, I did just that and made three versions :
 
 - **[Version A](http://webfiles.neustadt.fastmail.com.user.fm/leMondeJupiterArticle.html)**: With the original text (including comments, images and video)
-- **[Version B](http://webfiles.neustadt.fastmail.com.user.fm/leMondeJupiterArticle-noVideo.html)**: With the original text (including comments), images but no video
+- **[Version B](http://webfiles.neustadt.fastmail.com.user.fm/leMondeJupiterArticle-noVideo.html)**: With the original text (including comments, images) but no video
 - **[Version C](http://webfiles.neustadt.fastmail.com.user.fm/leMondeJupiterArticle-noVideoImages.html)**: With just the original text (including comments), no images or video
 
 Some numbers: 
