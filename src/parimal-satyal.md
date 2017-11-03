@@ -22,7 +22,7 @@ I built Neustadt.fr using [Metalsmith](https://github.com/metalsmith/metalsmith)
 
 This website is also open-source and shared with an [MIT license](https://opensource.org/licenses/MIT). You can access the Metalsmith back-end (and all the source files) on [this public GitHub repository](https://github.com/parimalsatyal/neustadt.fr-metalsmith). You are free to reuse the code in any way you please.
 
-Neustadt.fr is served over [Nginx](https://nginx.org) running on an [Ubuntu](https://ubuntu.com) linux machine running on a [Digital Ocean](https://www.digitalocean.com/) droplet in Frankfurt.
+Neustadt.fr is served over [Nginx](https://nginx.org) on an [Ubuntu](https://ubuntu.com) linux machine running on a [Digital Ocean](https://www.digitalocean.com/) droplet in Frankfurt.
 
 ## Accessible and Privacy-friendly
 
