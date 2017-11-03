@@ -100,7 +100,7 @@ The Leave campaign responsible for Brexit in the United Kingdom and Donald Trump
 
 >>You become a manipulable data point at the mercy of big corporations who sell their ability to manipulate you based on the data you volunteer.
 
-This is the equivalent of someone following you in real life as you go about your everyday business, like a private eye who notes down with whom you meet, what you talk about, what you spend time looking at in stores. A private eye who takes notes and then sells it to the highest bidder. But you got to enter the the store for free, so you should be so glad. The stores might also justify it. *"Sure it's a bit invasive, but we'll be able to give you better recommendations if we know what you like"*. 
+This is the equivalent of someone following you in real life as you go about your everyday business, like a private eye who notes down with whom you meet, what you talk about, what you spend time looking at in stores. A private eye who takes notes and then sells it to the highest bidder. But you got to enter the store for free, so you should be so glad. The stores might also justify it. *"Sure it's a bit invasive, but we'll be able to give you better recommendations if we know what you like"*. 
 
 But how do they get all this personal information -- where you live, who your friends are, what your religion and ethnicity are, where you were last night, what you bought on Monday? Most of it you volunteer yourself on social platforms like Facebook, Twitter and Instagram. The little share buttons you see on websites aren't just there to make it easy for you to post a link to Facebook; they also allow Facebook to be present and gather information about you from pretty much any website. 
 
