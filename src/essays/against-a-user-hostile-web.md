@@ -69,7 +69,7 @@ Meanwhile, Tim Berners-Lee was working as an independent contractor at CERN in G
   <figcaption><a href="http://info.cern.ch/hypertext/WWW/TheProject.html">The world's first website</a>, accessed 31 October 2017 via <a href="https://lynx.browser.org">lynx</a></figcaption>
 </figure>
 
-On April 30 1993, CERN made a bold decision. It decided to release WWW into the public domain. It renounced all intellectual property rights and essentially invited anyone at all, anywhere in the world, to play with it. Later, the director of CERN who approved the decision said that he was inspired [Richard Stallman](https://stallman.org)'s vision of [free, open software](https://www.gnu.org/philosophy/free-sw.en.html).
+On April 30 1993, CERN made a bold decision. It decided to release WWW into the public domain. It renounced all intellectual property rights and essentially invited anyone at all, anywhere in the world, to play with it. Later, the director of CERN who approved the decision said that he was inspired by [Richard Stallman](https://stallman.org)'s vision of [free, open software](https://www.gnu.org/philosophy/free-sw.en.html).
 
 Had CERN decided otherwise and patented the technology to then license it for money, the web would arguably not have taken off the way it did. It might have died out like the [Minitel](https://en.wikipedia.org/wiki/Minitel) did in France. The web as we know it was born of a vision to create an open system that brought people and ideas together, with documents that "may reside on any computer supported by that web". 
 
