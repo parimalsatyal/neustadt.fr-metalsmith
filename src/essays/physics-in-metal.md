@@ -40,7 +40,7 @@ Finally, we have the the chorus:
 > I can see the point of no return  
 > And when the light is slowly turning to red
 
-The "point of no return" is often how an event horizon is described and you *would* be able to see it as the boundary where the "black" part of the black hole starts. But why is the light "slowly turning to red"? Because electromagnetic radiation (like light) being pulled into a black hole is *redshifted*; the wavelength increases and is shifted towards the red ultraviolet end of the spectrum. So visible light would indeed turn reddish, and then perhaps not too *slowly* shift beyond visible light.
+The "point of no return" is often how an event horizon is described and you *would* be able to see it as the boundary where the "black" part of the black hole starts. But why is the light "slowly turning to red"? Because electromagnetic radiation (like light) being pulled into a black hole is *redshifted*; the wavelength increases and is shifted towards the infrared side of the spectrum. So visible light would indeed turn reddish, and then perhaps not too *slowly* shift beyond visible light.
 
 Kudos to Stratovarius for writing a mostly scientifically-accurate song about black holes. Now how about explaining that spaceship with a Russian-sounding onboard computer?
 
