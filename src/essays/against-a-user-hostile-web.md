@@ -240,7 +240,7 @@ The web is open by design and built to empower people. This is the web we're bre
 
 ## The Way Forward
 
-If you want to protect yourself (as a user) from predatory web marketing companies and defend the open web, there a few things you can do today at an individual level. 
+If you want to protect yourself (as a user) from predatory web marketing companies and defend the open web, there are a few things you can do today at an individual level. 
 
 If you're a web professional (a designer, UX consultant, strategist, programmer...), there are a number of considerations for better respecting your users and protecting their privacy (and your integrity). 
 
