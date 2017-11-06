@@ -221,7 +221,7 @@ And they do their best to keep you on their website as long as possible. Your at
 
 I'm not saying that what Facebook is doing is entirely unethical. It has to make money to make up for the resources it employs to keep the website running and it does so by advertising. Every time you choose to use a free service like Instagram, LinkedIn, Gmail or Snapchat, you are paying for the convenience with your eyes, your data and your attention. There's nothing inherently wrong as long you as you understand and consent to this exchange of value. But do you? Does your daughter? Your dad? 
 
-What I'm against is the centralization of services; Facebook and Google are virtually everywhere today. Through share buttons, free services, mobile applications, login gateways and analytics, they are able to be present on virtually every website you visit. This gives them immense power and control. They get to unilaterally made decisions that affect our collective behavior, our expectations and our well-being. You're either *with them or out*. Well, I chose out.
+What I'm against is the centralization of services; Facebook and Google are virtually everywhere today. Through share buttons, free services, mobile applications, login gateways and analytics, they are able to be present on virtually every website you visit. This gives them immense power and control. They get to unilaterally make decisions that affect our collective behavior, our expectations and our well-being. You're either *with them or out*. Well, I chose out.
 
 You see, the web wasn't meant to be a gated community. It's actually pretty simple.
 
