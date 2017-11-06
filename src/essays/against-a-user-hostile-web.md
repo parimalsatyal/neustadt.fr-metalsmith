@@ -55,7 +55,7 @@ If you work in the design/communication industry, consider this essay introspect
 
 It all began in the early 90s. 
 
-The Internet — the physical network that allowed computers around the world to communicate — was already in place but it remained inaccessible to most people. You had to know how to use a local client to connect to a remote FTP, [Usenet](https://en.wikipedia.org/wiki/Usenet), [Gopher](https://ils.unc.edu/callee/gopherpaper.htm) or an email server. This was before the days of ubiquitous graphical user interfaces so you had to type funny commands into a terminal, one of those black screens with green text that that hackers supposedly use to do *Bad Things*. 
+The Internet — the physical network that allowed computers around the world to communicate — was already in place but it remained inaccessible to most people. You had to know how to use a local client to connect to a remote FTP, [Usenet](https://en.wikipedia.org/wiki/Usenet), [Gopher](https://ils.unc.edu/callee/gopherpaper.htm) or an email server. This was before the days of ubiquitous graphical user interfaces so you had to type funny commands into a terminal, one of those black screens with green text that hackers supposedly use to do *Bad Things*. 
 
 <figure>
   <img src="/img/against-user-hostile-web/Gopher-Usenet-Archives-1981.png" alt="Usenet Archives from 1981 on gopher server Quux.org" />
@@ -179,7 +179,7 @@ Those are some very interesting figures. Some observations:
 - Even compared to the version with the video *(Version A)*, **the LeMonde article makes about 450 additional third party requests, of which 370 are to about 100 additional third parties, storing 100 additional cookies (55 of which are third party cookies)**. It also adds over 2 MB to the page. All that is data that has nothing do with and completely unnecessary to load the article you're reading.
 - The text + image version *(Version B)* is **able to load the entire text and the 3 images with only 5 requests and no cookies whatsoever**. Adding a video should reasonably add one or two more requests and maybe one cookie, not 450 requests and 100 cookies, the majority of which on behalf of companies you neither know nor trust, including those who track and sell your data for profit.	
 - The Le Monde page will **continue to periodically transfer data and make additional requests even after it has completely loaded** and as you scroll and interact with the page. If you monitor network traffic, a lot of this data is going to third-party tracking scripts. For example, a request is made to Xiti.com (a web analytics company) every few seconds.
-- If you don't use a content blocker, you will notice that **in just a matter of minutes, over 30 MB of data will be transfered between your browser and the 100+ third parties**. The number of requests will go into the thousands. This will continue to rise as long as you leave your browser open.
+- If you don't use a content blocker, you will notice that **in just a matter of minutes, over 30 MB of data will be transferred between your browser and the 100+ third parties**. The number of requests will go into the thousands. This will continue to rise as long as you leave your browser open.
 
 >> Essentially, this means that about 94% of the data being transferred and 99% of the requests being made have nothing to do with the article itself. Le Monde might principally be a newspaper in its printed version, but the online version is an invasive, insecure advertising platform with good content (in that order).
 
