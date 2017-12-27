@@ -249,7 +249,7 @@ This blog is run by **Tara** and **Elias**.
 
 ```
 
-The bit at the top between the `---` is called fontmatter. Here, it's in [YAML](http://yaml.org/) but that's not too important. These are just metadata that we'll be able to access in the template. Here we've included a *title*, a *date* and a *blurb*. You could also use add these kind of key/value pairs for keywords, categories, author name, modified date… you get the idea.
+The bit at the top between the `---` is called frontmatter. Here, it's in [YAML](http://yaml.org/) but that's not too important. These are just metadata that we'll be able to access in the template. Here we've included a *title*, a *date* and a *blurb*. You could also use add these kind of key/value pairs for keywords, categories, author name, modified date… you get the idea.
 
 We don't have a template to display this content yet, but since we added Markdown to our workflow, Metalsmith will still be able to convert it to HTML. Build your project to check:
 
@@ -375,7 +375,7 @@ metalsmith(__dirname)
 // ...
 ```
 
-In the template, we can access this information via the `{{ site.name }}` variable. The other tags &mdash; `title` and and `date` &mdash; come from our article's frontmatter.
+In the template, we can access this information via the `{{ site.name }}` variable. The other tags &mdash; `title` and `date` &mdash; come from our article's frontmatter.
 
 The article itself can be accessed quite through the `{{{ content }}}` tag. We're using three curly brackets here instead of the usual two because we don't want Handlebars to *escape* any characters (Markdown does that for us).
 
@@ -550,7 +550,7 @@ In this folder, create a file `header.html` that contains:
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{{#if title }}{ {title }} - {{/if}}{{ site.name }}</title>
+    <title>{{#if title }}{{title }} - {{/if}}{{ site.name }}</title>
     <meta name="description" content="{{#if blurb}}{{ blurb }}{{else}}{{#if description}}{{ description }}{{else}}{{ site.description }}{{/if}}{{/if}}" />
   </head>
   <body>
@@ -593,7 +593,7 @@ Now create a file called 'footer.html' that contains simply:
 
 Nothing too surprising here. 
 
-Now we have to let Metalsmith know that we've created these partials so we can invoke them from inside our templaces. To do this, open `build.js` and modify the parameters for our *layouts* plugin so they look like this:
+Now we have to let Metalsmith know that we've created these partials so we can invoke them from inside our templates. To do this, open `build.js` and modify the parameters for our *layouts* plugin so they look like this:
 
 ```javascript
 .use(layouts({
@@ -789,7 +789,7 @@ As you can see, the `/public` folder now represents every page as a folder with 
 
 You'd probably want to preview your articles before you publish them. You could, of course, open the generated `index.html` in your browser and reload your page everytime you change something, or you could have live preview. 
 
-To do this, Metalsmith would need to *watch* your folder and rebuild any files in which it detects changes and *serve* these pages with its own little webserver. Thankfully, Metalsmih comes with a pair of plugins that do just this: `metalsmith-watch` and `metalsmith-serve`.
+To do this, Metalsmith would need to *watch* your folder and rebuild any files in which it detects changes and *serve* these pages with its own little webserver. Thankfully, Metalsmith comes with a pair of plugins that do just this: `metalsmith-watch` and `metalsmith-serve`.
 
 Start by installing them:
 
